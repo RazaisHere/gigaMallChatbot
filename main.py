@@ -49,7 +49,8 @@ app.add_middleware(
     CORSMiddleware,
     allow_origins=[
         "http://localhost:3000",
-        "http://192.168.18.60:3000"
+        "http://192.168.18.60:3000",
+        'https://the-giga-mall-web-git-feature-chatbot-gigas-projects-ccabf899.vercel.app/'
     ],
     allow_credentials=True,
     allow_methods=["*"],
