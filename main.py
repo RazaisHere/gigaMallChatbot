@@ -50,11 +50,13 @@ app.add_middleware(
     allow_origins=[
         "http://localhost:3000",
         "http://192.168.18.60:3000",
-        'https://the-giga-mall-web-git-feature-chatbot-gigas-projects-ccabf899.vercel.app/'
+        "https://the-giga-mall-web-git-feature-chatbot-gigas-projects-ccabf899.vercel.app",
     ],
+    allow_origin_regex=r"https://.*\.vercel\.app",
     allow_credentials=True,
-    allow_methods=["*"],
+    allow_methods=["GET", "POST", "PUT", "DELETE", "OPTIONS"],
     allow_headers=["*"],
+    expose_headers=["*"],
 )
 
 # ============================================================================
