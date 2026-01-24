@@ -229,10 +229,10 @@ def build_retriever_from_markdown(file_path: str) -> Any:
         persist_directory=str(chroma_db_dir),
     )
 
-    # MMR retriever with slightly higher k for better recall
+    # Similarity retriever for tighter matches to user query
     retriever = vectorstore.as_retriever(
-        search_type="mmr",
-        search_kwargs={"k": 8, "fetch_k": 20, "lambda_mult": 0.7},
+        search_type="similarity",
+        search_kwargs={"k": 8},
     )
 
     return retriever
@@ -275,10 +275,10 @@ def load_existing_retriever() -> Any:
         embedding_function=embeddings
     )
     
-    # Create retriever with MMR for better diversity
+    # Create retriever with similarity for tighter matches
     retriever = vectorstore.as_retriever(
-        search_type="mmr",
-        search_kwargs={"k": 8, "fetch_k": 20, "lambda_mult": 0.7},
+        search_type="similarity",
+        search_kwargs={"k": 8},
     )
     
     return retriever

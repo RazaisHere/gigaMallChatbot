@@ -30,12 +30,19 @@ log_dir.mkdir(exist_ok=True)
 
 logging.basicConfig(
     level=logging.INFO,
-    format='%(asctime)s - %(message)s',
+    format='%(asctime)s - %(name)s - %(levelname)s - %(message)s',
     handlers=[
         logging.FileHandler(log_dir / "chat_history.log"),
         logging.StreamHandler()
     ]
 )
+
+# Create separate log file for RAG workflow
+rag_logger = logging.getLogger("rag_workflow")
+rag_file_handler = logging.FileHandler(log_dir / "rag_workflow.log")
+rag_file_handler.setFormatter(logging.Formatter('%(asctime)s - %(levelname)s - %(message)s'))
+rag_logger.addHandler(rag_file_handler)
+rag_logger.setLevel(logging.INFO)
 
 history_logger = logging.getLogger("chat_history")
 logger = logging.getLogger(__name__)
@@ -195,6 +202,17 @@ def stream_rag_response(request: RagChatRequest, db: Session):
             chat_history_lines.append(f"{role_label}: {msg['message']}")
         chat_history_str = "\n".join(chat_history_lines)
     
+    # Log user query
+    rag_logger.info("\n" + "=" * 80)
+    rag_logger.info("NEW USER QUERY RECEIVED")
+    rag_logger.info("=" * 80)
+    rag_logger.info(f"Session ID: {session_id}")
+    rag_logger.info(f"User Query: {request.message}")
+    rag_logger.info(f"Chat History Available: {'Yes' if chat_history_str else 'No'}")
+    if chat_history_str:
+        rag_logger.info(f"Chat History:\n{chat_history_str}")
+    rag_logger.info("=" * 80)
+    
     # Save user message to database
     ChatHistoryManager.save_message(
         db=db,
@@ -228,6 +246,13 @@ def stream_rag_response(request: RagChatRequest, db: Session):
         
         # Send completion signal
         yield f"data: {json.dumps({'type': 'done'})}\n\n"
+        
+        # Log final response
+        rag_logger.info("\n" + "=" * 80)
+        rag_logger.info("FINAL RESPONSE GENERATED:")
+        rag_logger.info("=" * 80)
+        rag_logger.info(full_response)
+        rag_logger.info("=" * 80 + "\n")
         
         # Save assistant response to database
         ChatHistoryManager.save_message(
@@ -291,6 +316,17 @@ async def rag_chat(request: RagChatRequest, db: Session = Depends(get_db)):
             chat_history_lines.append(f"{role_label}: {msg['message']}")
         chat_history_str = "\n".join(chat_history_lines)
     
+    # Log user query
+    rag_logger.info("\n" + "=" * 80)
+    rag_logger.info("NEW USER QUERY RECEIVED (NON-STREAMING)")
+    rag_logger.info("=" * 80)
+    rag_logger.info(f"Session ID: {session_id}")
+    rag_logger.info(f"User Query: {request.message}")
+    rag_logger.info(f"Chat History Available: {'Yes' if chat_history_str else 'No'}")
+    if chat_history_str:
+        rag_logger.info(f"Chat History:\n{chat_history_str}")
+    rag_logger.info("=" * 80)
+    
     # Save user message to database
     ChatHistoryManager.save_message(
         db=db,
@@ -310,6 +346,13 @@ async def rag_chat(request: RagChatRequest, db: Session = Depends(get_db)):
         result: Any = rag_chain.invoke(request.message)
         # ChatOpenAI returns an AIMessage; fall back to string for safety
         answer = getattr(result, "content", str(result))
+        
+        # Log final response
+        rag_logger.info("\n" + "=" * 80)
+        rag_logger.info("FINAL RESPONSE GENERATED (NON-STREAMING):")
+        rag_logger.info("=" * 80)
+        rag_logger.info(answer)
+        rag_logger.info("=" * 80 + "\n")
     except Exception as e:
         error_msg = "I'm having trouble processing your request. Please try again."
         # Save error message to database

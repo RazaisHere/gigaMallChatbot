@@ -1,0 +1,2315 @@
+2026-01-24 12:40:06,573 - INFO - 
+================================================================================
+2026-01-24 12:40:06,574 - INFO - NEW USER QUERY RECEIVED (NON-STREAMING)
+2026-01-24 12:40:06,574 - INFO - ================================================================================
+2026-01-24 12:40:06,574 - INFO - Session ID: 550e8400-e29b-41d4-a716-446655440001
+2026-01-24 12:40:06,574 - INFO - User Query: j. location?
+2026-01-24 12:40:06,575 - INFO - Chat History Available: No
+2026-01-24 12:40:06,575 - INFO - ================================================================================
+2026-01-24 12:40:08,190 - INFO - ================================================================================
+2026-01-24 12:40:08,190 - INFO - RETRIEVED CHUNKS:
+2026-01-24 12:40:08,190 - INFO - ================================================================================
+2026-01-24 12:40:08,191 - INFO - 
+--- Chunk 1 ---
+2026-01-24 12:40:08,191 - INFO - Content: Store name: Juices Land, Floor: 5, Kiosk, A tropical-themed juice bar offering fresh fruit juices, bubble tea, milk tea, and healthy beverages. Enjoy a wide selection of fresh juices made from pomegra...
+2026-01-24 12:40:08,191 - INFO - Metadata: {'normalized_store_name': 'juicesland', 'floor': 5, 'type': 'Kiosk', 'sub_category': 'Juice Bar', 'group': 'Dine/ Food Court / Meal options', 'category': 'Dine/ Food Court / Meal options', 'store_name': 'Juices Land'}
+2026-01-24 12:40:08,192 - INFO - 
+--- Chunk 2 ---
+2026-01-24 12:40:08,192 - INFO - Content: Store name: Jockey, Floor: 5, Outlet, An internationally renowned innerwear and leisurewear brand. Known for exceptional comfort and quality, they offer a wide range of premium underwear, activewear, ...
+2026-01-24 12:40:08,192 - INFO - Metadata: {'store_name': 'Jockey', 'floor': 5, 'group': 'Stores/Shops at Giga Mall', 'normalized_store_name': 'jockey', 'category': 'Clothing Brands', 'type': 'Outlet'}
+2026-01-24 12:40:08,193 - INFO - 
+--- Chunk 3 ---
+2026-01-24 12:40:08,193 - INFO - Content: Store name: Jiyas Creation, Floor: 4, Outlet, A boutique store known for unique and custom-designed apparel, focusing on women's ethnic wear. They provide a bespoke feel to their collections, blending...
+2026-01-24 12:40:08,193 - INFO - Metadata: {'category': 'Clothing Brands', 'normalized_store_name': 'jiyascreation', 'store_name': 'Jiyas Creation', 'type': 'Outlet', 'group': 'Stores/Shops at Giga Mall', 'floor': 4}
+2026-01-24 12:40:08,193 - INFO - 
+--- Chunk 4 ---
+2026-01-24 12:40:08,193 - INFO - Content: Store name: Chachajee, Floor: 5, Outlet, A beloved local favorite serving delicious traditional dishes with a modern twist.
+2026-01-24 12:40:08,194 - INFO - Metadata: {'group': 'Dine/ Food Court / Meal options', 'store_name': 'Chachajee', 'floor': 5, 'category': 'Dine/ Food Court / Meal options', 'normalized_store_name': 'chachajee', 'sub_category': 'Restaurant', 'type': 'Outlet'}
+2026-01-24 12:40:08,194 - INFO - 
+--- Chunk 5 ---
+2026-01-24 12:40:08,194 - INFO - Content: Store name: Jelly Factory, Floor: 2, Kiosk, A vibrant candy and ice cream cart offering a wide selection of colorful candies, jellies, gummy treats, slushies, and ice cream. Discover sweet delights fr...
+2026-01-24 12:40:08,194 - INFO - Metadata: {'floor': 2, 'group': 'Dine/ Food Court / Meal options', 'sub_category': 'Desserts & Beverages', 'store_name': 'Jelly Factory', 'type': 'Kiosk', 'category': 'Dine/ Food Court / Meal options', 'normalized_store_name': 'jellyfactory'}
+2026-01-24 12:40:08,194 - INFO - 
+--- Chunk 6 ---
+2026-01-24 12:40:08,194 - INFO - Content: Store name: Jojo, Floor: 5, Kiosk, A colorful candy store offering a wide variety of bulk candies, gummies, chocolates, and sweet treats. Discover an extensive selection of candies in a playful, vibra...
+2026-01-24 12:40:08,195 - INFO - Metadata: {'group': 'Dine/ Food Court / Meal options', 'store_name': 'Jojo', 'type': 'Kiosk', 'category': 'Dine/ Food Court / Meal options', 'normalized_store_name': 'jojo', 'floor': 5, 'sub_category': 'Desserts & Beverages'}
+2026-01-24 12:40:08,195 - INFO - 
+--- Chunk 7 ---
+2026-01-24 12:40:08,195 - INFO - Content: Store name: Location, Floor: 2, Outlet, A fully independent men's street wear brand based in the UK. Since its launch, it has fused sportswear with urban streetwear in order to produce clothing that i...
+2026-01-24 12:40:08,195 - INFO - Metadata: {'floor': 2, 'category': 'Clothing Brands', 'group': 'Stores/Shops at Giga Mall', 'store_name': 'Location', 'normalized_store_name': 'location', 'type': 'Outlet'}
+2026-01-24 12:40:08,195 - INFO - 
+--- Chunk 8 ---
+2026-01-24 12:40:08,196 - INFO - Content: Store name: Juice Station, Floor: 3, Kiosk, As natural as you! Fresh, pure juices made from the finest fruits with no additives. Grab & go options available in 250ML, 500ML, and 1LTR sizes. Experience...
+2026-01-24 12:40:08,196 - INFO - Metadata: {'sub_category': 'Juice Bar', 'group': 'Dine/ Food Court / Meal options', 'type': 'Kiosk', 'category': 'Dine/ Food Court / Meal options', 'normalized_store_name': 'juicestation', 'floor': 3, 'store_name': 'Juice Station'}
+2026-01-24 12:40:08,196 - INFO - ================================================================================
+2026-01-24 12:40:08,197 - INFO - 
+================================================================================
+2026-01-24 12:40:08,198 - INFO - FINAL PROMPT SENT TO LLM:
+2026-01-24 12:40:08,198 - INFO - ================================================================================
+2026-01-24 12:40:08,198 - INFO - You are a friendly and helpful AI assistant for Giga Mall. Your role is to answer customer questions about the mall, its stores, restaurants, and services.
+
+=== ALWAYS AVAILABLE INFORMATION (Use these without checking context) ===
+
+MALL LOCATION:
+- If user asks about Giga Mall's location, address, where is the mall, how to reach, directions, or map, ALWAYS respond with:
+  "You can find Giga Mall at: https://maps.app.goo.gl/2sDgo5JKupbKcbCQ6"
+- This information is ALWAYS available - do NOT say you don't have it.
+
+MALL CONTACT:
+- Phone: (051) 8491040
+
+=== CONTEXT FROM KNOWLEDGE BASE ===
+Store name: Juices Land, Floor: 5, Kiosk, A tropical-themed juice bar offering fresh fruit juices, bubble tea, milk tea, and healthy beverages. Enjoy a wide selection of fresh juices made from pomegranates, oranges, apples, and more, along with a Jeely Factory candy section.
+
+Store name: Jockey, Floor: 5, Outlet, An internationally renowned innerwear and leisurewear brand. Known for exceptional comfort and quality, they offer a wide range of premium underwear, activewear, and loungewear for men and women.
+
+Store name: Jiyas Creation, Floor: 4, Outlet, A boutique store known for unique and custom-designed apparel, focusing on women's ethnic wear. They provide a bespoke feel to their collections, blending traditional styles with modern cuts.
+
+Store name: Chachajee, Floor: 5, Outlet, A beloved local favorite serving delicious traditional dishes with a modern twist.
+
+Store name: Jelly Factory, Floor: 2, Kiosk, A vibrant candy and ice cream cart offering a wide selection of colorful candies, jellies, gummy treats, slushies, and ice cream. Discover sweet delights from our Jelly Factory and cool treats from our Ice Cream Stop.
+
+Store name: Jojo, Floor: 5, Kiosk, A colorful candy store offering a wide variety of bulk candies, gummies, chocolates, and sweet treats. Discover an extensive selection of candies in a playful, vibrant setting with a gumball machine and delightful candy displays.
+
+Store name: Location, Floor: 2, Outlet, A fully independent men's street wear brand based in the UK. Since its launch, it has fused sportswear with urban streetwear in order to produce clothing that is unique, durable, functional, and technical. It strives to push beyond boundaries, setting standards that others love to follow.
+
+Store name: Juice Station, Floor: 3, Kiosk, As natural as you! Fresh, pure juices made from the finest fruits with no additives. Grab & go options available in 250ML, 500ML, and 1LTR sizes. Experience the authentic taste of natural ingredients.
+
+Each context chunk describes ONE store or service with:
+- Store name, Floor number, Store type (Outlet/Kiosk), Category
+
+=== CONVERSATION HISTORY ===
+
+
+=== CURRENT QUESTION ===
+j. location?
+
+=== RESPONSE RULES (Follow in this order) ===
+
+RULE 1: MALL LOCATION QUERIES (ONLY for the mall itself)
+- Only use this rule if the user clearly asks about the MALL location (e.g., mentions "Giga Mall", "the mall", "this mall").
+- Keywords: "location", "address", "where is", "directions", "map", "how to reach", "find the mall"
+- Response: "You can find Giga Mall at: https://maps.app.goo.gl/2sDgo5JKupbKcbCQ6"
+- Do NOT use this rule for store names like "J." or "Junaid Jamshed" etc. Those are stores, not the mall.
+
+RULE 2: PRODUCT/DEAL/PRICE QUERIES
+- Keywords: "price", "cost", "deal", "discount", "offer", "menu price", "product price", "how much", "what's the price"
+- Examples: "What's the price of ABC brand's product?", "Any deals at XYZ?", "Menu prices?", "What does ABC store sell?"
+- Response: "For product information, deals, and pricing details, please visit the Giga Mall website or contact the store directly."
+
+RULE 3: STORE LOCATION & GENERAL INFO (Answer from context)
+- If the question mentions a store name (e.g., "J.", "Junaid Jamshed", "Jockey") and asks about location or floor, answer with that store's floor and type from context.
+- Questions about: which floor, store location in mall, store type, store description, what stores are available
+- Answer ONLY from the context provided above
+- If multiple stores match (e.g., "J."), list the best 2-4 options that start with or closely match that name.
+- Format for listing stores:
+  1) Store Name - Floor X (Type): Brief description
+- Be direct and concise
+
+RULE 4: INFORMATION NOT IN CONTEXT
+- If the question is NOT about location, products/deals, or store info from context
+- Response: "I'm unable to respond to your query. Please contact Giga Mall at (051) 8491040 for assistance."
+
+=== FORMATTING REQUIREMENTS ===
+- Plain text only (no markdown, no **bold**, no bullets, no special formatting)
+- URLs must be full URLs (e.g., https://maps.app.goo.gl/2sDgo5JKupbKcbCQ6) for clickable links
+- Keep responses short and friendly
+- No disclaimers like "Unfortunately" or "I don't have more information"
+- Be conversational, like talking to a friend
+
+=== EXAMPLES ===
+User: "Where is Giga Mall?"
+You: "You can find Giga Mall at: https://maps.app.goo.gl/2sDgo5JKupbKcbCQ6"
+
+User: "What's the price of Nike shoes?"
+You: "For product information, deals, and pricing details, please visit the Giga Mall website or contact the store directly."
+
+User: "Which floor has clothing stores?"
+You: [Answer from context with store listings]
+
+User: "What's the weather today?"
+You: "I'm unable to respond to your query. Please contact Giga Mall at (051) 8491040 for assistance."
+2026-01-24 12:40:08,199 - INFO - ================================================================================
+
+2026-01-24 12:40:09,441 - INFO - 
+================================================================================
+2026-01-24 12:40:09,441 - INFO - FINAL RESPONSE GENERATED (NON-STREAMING):
+2026-01-24 12:40:09,442 - INFO - ================================================================================
+2026-01-24 12:40:09,442 - INFO - You can find Giga Mall at: https://maps.app.goo.gl/2sDgo5JKupbKcbCQ6
+2026-01-24 12:40:09,442 - INFO - ================================================================================
+
+2026-01-24 12:41:18,897 - INFO - 
+================================================================================
+2026-01-24 12:41:18,898 - INFO - NEW USER QUERY RECEIVED (NON-STREAMING)
+2026-01-24 12:41:18,898 - INFO - ================================================================================
+2026-01-24 12:41:18,898 - INFO - Session ID: 550e8400-e29b-41d4-a716-446655440011
+2026-01-24 12:41:18,898 - INFO - User Query: juniad jamsheed location?
+2026-01-24 12:41:18,899 - INFO - Chat History Available: No
+2026-01-24 12:41:18,899 - INFO - ================================================================================
+2026-01-24 12:41:19,411 - INFO - ================================================================================
+2026-01-24 12:41:19,412 - INFO - RETRIEVED CHUNKS:
+2026-01-24 12:41:19,412 - INFO - ================================================================================
+2026-01-24 12:41:19,412 - INFO - 
+--- Chunk 1 ---
+2026-01-24 12:41:19,412 - INFO - Content: Store name: Junaid Jamshed, Floor: 4, Outlet, Also known as J., this is a well-known Pakistani fashion brand founded by the late Junaid Jamshed. It started with traditional menswear and expanded into ...
+2026-01-24 12:41:19,412 - INFO - Metadata: {'group': 'Stores/Shops at Giga Mall', 'store_name': 'Junaid Jamshed', 'floor': 4, 'type': 'Outlet', 'normalized_store_name': 'junaidjamshed', 'category': 'Clothing Brands'}
+2026-01-24 12:41:19,412 - INFO - 
+--- Chunk 2 ---
+2026-01-24 12:41:19,412 - INFO - Content: Store name: J. Fragrance and Costmetics, Floor: 3, Kiosk, Part of the well-known Pakistani brand Junaid Jamshed, this section specializes in a wide array of perfumes, colognes, and cosmetics. They off...
+2026-01-24 12:41:19,413 - INFO - Metadata: {'category': 'Beauty & Fragrances', 'store_name': 'J. Fragrance and Costmetics', 'normalized_store_name': 'jfragranceandcostmetics', 'group': 'Stores/Shops at Giga Mall', 'floor': 3, 'type': 'Kiosk'}
+2026-01-24 12:41:19,413 - INFO - 
+--- Chunk 3 ---
+2026-01-24 12:41:19,413 - INFO - Content: Store name: Almirah, Floor: 3, Outlet, A Pakistani clothing label under the Junaid Jamshed group that offers ready-to-wear and unstitched apparel for men, women, and children, including kurtas, formal...
+2026-01-24 12:41:19,413 - INFO - Metadata: {'floor': 3, 'normalized_store_name': 'almirah', 'group': 'Stores/Shops at Giga Mall', 'store_name': 'Almirah', 'category': 'Clothing Brands', 'type': 'Outlet'}
+2026-01-24 12:41:19,413 - INFO - 
+--- Chunk 4 ---
+2026-01-24 12:41:19,414 - INFO - Content: Store name: Jafferjees, Floor: 3, Outlet, A heritage leather goods company in Pakistan. They are renowned for their luxury, handcrafted leather products, including high-quality bags, briefcases, walle...
+2026-01-24 12:41:19,414 - INFO - Metadata: {'group': 'Stores/Shops at Giga Mall', 'floor': 3, 'type': 'Outlet', 'normalized_store_name': 'jafferjees', 'store_name': 'Jafferjees', 'category': 'Accessories'}
+2026-01-24 12:41:19,415 - INFO - 
+--- Chunk 5 ---
+2026-01-24 12:41:19,415 - INFO - Content: Store name:  Mosque, Floor: -0, A beautifully designed prayer hall providing a serene and peaceful space for daily prayers and spiritual reflection. Open to all visitors seeking a moment of tranquilit...
+2026-01-24 12:41:19,415 - INFO - Metadata: {'floor': 0, 'store_name': 'Mosque', 'normalized_store_name': 'mosque', 'category': 'Religious', 'group': 'Services in Giga Mall'}
+2026-01-24 12:41:19,415 - INFO - 
+--- Chunk 6 ---
+2026-01-24 12:41:19,415 - INFO - Content: Store name: Saeed Ghani, Floor: 2, Kiosk, A heritage natural beauty and herbal wellness brand with skincare, haircare, and fragrance products rooted in traditional ingredients.
+2026-01-24 12:41:19,415 - INFO - Metadata: {'category': 'Beauty & Fragrances', 'group': 'Stores/Shops at Giga Mall', 'floor': 2, 'store_name': 'Saeed Ghani', 'type': 'Kiosk', 'normalized_store_name': 'saeedghani'}
+2026-01-24 12:41:19,416 - INFO - 
+--- Chunk 7 ---
+2026-01-24 12:41:19,416 - INFO - Content: Store name: Juices Land, Floor: 5, Kiosk, A tropical-themed juice bar offering fresh fruit juices, bubble tea, milk tea, and healthy beverages. Enjoy a wide selection of fresh juices made from pomegra...
+2026-01-24 12:41:19,416 - INFO - Metadata: {'floor': 5, 'normalized_store_name': 'juicesland', 'group': 'Dine/ Food Court / Meal options', 'type': 'Kiosk', 'store_name': 'Juices Land', 'sub_category': 'Juice Bar', 'category': 'Dine/ Food Court / Meal options'}
+2026-01-24 12:41:19,417 - INFO - 
+--- Chunk 8 ---
+2026-01-24 12:41:19,417 - INFO - Content: Store name: Johri, Floor: 2, Outlet, A traditional jewelry brand specializing in authentic gold and gemstone pieces. They are known for intricate bridal sets and fine jewelry that emphasizes classic P...
+2026-01-24 12:41:19,417 - INFO - Metadata: {'type': 'Outlet', 'category': 'Jewelry', 'floor': 2, 'group': 'Stores/Shops at Giga Mall', 'normalized_store_name': 'johri', 'store_name': 'Johri'}
+2026-01-24 12:41:19,417 - INFO - ================================================================================
+2026-01-24 12:41:19,418 - INFO - 
+================================================================================
+2026-01-24 12:41:19,419 - INFO - FINAL PROMPT SENT TO LLM:
+2026-01-24 12:41:19,419 - INFO - ================================================================================
+2026-01-24 12:41:19,419 - INFO - You are a friendly and helpful AI assistant for Giga Mall. Your role is to answer customer questions about the mall, its stores, restaurants, and services.
+
+=== ALWAYS AVAILABLE INFORMATION (Use these without checking context) ===
+
+MALL LOCATION:
+- If user asks about Giga Mall's location, address, where is the mall, how to reach, directions, or map, ALWAYS respond with:
+  "You can find Giga Mall at: https://maps.app.goo.gl/2sDgo5JKupbKcbCQ6"
+- This information is ALWAYS available - do NOT say you don't have it.
+
+MALL CONTACT:
+- Phone: (051) 8491040
+
+=== CONTEXT FROM KNOWLEDGE BASE ===
+Store name: Junaid Jamshed, Floor: 4, Outlet, Also known as J., this is a well-known Pakistani fashion brand founded by the late Junaid Jamshed. It started with traditional menswear and expanded into womenswear, kidswear, and accessories with a focus on modest, elegant clothing rooted in cultural aesthetics.
+
+Store name: J. Fragrance and Costmetics, Floor: 3, Kiosk, Part of the well-known Pakistani brand Junaid Jamshed, this section specializes in a wide array of perfumes, colognes, and cosmetics. They offer signature scents and makeup products that are popular locally.
+
+Store name: Almirah, Floor: 3, Outlet, A Pakistani clothing label under the Junaid Jamshed group that offers ready-to-wear and unstitched apparel for men, women, and children, including kurtas, formal wear, and seasonal collections.
+
+Store name: Jafferjees, Floor: 3, Outlet, A heritage leather goods company in Pakistan. They are renowned for their luxury, handcrafted leather products, including high-quality bags, briefcases, wallets, and sophisticated travel accessories.
+
+Store name:  Mosque, Floor: -0, A beautifully designed prayer hall providing a serene and peaceful space for daily prayers and spiritual reflection. Open to all visitors seeking a moment of tranquility and connection.
+
+Store name: Saeed Ghani, Floor: 2, Kiosk, A heritage natural beauty and herbal wellness brand with skincare, haircare, and fragrance products rooted in traditional ingredients.
+
+Store name: Juices Land, Floor: 5, Kiosk, A tropical-themed juice bar offering fresh fruit juices, bubble tea, milk tea, and healthy beverages. Enjoy a wide selection of fresh juices made from pomegranates, oranges, apples, and more, along with a Jeely Factory candy section.
+
+Store name: Johri, Floor: 2, Outlet, A traditional jewelry brand specializing in authentic gold and gemstone pieces. They are known for intricate bridal sets and fine jewelry that emphasizes classic Pakistani heritage and craftsmanship.
+
+Each context chunk describes ONE store or service with:
+- Store name, Floor number, Store type (Outlet/Kiosk), Category
+
+=== CONVERSATION HISTORY ===
+
+
+=== CURRENT QUESTION ===
+juniad jamsheed location?
+
+=== RESPONSE RULES (Follow in this order) ===
+
+RULE 1: MALL LOCATION QUERIES (ONLY for the mall itself)
+- Only use this rule if the user clearly asks about the MALL location (e.g., mentions "Giga Mall", "the mall", "this mall").
+- Keywords: "location", "address", "where is", "directions", "map", "how to reach", "find the mall"
+- Response: "You can find Giga Mall at: https://maps.app.goo.gl/2sDgo5JKupbKcbCQ6"
+- Do NOT use this rule for store names like "J." or "Junaid Jamshed" etc. Those are stores, not the mall.
+
+RULE 2: PRODUCT/DEAL/PRICE QUERIES
+- Keywords: "price", "cost", "deal", "discount", "offer", "menu price", "product price", "how much", "what's the price"
+- Examples: "What's the price of ABC brand's product?", "Any deals at XYZ?", "Menu prices?", "What does ABC store sell?"
+- Response: "For product information, deals, and pricing details, please visit the Giga Mall website or contact the store directly."
+
+RULE 3: STORE LOCATION & GENERAL INFO (Answer from context)
+- If the question mentions a store name (e.g., "J.", "Junaid Jamshed", "Jockey") and asks about location or floor, answer with that store's floor and type from context.
+- Questions about: which floor, store location in mall, store type, store description, what stores are available
+- Answer ONLY from the context provided above
+- If multiple stores match (e.g., "J."), list the best 2-4 options that start with or closely match that name.
+- Format for listing stores:
+  1) Store Name - Floor X (Type): Brief description
+- Be direct and concise
+
+RULE 4: INFORMATION NOT IN CONTEXT
+- If the question is NOT about location, products/deals, or store info from context
+- Response: "I'm unable to respond to your query. Please contact Giga Mall at (051) 8491040 for assistance."
+
+=== FORMATTING REQUIREMENTS ===
+- Plain text only (no markdown, no **bold**, no bullets, no special formatting)
+- URLs must be full URLs (e.g., https://maps.app.goo.gl/2sDgo5JKupbKcbCQ6) for clickable links
+- Keep responses short and friendly
+- No disclaimers like "Unfortunately" or "I don't have more information"
+- Be conversational, like talking to a friend
+
+=== EXAMPLES ===
+User: "Where is Giga Mall?"
+You: "You can find Giga Mall at: https://maps.app.goo.gl/2sDgo5JKupbKcbCQ6"
+
+User: "What's the price of Nike shoes?"
+You: "For product information, deals, and pricing details, please visit the Giga Mall website or contact the store directly."
+
+User: "Which floor has clothing stores?"
+You: [Answer from context with store listings]
+
+User: "What's the weather today?"
+You: "I'm unable to respond to your query. Please contact Giga Mall at (051) 8491040 for assistance."
+2026-01-24 12:41:19,420 - INFO - ================================================================================
+
+2026-01-24 12:41:21,631 - INFO - 
+================================================================================
+2026-01-24 12:41:21,631 - INFO - FINAL RESPONSE GENERATED (NON-STREAMING):
+2026-01-24 12:41:21,631 - INFO - ================================================================================
+2026-01-24 12:41:21,632 - INFO - Junaid Jamshed, also known as J., is located on Floor 4 as an outlet. They offer a range of traditional and modern menswear, womenswear, kidswear, and accessories.
+2026-01-24 12:41:21,632 - INFO - ================================================================================
+
+2026-01-24 12:41:43,770 - INFO - 
+================================================================================
+2026-01-24 12:41:43,770 - INFO - NEW USER QUERY RECEIVED (NON-STREAMING)
+2026-01-24 12:41:43,771 - INFO - ================================================================================
+2026-01-24 12:41:43,771 - INFO - Session ID: 550e8400-e29b-41d4-a716-446655440011
+2026-01-24 12:41:43,772 - INFO - User Query: j . location?
+2026-01-24 12:41:43,772 - INFO - Chat History Available: Yes
+2026-01-24 12:41:43,773 - INFO - Chat History:
+User: juniad jamsheed location?
+Assistant: Junaid Jamshed, also known as J., is located on Floor 4 as an outlet. They offer a range of traditional and modern menswear, womenswear, kidswear, and accessories.
+2026-01-24 12:41:43,774 - INFO - ================================================================================
+2026-01-24 12:41:44,261 - INFO - ================================================================================
+2026-01-24 12:41:44,262 - INFO - RETRIEVED CHUNKS:
+2026-01-24 12:41:44,262 - INFO - ================================================================================
+2026-01-24 12:41:44,263 - INFO - 
+--- Chunk 1 ---
+2026-01-24 12:41:44,263 - INFO - Content: Store name: Juices Land, Floor: 5, Kiosk, A tropical-themed juice bar offering fresh fruit juices, bubble tea, milk tea, and healthy beverages. Enjoy a wide selection of fresh juices made from pomegra...
+2026-01-24 12:41:44,263 - INFO - Metadata: {'floor': 5, 'normalized_store_name': 'juicesland', 'type': 'Kiosk', 'group': 'Dine/ Food Court / Meal options', 'category': 'Dine/ Food Court / Meal options', 'store_name': 'Juices Land', 'sub_category': 'Juice Bar'}
+2026-01-24 12:41:44,264 - INFO - 
+--- Chunk 2 ---
+2026-01-24 12:41:44,264 - INFO - Content: Store name: Jelly Factory, Floor: 2, Kiosk, A vibrant candy and ice cream cart offering a wide selection of colorful candies, jellies, gummy treats, slushies, and ice cream. Discover sweet delights fr...
+2026-01-24 12:41:44,264 - INFO - Metadata: {'type': 'Kiosk', 'normalized_store_name': 'jellyfactory', 'store_name': 'Jelly Factory', 'floor': 2, 'sub_category': 'Desserts & Beverages', 'category': 'Dine/ Food Court / Meal options', 'group': 'Dine/ Food Court / Meal options'}
+2026-01-24 12:41:44,265 - INFO - 
+--- Chunk 3 ---
+2026-01-24 12:41:44,265 - INFO - Content: Store name: Jiyas Creation, Floor: 4, Outlet, A boutique store known for unique and custom-designed apparel, focusing on women's ethnic wear. They provide a bespoke feel to their collections, blending...
+2026-01-24 12:41:44,266 - INFO - Metadata: {'floor': 4, 'group': 'Stores/Shops at Giga Mall', 'category': 'Clothing Brands', 'normalized_store_name': 'jiyascreation', 'type': 'Outlet', 'store_name': 'Jiyas Creation'}
+2026-01-24 12:41:44,266 - INFO - 
+--- Chunk 4 ---
+2026-01-24 12:41:44,266 - INFO - Content: Store name: Jojo, Floor: 5, Kiosk, A colorful candy store offering a wide variety of bulk candies, gummies, chocolates, and sweet treats. Discover an extensive selection of candies in a playful, vibra...
+2026-01-24 12:41:44,267 - INFO - Metadata: {'sub_category': 'Desserts & Beverages', 'floor': 5, 'normalized_store_name': 'jojo', 'store_name': 'Jojo', 'category': 'Dine/ Food Court / Meal options', 'group': 'Dine/ Food Court / Meal options', 'type': 'Kiosk'}
+2026-01-24 12:41:44,267 - INFO - 
+--- Chunk 5 ---
+2026-01-24 12:41:44,268 - INFO - Content: Store name: Jockey, Floor: 5, Outlet, An internationally renowned innerwear and leisurewear brand. Known for exceptional comfort and quality, they offer a wide range of premium underwear, activewear, ...
+2026-01-24 12:41:44,268 - INFO - Metadata: {'type': 'Outlet', 'floor': 5, 'group': 'Stores/Shops at Giga Mall', 'normalized_store_name': 'jockey', 'store_name': 'Jockey', 'category': 'Clothing Brands'}
+2026-01-24 12:41:44,269 - INFO - 
+--- Chunk 6 ---
+2026-01-24 12:41:44,269 - INFO - Content: Store name: Chachajee, Floor: 5, Outlet, A beloved local favorite serving delicious traditional dishes with a modern twist.
+2026-01-24 12:41:44,269 - INFO - Metadata: {'normalized_store_name': 'chachajee', 'type': 'Outlet', 'floor': 5, 'sub_category': 'Restaurant', 'store_name': 'Chachajee', 'group': 'Dine/ Food Court / Meal options', 'category': 'Dine/ Food Court / Meal options'}
+2026-01-24 12:41:44,270 - INFO - 
+--- Chunk 7 ---
+2026-01-24 12:41:44,270 - INFO - Content: Store name: Juice Station, Floor: 3, Kiosk, As natural as you! Fresh, pure juices made from the finest fruits with no additives. Grab & go options available in 250ML, 500ML, and 1LTR sizes. Experience...
+2026-01-24 12:41:44,270 - INFO - Metadata: {'store_name': 'Juice Station', 'sub_category': 'Juice Bar', 'group': 'Dine/ Food Court / Meal options', 'floor': 3, 'category': 'Dine/ Food Court / Meal options', 'type': 'Kiosk', 'normalized_store_name': 'juicestation'}
+2026-01-24 12:41:44,271 - INFO - 
+--- Chunk 8 ---
+2026-01-24 12:41:44,271 - INFO - Content: Store name: J. Fragrance and Costmetics, Floor: 3, Kiosk, Part of the well-known Pakistani brand Junaid Jamshed, this section specializes in a wide array of perfumes, colognes, and cosmetics. They off...
+2026-01-24 12:41:44,271 - INFO - Metadata: {'type': 'Kiosk', 'group': 'Stores/Shops at Giga Mall', 'store_name': 'J. Fragrance and Costmetics', 'category': 'Beauty & Fragrances', 'normalized_store_name': 'jfragranceandcostmetics', 'floor': 3}
+2026-01-24 12:41:44,272 - INFO - ================================================================================
+2026-01-24 12:41:44,273 - INFO - 
+================================================================================
+2026-01-24 12:41:44,274 - INFO - FINAL PROMPT SENT TO LLM:
+2026-01-24 12:41:44,274 - INFO - ================================================================================
+2026-01-24 12:41:44,275 - INFO - You are a friendly and helpful AI assistant for Giga Mall. Your role is to answer customer questions about the mall, its stores, restaurants, and services.
+
+=== ALWAYS AVAILABLE INFORMATION (Use these without checking context) ===
+
+MALL LOCATION:
+- If user asks about Giga Mall's location, address, where is the mall, how to reach, directions, or map, ALWAYS respond with:
+  "You can find Giga Mall at: https://maps.app.goo.gl/2sDgo5JKupbKcbCQ6"
+- This information is ALWAYS available - do NOT say you don't have it.
+
+MALL CONTACT:
+- Phone: (051) 8491040
+
+=== CONTEXT FROM KNOWLEDGE BASE ===
+Store name: Juices Land, Floor: 5, Kiosk, A tropical-themed juice bar offering fresh fruit juices, bubble tea, milk tea, and healthy beverages. Enjoy a wide selection of fresh juices made from pomegranates, oranges, apples, and more, along with a Jeely Factory candy section.
+
+Store name: Jelly Factory, Floor: 2, Kiosk, A vibrant candy and ice cream cart offering a wide selection of colorful candies, jellies, gummy treats, slushies, and ice cream. Discover sweet delights from our Jelly Factory and cool treats from our Ice Cream Stop.
+
+Store name: Jiyas Creation, Floor: 4, Outlet, A boutique store known for unique and custom-designed apparel, focusing on women's ethnic wear. They provide a bespoke feel to their collections, blending traditional styles with modern cuts.
+
+Store name: Jojo, Floor: 5, Kiosk, A colorful candy store offering a wide variety of bulk candies, gummies, chocolates, and sweet treats. Discover an extensive selection of candies in a playful, vibrant setting with a gumball machine and delightful candy displays.
+
+Store name: Jockey, Floor: 5, Outlet, An internationally renowned innerwear and leisurewear brand. Known for exceptional comfort and quality, they offer a wide range of premium underwear, activewear, and loungewear for men and women.
+
+Store name: Chachajee, Floor: 5, Outlet, A beloved local favorite serving delicious traditional dishes with a modern twist.
+
+Store name: Juice Station, Floor: 3, Kiosk, As natural as you! Fresh, pure juices made from the finest fruits with no additives. Grab & go options available in 250ML, 500ML, and 1LTR sizes. Experience the authentic taste of natural ingredients.
+
+Store name: J. Fragrance and Costmetics, Floor: 3, Kiosk, Part of the well-known Pakistani brand Junaid Jamshed, this section specializes in a wide array of perfumes, colognes, and cosmetics. They offer signature scents and makeup products that are popular locally.
+
+Each context chunk describes ONE store or service with:
+- Store name, Floor number, Store type (Outlet/Kiosk), Category
+
+=== CONVERSATION HISTORY ===
+
+Previous Conversation History:
+User: juniad jamsheed location?
+Assistant: Junaid Jamshed, also known as J., is located on Floor 4 as an outlet. They offer a range of traditional and modern menswear, womenswear, kidswear, and accessories.
+
+Use the conversation history above to understand the context of the current question.
+
+
+=== CURRENT QUESTION ===
+j . location?
+
+=== RESPONSE RULES (Follow in this order) ===
+
+RULE 1: MALL LOCATION QUERIES (ONLY for the mall itself)
+- Only use this rule if the user clearly asks about the MALL location (e.g., mentions "Giga Mall", "the mall", "this mall").
+- Keywords: "location", "address", "where is", "directions", "map", "how to reach", "find the mall"
+- Response: "You can find Giga Mall at: https://maps.app.goo.gl/2sDgo5JKupbKcbCQ6"
+- Do NOT use this rule for store names like "J." or "Junaid Jamshed" etc. Those are stores, not the mall.
+
+RULE 2: PRODUCT/DEAL/PRICE QUERIES
+- Keywords: "price", "cost", "deal", "discount", "offer", "menu price", "product price", "how much", "what's the price"
+- Examples: "What's the price of ABC brand's product?", "Any deals at XYZ?", "Menu prices?", "What does ABC store sell?"
+- Response: "For product information, deals, and pricing details, please visit the Giga Mall website or contact the store directly."
+
+RULE 3: STORE LOCATION & GENERAL INFO (Answer from context)
+- If the question mentions a store name (e.g., "J.", "Junaid Jamshed", "Jockey") and asks about location or floor, answer with that store's floor and type from context.
+- Questions about: which floor, store location in mall, store type, store description, what stores are available
+- Answer ONLY from the context provided above
+- If multiple stores match (e.g., "J."), list the best 2-4 options that start with or closely match that name.
+- Format for listing stores:
+  1) Store Name - Floor X (Type): Brief description
+- Be direct and concise
+
+RULE 4: INFORMATION NOT IN CONTEXT
+- If the question is NOT about location, products/deals, or store info from context
+- Response: "I'm unable to respond to your query. Please contact Giga Mall at (051) 8491040 for assistance."
+
+=== FORMATTING REQUIREMENTS ===
+- Plain text only (no markdown, no **bold**, no bullets, no special formatting)
+- URLs must be full URLs (e.g., https://maps.app.goo.gl/2sDgo5JKupbKcbCQ6) for clickable links
+- Keep responses short and friendly
+- No disclaimers like "Unfortunately" or "I don't have more information"
+- Be conversational, like talking to a friend
+
+=== EXAMPLES ===
+User: "Where is Giga Mall?"
+You: "You can find Giga Mall at: https://maps.app.goo.gl/2sDgo5JKupbKcbCQ6"
+
+User: "What's the price of Nike shoes?"
+You: "For product information, deals, and pricing details, please visit the Giga Mall website or contact the store directly."
+
+User: "Which floor has clothing stores?"
+You: [Answer from context with store listings]
+
+User: "What's the weather today?"
+You: "I'm unable to respond to your query. Please contact Giga Mall at (051) 8491040 for assistance."
+2026-01-24 12:41:44,276 - INFO - ================================================================================
+
+2026-01-24 12:41:45,659 - INFO - 
+================================================================================
+2026-01-24 12:41:45,659 - INFO - FINAL RESPONSE GENERATED (NON-STREAMING):
+2026-01-24 12:41:45,660 - INFO - ================================================================================
+2026-01-24 12:41:45,660 - INFO - J. Fragrance and Cosmetics is located on Floor 3 as a kiosk. They specialize in a wide array of perfumes, colognes, and cosmetics.
+2026-01-24 12:41:45,661 - INFO - ================================================================================
+
+2026-01-24 12:42:09,378 - INFO - 
+================================================================================
+2026-01-24 12:42:09,378 - INFO - NEW USER QUERY RECEIVED (NON-STREAMING)
+2026-01-24 12:42:09,378 - INFO - ================================================================================
+2026-01-24 12:42:09,379 - INFO - Session ID: 550e8400-e29b-41d4-a716-446655440111
+2026-01-24 12:42:09,379 - INFO - User Query: j . location?
+2026-01-24 12:42:09,379 - INFO - Chat History Available: No
+2026-01-24 12:42:09,379 - INFO - ================================================================================
+2026-01-24 12:42:10,165 - INFO - ================================================================================
+2026-01-24 12:42:10,166 - INFO - RETRIEVED CHUNKS:
+2026-01-24 12:42:10,166 - INFO - ================================================================================
+2026-01-24 12:42:10,166 - INFO - 
+--- Chunk 1 ---
+2026-01-24 12:42:10,166 - INFO - Content: Store name: Juices Land, Floor: 5, Kiosk, A tropical-themed juice bar offering fresh fruit juices, bubble tea, milk tea, and healthy beverages. Enjoy a wide selection of fresh juices made from pomegra...
+2026-01-24 12:42:10,167 - INFO - Metadata: {'floor': 5, 'category': 'Dine/ Food Court / Meal options', 'sub_category': 'Juice Bar', 'group': 'Dine/ Food Court / Meal options', 'store_name': 'Juices Land', 'normalized_store_name': 'juicesland', 'type': 'Kiosk'}
+2026-01-24 12:42:10,167 - INFO - 
+--- Chunk 2 ---
+2026-01-24 12:42:10,168 - INFO - Content: Store name: Jelly Factory, Floor: 2, Kiosk, A vibrant candy and ice cream cart offering a wide selection of colorful candies, jellies, gummy treats, slushies, and ice cream. Discover sweet delights fr...
+2026-01-24 12:42:10,168 - INFO - Metadata: {'store_name': 'Jelly Factory', 'floor': 2, 'group': 'Dine/ Food Court / Meal options', 'sub_category': 'Desserts & Beverages', 'category': 'Dine/ Food Court / Meal options', 'normalized_store_name': 'jellyfactory', 'type': 'Kiosk'}
+2026-01-24 12:42:10,168 - INFO - 
+--- Chunk 3 ---
+2026-01-24 12:42:10,168 - INFO - Content: Store name: Jiyas Creation, Floor: 4, Outlet, A boutique store known for unique and custom-designed apparel, focusing on women's ethnic wear. They provide a bespoke feel to their collections, blending...
+2026-01-24 12:42:10,168 - INFO - Metadata: {'floor': 4, 'type': 'Outlet', 'group': 'Stores/Shops at Giga Mall', 'normalized_store_name': 'jiyascreation', 'category': 'Clothing Brands', 'store_name': 'Jiyas Creation'}
+2026-01-24 12:42:10,169 - INFO - 
+--- Chunk 4 ---
+2026-01-24 12:42:10,169 - INFO - Content: Store name: Jojo, Floor: 5, Kiosk, A colorful candy store offering a wide variety of bulk candies, gummies, chocolates, and sweet treats. Discover an extensive selection of candies in a playful, vibra...
+2026-01-24 12:42:10,169 - INFO - Metadata: {'store_name': 'Jojo', 'type': 'Kiosk', 'category': 'Dine/ Food Court / Meal options', 'normalized_store_name': 'jojo', 'floor': 5, 'sub_category': 'Desserts & Beverages', 'group': 'Dine/ Food Court / Meal options'}
+2026-01-24 12:42:10,169 - INFO - 
+--- Chunk 5 ---
+2026-01-24 12:42:10,169 - INFO - Content: Store name: Jockey, Floor: 5, Outlet, An internationally renowned innerwear and leisurewear brand. Known for exceptional comfort and quality, they offer a wide range of premium underwear, activewear, ...
+2026-01-24 12:42:10,170 - INFO - Metadata: {'floor': 5, 'store_name': 'Jockey', 'group': 'Stores/Shops at Giga Mall', 'category': 'Clothing Brands', 'type': 'Outlet', 'normalized_store_name': 'jockey'}
+2026-01-24 12:42:10,170 - INFO - 
+--- Chunk 6 ---
+2026-01-24 12:42:10,170 - INFO - Content: Store name: Chachajee, Floor: 5, Outlet, A beloved local favorite serving delicious traditional dishes with a modern twist.
+2026-01-24 12:42:10,170 - INFO - Metadata: {'category': 'Dine/ Food Court / Meal options', 'type': 'Outlet', 'group': 'Dine/ Food Court / Meal options', 'store_name': 'Chachajee', 'normalized_store_name': 'chachajee', 'floor': 5, 'sub_category': 'Restaurant'}
+2026-01-24 12:42:10,170 - INFO - 
+--- Chunk 7 ---
+2026-01-24 12:42:10,170 - INFO - Content: Store name: Juice Station, Floor: 3, Kiosk, As natural as you! Fresh, pure juices made from the finest fruits with no additives. Grab & go options available in 250ML, 500ML, and 1LTR sizes. Experience...
+2026-01-24 12:42:10,170 - INFO - Metadata: {'type': 'Kiosk', 'store_name': 'Juice Station', 'sub_category': 'Juice Bar', 'floor': 3, 'normalized_store_name': 'juicestation', 'category': 'Dine/ Food Court / Meal options', 'group': 'Dine/ Food Court / Meal options'}
+2026-01-24 12:42:10,170 - INFO - 
+--- Chunk 8 ---
+2026-01-24 12:42:10,171 - INFO - Content: Store name: J. Fragrance and Costmetics, Floor: 3, Kiosk, Part of the well-known Pakistani brand Junaid Jamshed, this section specializes in a wide array of perfumes, colognes, and cosmetics. They off...
+2026-01-24 12:42:10,171 - INFO - Metadata: {'store_name': 'J. Fragrance and Costmetics', 'floor': 3, 'category': 'Beauty & Fragrances', 'group': 'Stores/Shops at Giga Mall', 'type': 'Kiosk', 'normalized_store_name': 'jfragranceandcostmetics'}
+2026-01-24 12:42:10,171 - INFO - ================================================================================
+2026-01-24 12:42:10,172 - INFO - 
+================================================================================
+2026-01-24 12:42:10,173 - INFO - FINAL PROMPT SENT TO LLM:
+2026-01-24 12:42:10,173 - INFO - ================================================================================
+2026-01-24 12:42:10,173 - INFO - You are a friendly and helpful AI assistant for Giga Mall. Your role is to answer customer questions about the mall, its stores, restaurants, and services.
+
+=== ALWAYS AVAILABLE INFORMATION (Use these without checking context) ===
+
+MALL LOCATION:
+- If user asks about Giga Mall's location, address, where is the mall, how to reach, directions, or map, ALWAYS respond with:
+  "You can find Giga Mall at: https://maps.app.goo.gl/2sDgo5JKupbKcbCQ6"
+- This information is ALWAYS available - do NOT say you don't have it.
+
+MALL CONTACT:
+- Phone: (051) 8491040
+
+=== CONTEXT FROM KNOWLEDGE BASE ===
+Store name: Juices Land, Floor: 5, Kiosk, A tropical-themed juice bar offering fresh fruit juices, bubble tea, milk tea, and healthy beverages. Enjoy a wide selection of fresh juices made from pomegranates, oranges, apples, and more, along with a Jeely Factory candy section.
+
+Store name: Jelly Factory, Floor: 2, Kiosk, A vibrant candy and ice cream cart offering a wide selection of colorful candies, jellies, gummy treats, slushies, and ice cream. Discover sweet delights from our Jelly Factory and cool treats from our Ice Cream Stop.
+
+Store name: Jiyas Creation, Floor: 4, Outlet, A boutique store known for unique and custom-designed apparel, focusing on women's ethnic wear. They provide a bespoke feel to their collections, blending traditional styles with modern cuts.
+
+Store name: Jojo, Floor: 5, Kiosk, A colorful candy store offering a wide variety of bulk candies, gummies, chocolates, and sweet treats. Discover an extensive selection of candies in a playful, vibrant setting with a gumball machine and delightful candy displays.
+
+Store name: Jockey, Floor: 5, Outlet, An internationally renowned innerwear and leisurewear brand. Known for exceptional comfort and quality, they offer a wide range of premium underwear, activewear, and loungewear for men and women.
+
+Store name: Chachajee, Floor: 5, Outlet, A beloved local favorite serving delicious traditional dishes with a modern twist.
+
+Store name: Juice Station, Floor: 3, Kiosk, As natural as you! Fresh, pure juices made from the finest fruits with no additives. Grab & go options available in 250ML, 500ML, and 1LTR sizes. Experience the authentic taste of natural ingredients.
+
+Store name: J. Fragrance and Costmetics, Floor: 3, Kiosk, Part of the well-known Pakistani brand Junaid Jamshed, this section specializes in a wide array of perfumes, colognes, and cosmetics. They offer signature scents and makeup products that are popular locally.
+
+Each context chunk describes ONE store or service with:
+- Store name, Floor number, Store type (Outlet/Kiosk), Category
+
+=== CONVERSATION HISTORY ===
+
+
+=== CURRENT QUESTION ===
+j . location?
+
+=== RESPONSE RULES (Follow in this order) ===
+
+RULE 1: MALL LOCATION QUERIES (ONLY for the mall itself)
+- Only use this rule if the user clearly asks about the MALL location (e.g., mentions "Giga Mall", "the mall", "this mall").
+- Keywords: "location", "address", "where is", "directions", "map", "how to reach", "find the mall"
+- Response: "You can find Giga Mall at: https://maps.app.goo.gl/2sDgo5JKupbKcbCQ6"
+- Do NOT use this rule for store names like "J." or "Junaid Jamshed" etc. Those are stores, not the mall.
+
+RULE 2: PRODUCT/DEAL/PRICE QUERIES
+- Keywords: "price", "cost", "deal", "discount", "offer", "menu price", "product price", "how much", "what's the price"
+- Examples: "What's the price of ABC brand's product?", "Any deals at XYZ?", "Menu prices?", "What does ABC store sell?"
+- Response: "For product information, deals, and pricing details, please visit the Giga Mall website or contact the store directly."
+
+RULE 3: STORE LOCATION & GENERAL INFO (Answer from context)
+- If the question mentions a store name (e.g., "J.", "Junaid Jamshed", "Jockey") and asks about location or floor, answer with that store's floor and type from context.
+- Questions about: which floor, store location in mall, store type, store description, what stores are available
+- Answer ONLY from the context provided above
+- If multiple stores match (e.g., "J."), list the best 2-4 options that start with or closely match that name.
+- Format for listing stores:
+  1) Store Name - Floor X (Type): Brief description
+- Be direct and concise
+
+RULE 4: INFORMATION NOT IN CONTEXT
+- If the question is NOT about location, products/deals, or store info from context
+- Response: "I'm unable to respond to your query. Please contact Giga Mall at (051) 8491040 for assistance."
+
+=== FORMATTING REQUIREMENTS ===
+- Plain text only (no markdown, no **bold**, no bullets, no special formatting)
+- URLs must be full URLs (e.g., https://maps.app.goo.gl/2sDgo5JKupbKcbCQ6) for clickable links
+- Keep responses short and friendly
+- No disclaimers like "Unfortunately" or "I don't have more information"
+- Be conversational, like talking to a friend
+
+=== EXAMPLES ===
+User: "Where is Giga Mall?"
+You: "You can find Giga Mall at: https://maps.app.goo.gl/2sDgo5JKupbKcbCQ6"
+
+User: "What's the price of Nike shoes?"
+You: "For product information, deals, and pricing details, please visit the Giga Mall website or contact the store directly."
+
+User: "Which floor has clothing stores?"
+You: [Answer from context with store listings]
+
+User: "What's the weather today?"
+You: "I'm unable to respond to your query. Please contact Giga Mall at (051) 8491040 for assistance."
+2026-01-24 12:42:10,174 - INFO - ================================================================================
+
+2026-01-24 12:42:11,568 - INFO - 
+================================================================================
+2026-01-24 12:42:11,568 - INFO - FINAL RESPONSE GENERATED (NON-STREAMING):
+2026-01-24 12:42:11,568 - INFO - ================================================================================
+2026-01-24 12:42:11,569 - INFO - You can find Giga Mall at: https://maps.app.goo.gl/2sDgo5JKupbKcbCQ6
+2026-01-24 12:42:11,569 - INFO - ================================================================================
+
+2026-01-24 12:42:47,530 - INFO - 
+================================================================================
+2026-01-24 12:42:47,531 - INFO - NEW USER QUERY RECEIVED (NON-STREAMING)
+2026-01-24 12:42:47,531 - INFO - ================================================================================
+2026-01-24 12:42:47,531 - INFO - Session ID: 550e8400-e29b-41d4-a716-446655440111
+2026-01-24 12:42:47,532 - INFO - User Query: J. location?
+2026-01-24 12:42:47,532 - INFO - Chat History Available: Yes
+2026-01-24 12:42:47,532 - INFO - Chat History:
+User: j . location?
+Assistant: You can find Giga Mall at: https://maps.app.goo.gl/2sDgo5JKupbKcbCQ6
+2026-01-24 12:42:47,533 - INFO - ================================================================================
+2026-01-24 12:42:48,110 - INFO - ================================================================================
+2026-01-24 12:42:48,111 - INFO - RETRIEVED CHUNKS:
+2026-01-24 12:42:48,111 - INFO - ================================================================================
+2026-01-24 12:42:48,111 - INFO - 
+--- Chunk 1 ---
+2026-01-24 12:42:48,111 - INFO - Content: Store name: Juices Land, Floor: 5, Kiosk, A tropical-themed juice bar offering fresh fruit juices, bubble tea, milk tea, and healthy beverages. Enjoy a wide selection of fresh juices made from pomegra...
+2026-01-24 12:42:48,111 - INFO - Metadata: {'normalized_store_name': 'juicesland', 'store_name': 'Juices Land', 'floor': 5, 'category': 'Dine/ Food Court / Meal options', 'sub_category': 'Juice Bar', 'type': 'Kiosk', 'group': 'Dine/ Food Court / Meal options'}
+2026-01-24 12:42:48,112 - INFO - 
+--- Chunk 2 ---
+2026-01-24 12:42:48,112 - INFO - Content: Store name: Chachajee, Floor: 5, Outlet, A beloved local favorite serving delicious traditional dishes with a modern twist.
+2026-01-24 12:42:48,112 - INFO - Metadata: {'category': 'Dine/ Food Court / Meal options', 'sub_category': 'Restaurant', 'store_name': 'Chachajee', 'type': 'Outlet', 'group': 'Dine/ Food Court / Meal options', 'floor': 5, 'normalized_store_name': 'chachajee'}
+2026-01-24 12:42:48,113 - INFO - 
+--- Chunk 3 ---
+2026-01-24 12:42:48,113 - INFO - Content: Store name: Jockey, Floor: 5, Outlet, An internationally renowned innerwear and leisurewear brand. Known for exceptional comfort and quality, they offer a wide range of premium underwear, activewear, ...
+2026-01-24 12:42:48,113 - INFO - Metadata: {'normalized_store_name': 'jockey', 'type': 'Outlet', 'group': 'Stores/Shops at Giga Mall', 'store_name': 'Jockey', 'floor': 5, 'category': 'Clothing Brands'}
+2026-01-24 12:42:48,113 - INFO - 
+--- Chunk 4 ---
+2026-01-24 12:42:48,113 - INFO - Content: Store name: Juice Station, Floor: 3, Kiosk, As natural as you! Fresh, pure juices made from the finest fruits with no additives. Grab & go options available in 250ML, 500ML, and 1LTR sizes. Experience...
+2026-01-24 12:42:48,114 - INFO - Metadata: {'store_name': 'Juice Station', 'category': 'Dine/ Food Court / Meal options', 'type': 'Kiosk', 'normalized_store_name': 'juicestation', 'floor': 3, 'group': 'Dine/ Food Court / Meal options', 'sub_category': 'Juice Bar'}
+2026-01-24 12:42:48,114 - INFO - 
+--- Chunk 5 ---
+2026-01-24 12:42:48,114 - INFO - Content: Store name: Jojo, Floor: 5, Kiosk, A colorful candy store offering a wide variety of bulk candies, gummies, chocolates, and sweet treats. Discover an extensive selection of candies in a playful, vibra...
+2026-01-24 12:42:48,114 - INFO - Metadata: {'floor': 5, 'group': 'Dine/ Food Court / Meal options', 'store_name': 'Jojo', 'type': 'Kiosk', 'normalized_store_name': 'jojo', 'sub_category': 'Desserts & Beverages', 'category': 'Dine/ Food Court / Meal options'}
+2026-01-24 12:42:48,115 - INFO - 
+--- Chunk 6 ---
+2026-01-24 12:42:48,115 - INFO - Content: Store name: Jelly Factory, Floor: 2, Kiosk, A vibrant candy and ice cream cart offering a wide selection of colorful candies, jellies, gummy treats, slushies, and ice cream. Discover sweet delights fr...
+2026-01-24 12:42:48,115 - INFO - Metadata: {'floor': 2, 'normalized_store_name': 'jellyfactory', 'type': 'Kiosk', 'category': 'Dine/ Food Court / Meal options', 'store_name': 'Jelly Factory', 'group': 'Dine/ Food Court / Meal options', 'sub_category': 'Desserts & Beverages'}
+2026-01-24 12:42:48,115 - INFO - 
+--- Chunk 7 ---
+2026-01-24 12:42:48,115 - INFO - Content: Store name: Jiyas Creation, Floor: 4, Outlet, A boutique store known for unique and custom-designed apparel, focusing on women's ethnic wear. They provide a bespoke feel to their collections, blending...
+2026-01-24 12:42:48,115 - INFO - Metadata: {'floor': 4, 'category': 'Clothing Brands', 'store_name': 'Jiyas Creation', 'group': 'Stores/Shops at Giga Mall', 'type': 'Outlet', 'normalized_store_name': 'jiyascreation'}
+2026-01-24 12:42:48,115 - INFO - 
+--- Chunk 8 ---
+2026-01-24 12:42:48,116 - INFO - Content: Store name: Zamin Jewelers, Floor: 1, Outlet, A jewelry retailer offering gold, diamond, and gemstone jewelry with classic and contemporary designs.
+2026-01-24 12:42:48,116 - INFO - Metadata: {'category': 'Jewelry', 'floor': 1, 'store_name': 'Zamin Jewelers', 'normalized_store_name': 'zaminjewelers', 'type': 'Outlet', 'group': 'Stores/Shops at Giga Mall'}
+2026-01-24 12:42:48,116 - INFO - ================================================================================
+2026-01-24 12:42:48,117 - INFO - 
+================================================================================
+2026-01-24 12:42:48,117 - INFO - FINAL PROMPT SENT TO LLM:
+2026-01-24 12:42:48,117 - INFO - ================================================================================
+2026-01-24 12:42:48,117 - INFO - You are a friendly and helpful AI assistant for Giga Mall. Your role is to answer customer questions about the mall, its stores, restaurants, and services.
+
+=== ALWAYS AVAILABLE INFORMATION (Use these without checking context) ===
+
+MALL LOCATION:
+- If user asks about Giga Mall's location, address, where is the mall, how to reach, directions, or map, ALWAYS respond with:
+  "You can find Giga Mall at: https://maps.app.goo.gl/2sDgo5JKupbKcbCQ6"
+- This information is ALWAYS available - do NOT say you don't have it.
+
+MALL CONTACT:
+- Phone: (051) 8491040
+
+=== CONTEXT FROM KNOWLEDGE BASE ===
+Store name: Juices Land, Floor: 5, Kiosk, A tropical-themed juice bar offering fresh fruit juices, bubble tea, milk tea, and healthy beverages. Enjoy a wide selection of fresh juices made from pomegranates, oranges, apples, and more, along with a Jeely Factory candy section.
+
+Store name: Chachajee, Floor: 5, Outlet, A beloved local favorite serving delicious traditional dishes with a modern twist.
+
+Store name: Jockey, Floor: 5, Outlet, An internationally renowned innerwear and leisurewear brand. Known for exceptional comfort and quality, they offer a wide range of premium underwear, activewear, and loungewear for men and women.
+
+Store name: Juice Station, Floor: 3, Kiosk, As natural as you! Fresh, pure juices made from the finest fruits with no additives. Grab & go options available in 250ML, 500ML, and 1LTR sizes. Experience the authentic taste of natural ingredients.
+
+Store name: Jojo, Floor: 5, Kiosk, A colorful candy store offering a wide variety of bulk candies, gummies, chocolates, and sweet treats. Discover an extensive selection of candies in a playful, vibrant setting with a gumball machine and delightful candy displays.
+
+Store name: Jelly Factory, Floor: 2, Kiosk, A vibrant candy and ice cream cart offering a wide selection of colorful candies, jellies, gummy treats, slushies, and ice cream. Discover sweet delights from our Jelly Factory and cool treats from our Ice Cream Stop.
+
+Store name: Jiyas Creation, Floor: 4, Outlet, A boutique store known for unique and custom-designed apparel, focusing on women's ethnic wear. They provide a bespoke feel to their collections, blending traditional styles with modern cuts.
+
+Store name: Zamin Jewelers, Floor: 1, Outlet, A jewelry retailer offering gold, diamond, and gemstone jewelry with classic and contemporary designs.
+
+Each context chunk describes ONE store or service with:
+- Store name, Floor number, Store type (Outlet/Kiosk), Category
+
+=== CONVERSATION HISTORY ===
+
+Previous Conversation History:
+User: j . location?
+Assistant: You can find Giga Mall at: https://maps.app.goo.gl/2sDgo5JKupbKcbCQ6
+
+Use the conversation history above to understand the context of the current question.
+
+
+=== CURRENT QUESTION ===
+J. location?
+
+=== RESPONSE RULES (Follow in this order) ===
+
+RULE 1: MALL LOCATION QUERIES (ONLY for the mall itself)
+- Only use this rule if the user clearly asks about the MALL location (e.g., mentions "Giga Mall", "the mall", "this mall").
+- Keywords: "location", "address", "where is", "directions", "map", "how to reach", "find the mall"
+- Response: "You can find Giga Mall at: https://maps.app.goo.gl/2sDgo5JKupbKcbCQ6"
+- Do NOT use this rule for store names like "J." or "Junaid Jamshed" etc. Those are stores, not the mall.
+
+RULE 2: PRODUCT/DEAL/PRICE QUERIES
+- Keywords: "price", "cost", "deal", "discount", "offer", "menu price", "product price", "how much", "what's the price"
+- Examples: "What's the price of ABC brand's product?", "Any deals at XYZ?", "Menu prices?", "What does ABC store sell?"
+- Response: "For product information, deals, and pricing details, please visit the Giga Mall website or contact the store directly."
+
+RULE 3: STORE LOCATION & GENERAL INFO (Answer from context)
+- If the question mentions a store name (e.g., "J.", "Junaid Jamshed", "Jockey") and asks about location or floor, answer with that store's floor and type from context.
+- Questions about: which floor, store location in mall, store type, store description, what stores are available
+- Answer ONLY from the context provided above
+- If multiple stores match (e.g., "J."), list the best 2-4 options that start with or closely match that name.
+- Format for listing stores:
+  1) Store Name - Floor X (Type): Brief description
+- Be direct and concise
+
+RULE 4: INFORMATION NOT IN CONTEXT
+- If the question is NOT about location, products/deals, or store info from context
+- Response: "I'm unable to respond to your query. Please contact Giga Mall at (051) 8491040 for assistance."
+
+=== FORMATTING REQUIREMENTS ===
+- Plain text only (no markdown, no **bold**, no bullets, no special formatting)
+- URLs must be full URLs (e.g., https://maps.app.goo.gl/2sDgo5JKupbKcbCQ6) for clickable links
+- Keep responses short and friendly
+- No disclaimers like "Unfortunately" or "I don't have more information"
+- Be conversational, like talking to a friend
+
+=== EXAMPLES ===
+User: "Where is Giga Mall?"
+You: "You can find Giga Mall at: https://maps.app.goo.gl/2sDgo5JKupbKcbCQ6"
+
+User: "What's the price of Nike shoes?"
+You: "For product information, deals, and pricing details, please visit the Giga Mall website or contact the store directly."
+
+User: "Which floor has clothing stores?"
+You: [Answer from context with store listings]
+
+User: "What's the weather today?"
+You: "I'm unable to respond to your query. Please contact Giga Mall at (051) 8491040 for assistance."
+2026-01-24 12:42:48,118 - INFO - ================================================================================
+
+2026-01-24 12:42:49,220 - INFO - 
+================================================================================
+2026-01-24 12:42:49,221 - INFO - FINAL RESPONSE GENERATED (NON-STREAMING):
+2026-01-24 12:42:49,221 - INFO - ================================================================================
+2026-01-24 12:42:49,221 - INFO - You can find Giga Mall at: https://maps.app.goo.gl/2sDgo5JKupbKcbCQ6
+2026-01-24 12:42:49,222 - INFO - ================================================================================
+
+2026-01-24 12:44:06,227 - INFO - 
+================================================================================
+2026-01-24 12:44:06,228 - INFO - NEW USER QUERY RECEIVED (NON-STREAMING)
+2026-01-24 12:44:06,228 - INFO - ================================================================================
+2026-01-24 12:44:06,228 - INFO - Session ID: 550e8400-e29b-41d4-a716-441655440111
+2026-01-24 12:44:06,228 - INFO - User Query: J. location?
+2026-01-24 12:44:06,230 - INFO - Chat History Available: No
+2026-01-24 12:44:06,230 - INFO - ================================================================================
+2026-01-24 12:44:07,710 - INFO - ================================================================================
+2026-01-24 12:44:07,710 - INFO - RETRIEVED CHUNKS:
+2026-01-24 12:44:07,711 - INFO - ================================================================================
+2026-01-24 12:44:07,711 - INFO - 
+--- Chunk 1 ---
+2026-01-24 12:44:07,711 - INFO - Content: Store name: Juices Land, Floor: 5, Kiosk, A tropical-themed juice bar offering fresh fruit juices, bubble tea, milk tea, and healthy beverages. Enjoy a wide selection of fresh juices made from pomegra...
+2026-01-24 12:44:07,711 - INFO - Metadata: {'category': 'Dine/ Food Court / Meal options', 'type': 'Kiosk', 'normalized_store_name': 'juicesland', 'store_name': 'Juices Land', 'group': 'Dine/ Food Court / Meal options', 'sub_category': 'Juice Bar', 'floor': 5}
+2026-01-24 12:44:07,711 - INFO - 
+--- Chunk 2 ---
+2026-01-24 12:44:07,711 - INFO - Content: Store name: Chachajee, Floor: 5, Outlet, A beloved local favorite serving delicious traditional dishes with a modern twist.
+2026-01-24 12:44:07,712 - INFO - Metadata: {'normalized_store_name': 'chachajee', 'category': 'Dine/ Food Court / Meal options', 'group': 'Dine/ Food Court / Meal options', 'store_name': 'Chachajee', 'floor': 5, 'type': 'Outlet', 'sub_category': 'Restaurant'}
+2026-01-24 12:44:07,712 - INFO - 
+--- Chunk 3 ---
+2026-01-24 12:44:07,712 - INFO - Content: Store name: Jockey, Floor: 5, Outlet, An internationally renowned innerwear and leisurewear brand. Known for exceptional comfort and quality, they offer a wide range of premium underwear, activewear, ...
+2026-01-24 12:44:07,712 - INFO - Metadata: {'type': 'Outlet', 'store_name': 'Jockey', 'normalized_store_name': 'jockey', 'category': 'Clothing Brands', 'floor': 5, 'group': 'Stores/Shops at Giga Mall'}
+2026-01-24 12:44:07,712 - INFO - 
+--- Chunk 4 ---
+2026-01-24 12:44:07,713 - INFO - Content: Store name: Juice Station, Floor: 3, Kiosk, As natural as you! Fresh, pure juices made from the finest fruits with no additives. Grab & go options available in 250ML, 500ML, and 1LTR sizes. Experience...
+2026-01-24 12:44:07,713 - INFO - Metadata: {'category': 'Dine/ Food Court / Meal options', 'group': 'Dine/ Food Court / Meal options', 'normalized_store_name': 'juicestation', 'type': 'Kiosk', 'floor': 3, 'sub_category': 'Juice Bar', 'store_name': 'Juice Station'}
+2026-01-24 12:44:07,713 - INFO - 
+--- Chunk 5 ---
+2026-01-24 12:44:07,713 - INFO - Content: Store name: Jojo, Floor: 5, Kiosk, A colorful candy store offering a wide variety of bulk candies, gummies, chocolates, and sweet treats. Discover an extensive selection of candies in a playful, vibra...
+2026-01-24 12:44:07,713 - INFO - Metadata: {'store_name': 'Jojo', 'group': 'Dine/ Food Court / Meal options', 'sub_category': 'Desserts & Beverages', 'floor': 5, 'normalized_store_name': 'jojo', 'category': 'Dine/ Food Court / Meal options', 'type': 'Kiosk'}
+2026-01-24 12:44:07,713 - INFO - 
+--- Chunk 6 ---
+2026-01-24 12:44:07,714 - INFO - Content: Store name: Jelly Factory, Floor: 2, Kiosk, A vibrant candy and ice cream cart offering a wide selection of colorful candies, jellies, gummy treats, slushies, and ice cream. Discover sweet delights fr...
+2026-01-24 12:44:07,714 - INFO - Metadata: {'normalized_store_name': 'jellyfactory', 'type': 'Kiosk', 'group': 'Dine/ Food Court / Meal options', 'store_name': 'Jelly Factory', 'sub_category': 'Desserts & Beverages', 'floor': 2, 'category': 'Dine/ Food Court / Meal options'}
+2026-01-24 12:44:07,714 - INFO - 
+--- Chunk 7 ---
+2026-01-24 12:44:07,714 - INFO - Content: Store name: Jiyas Creation, Floor: 4, Outlet, A boutique store known for unique and custom-designed apparel, focusing on women's ethnic wear. They provide a bespoke feel to their collections, blending...
+2026-01-24 12:44:07,714 - INFO - Metadata: {'normalized_store_name': 'jiyascreation', 'category': 'Clothing Brands', 'store_name': 'Jiyas Creation', 'type': 'Outlet', 'floor': 4, 'group': 'Stores/Shops at Giga Mall'}
+2026-01-24 12:44:07,714 - INFO - 
+--- Chunk 8 ---
+2026-01-24 12:44:07,714 - INFO - Content: Store name: Zamin Jewelers, Floor: 1, Outlet, A jewelry retailer offering gold, diamond, and gemstone jewelry with classic and contemporary designs.
+2026-01-24 12:44:07,715 - INFO - Metadata: {'floor': 1, 'type': 'Outlet', 'category': 'Jewelry', 'group': 'Stores/Shops at Giga Mall', 'store_name': 'Zamin Jewelers', 'normalized_store_name': 'zaminjewelers'}
+2026-01-24 12:44:07,715 - INFO - ================================================================================
+2026-01-24 12:44:07,716 - INFO - 
+================================================================================
+2026-01-24 12:44:07,716 - INFO - FINAL PROMPT SENT TO LLM:
+2026-01-24 12:44:07,717 - INFO - ================================================================================
+2026-01-24 12:44:07,717 - INFO - You are a friendly and helpful AI assistant for Giga Mall. Your role is to answer customer questions about the mall, its stores, restaurants, and services.
+
+=== ALWAYS AVAILABLE INFORMATION (Use these without checking context) ===
+
+MALL LOCATION:
+- If user asks about Giga Mall's location, address, where is the mall, how to reach, directions, or map, ALWAYS respond with:
+  "You can find Giga Mall at: https://maps.app.goo.gl/2sDgo5JKupbKcbCQ6"
+- This information is ALWAYS available - do NOT say you don't have it.
+
+MALL CONTACT:
+- Phone: (051) 8491040
+
+=== CONTEXT FROM KNOWLEDGE BASE ===
+Store name: Juices Land, Floor: 5, Kiosk, A tropical-themed juice bar offering fresh fruit juices, bubble tea, milk tea, and healthy beverages. Enjoy a wide selection of fresh juices made from pomegranates, oranges, apples, and more, along with a Jeely Factory candy section.
+
+Store name: Chachajee, Floor: 5, Outlet, A beloved local favorite serving delicious traditional dishes with a modern twist.
+
+Store name: Jockey, Floor: 5, Outlet, An internationally renowned innerwear and leisurewear brand. Known for exceptional comfort and quality, they offer a wide range of premium underwear, activewear, and loungewear for men and women.
+
+Store name: Juice Station, Floor: 3, Kiosk, As natural as you! Fresh, pure juices made from the finest fruits with no additives. Grab & go options available in 250ML, 500ML, and 1LTR sizes. Experience the authentic taste of natural ingredients.
+
+Store name: Jojo, Floor: 5, Kiosk, A colorful candy store offering a wide variety of bulk candies, gummies, chocolates, and sweet treats. Discover an extensive selection of candies in a playful, vibrant setting with a gumball machine and delightful candy displays.
+
+Store name: Jelly Factory, Floor: 2, Kiosk, A vibrant candy and ice cream cart offering a wide selection of colorful candies, jellies, gummy treats, slushies, and ice cream. Discover sweet delights from our Jelly Factory and cool treats from our Ice Cream Stop.
+
+Store name: Jiyas Creation, Floor: 4, Outlet, A boutique store known for unique and custom-designed apparel, focusing on women's ethnic wear. They provide a bespoke feel to their collections, blending traditional styles with modern cuts.
+
+Store name: Zamin Jewelers, Floor: 1, Outlet, A jewelry retailer offering gold, diamond, and gemstone jewelry with classic and contemporary designs.
+
+Each context chunk describes ONE store or service with:
+- Store name, Floor number, Store type (Outlet/Kiosk), Category
+
+=== CONVERSATION HISTORY ===
+
+
+=== CURRENT QUESTION ===
+J. location?
+
+=== RESPONSE RULES (Follow in this order) ===
+
+RULE 1: MALL LOCATION QUERIES (ONLY for the mall itself)
+- Only use this rule if the user clearly asks about the MALL location (e.g., mentions "Giga Mall", "the mall", "this mall").
+- Keywords: "location", "address", "where is", "directions", "map", "how to reach", "find the mall"
+- Response: "You can find Giga Mall at: https://maps.app.goo.gl/2sDgo5JKupbKcbCQ6"
+- Do NOT use this rule for store names like "J., j. J . j . etc" or "Junaid Jamshed" etc. Those are stores, not the mall.
+
+RULE 2: PRODUCT/DEAL/PRICE QUERIES
+- Keywords: "price", "cost", "deal", "discount", "offer", "menu price", "product price", "how much", "what's the price"
+- Examples: "What's the price of ABC brand's product?", "Any deals at XYZ?", "Menu prices?", "What does ABC store sell?"
+- Response: "For product information, deals, and pricing details, please visit the Giga Mall website or contact the store directly."
+
+RULE 3: STORE LOCATION & GENERAL INFO (Answer from context)
+- If the question mentions a store name (e.g., "J.", "Junaid Jamshed", "Jockey") and asks about location or floor, answer with that store's floor and type from context.
+- Questions about: which floor, store location in mall, store type, store description, what stores are available
+- Answer ONLY from the context provided above
+- If multiple stores match (e.g., "J."), list the best 2-4 options that start with or closely match that name.
+- Format for listing stores:
+  1) Store Name - Floor X (Type): Brief description
+- Be direct and concise
+
+RULE 4: INFORMATION NOT IN CONTEXT
+- If the question is NOT about location, products/deals, or store info from context
+- Response: "I'm unable to respond to your query. Please contact Giga Mall at (051) 8491040 for assistance."
+
+=== FORMATTING REQUIREMENTS ===
+- Plain text only (no markdown, no **bold**, no bullets, no special formatting)
+- URLs must be full URLs (e.g., https://maps.app.goo.gl/2sDgo5JKupbKcbCQ6) for clickable links
+- Keep responses short and friendly
+- No disclaimers like "Unfortunately" or "I don't have more information"
+- Be conversational, like talking to a friend
+
+=== EXAMPLES ===
+User: "What's the price of Nike shoes?"
+You: "For product information, deals, and pricing details, please visit the Giga Mall website or contact the store directly."
+
+User: "Which floor has clothing stores?"
+You: [Answer from context with store listings]
+
+User: "What's the weather today?"
+You: "I'm unable to respond to your query. Please contact Giga Mall at (051) 8491040 for assistance."
+2026-01-24 12:44:07,718 - INFO - ================================================================================
+
+2026-01-24 12:44:09,263 - INFO - 
+================================================================================
+2026-01-24 12:44:09,264 - INFO - FINAL RESPONSE GENERATED (NON-STREAMING):
+2026-01-24 12:44:09,264 - INFO - ================================================================================
+2026-01-24 12:44:09,264 - INFO - You can find Giga Mall at: https://maps.app.goo.gl/2sDgo5JKupbKcbCQ6
+2026-01-24 12:44:09,265 - INFO - ================================================================================
+
+2026-01-24 12:44:31,008 - INFO - 
+================================================================================
+2026-01-24 12:44:31,009 - INFO - NEW USER QUERY RECEIVED (NON-STREAMING)
+2026-01-24 12:44:31,009 - INFO - ================================================================================
+2026-01-24 12:44:31,010 - INFO - Session ID: 550e8400-e29b-41d4-a716-441655440111
+2026-01-24 12:44:31,010 - INFO - User Query: J. location?
+2026-01-24 12:44:31,010 - INFO - Chat History Available: Yes
+2026-01-24 12:44:31,010 - INFO - Chat History:
+User: J. location?
+Assistant: You can find Giga Mall at: https://maps.app.goo.gl/2sDgo5JKupbKcbCQ6
+2026-01-24 12:44:31,010 - INFO - ================================================================================
+2026-01-24 12:44:31,602 - INFO - ================================================================================
+2026-01-24 12:44:31,603 - INFO - RETRIEVED CHUNKS:
+2026-01-24 12:44:31,603 - INFO - ================================================================================
+2026-01-24 12:44:31,603 - INFO - 
+--- Chunk 1 ---
+2026-01-24 12:44:31,604 - INFO - Content: Store name: Juices Land, Floor: 5, Kiosk, A tropical-themed juice bar offering fresh fruit juices, bubble tea, milk tea, and healthy beverages. Enjoy a wide selection of fresh juices made from pomegra...
+2026-01-24 12:44:31,604 - INFO - Metadata: {'group': 'Dine/ Food Court / Meal options', 'floor': 5, 'sub_category': 'Juice Bar', 'type': 'Kiosk', 'store_name': 'Juices Land', 'category': 'Dine/ Food Court / Meal options', 'normalized_store_name': 'juicesland'}
+2026-01-24 12:44:31,604 - INFO - 
+--- Chunk 2 ---
+2026-01-24 12:44:31,605 - INFO - Content: Store name: Chachajee, Floor: 5, Outlet, A beloved local favorite serving delicious traditional dishes with a modern twist.
+2026-01-24 12:44:31,605 - INFO - Metadata: {'normalized_store_name': 'chachajee', 'sub_category': 'Restaurant', 'group': 'Dine/ Food Court / Meal options', 'store_name': 'Chachajee', 'floor': 5, 'type': 'Outlet', 'category': 'Dine/ Food Court / Meal options'}
+2026-01-24 12:44:31,605 - INFO - 
+--- Chunk 3 ---
+2026-01-24 12:44:31,605 - INFO - Content: Store name: Jockey, Floor: 5, Outlet, An internationally renowned innerwear and leisurewear brand. Known for exceptional comfort and quality, they offer a wide range of premium underwear, activewear, ...
+2026-01-24 12:44:31,605 - INFO - Metadata: {'store_name': 'Jockey', 'group': 'Stores/Shops at Giga Mall', 'type': 'Outlet', 'normalized_store_name': 'jockey', 'category': 'Clothing Brands', 'floor': 5}
+2026-01-24 12:44:31,606 - INFO - 
+--- Chunk 4 ---
+2026-01-24 12:44:31,606 - INFO - Content: Store name: Juice Station, Floor: 3, Kiosk, As natural as you! Fresh, pure juices made from the finest fruits with no additives. Grab & go options available in 250ML, 500ML, and 1LTR sizes. Experience...
+2026-01-24 12:44:31,606 - INFO - Metadata: {'group': 'Dine/ Food Court / Meal options', 'store_name': 'Juice Station', 'type': 'Kiosk', 'category': 'Dine/ Food Court / Meal options', 'sub_category': 'Juice Bar', 'normalized_store_name': 'juicestation', 'floor': 3}
+2026-01-24 12:44:31,606 - INFO - 
+--- Chunk 5 ---
+2026-01-24 12:44:31,606 - INFO - Content: Store name: Jojo, Floor: 5, Kiosk, A colorful candy store offering a wide variety of bulk candies, gummies, chocolates, and sweet treats. Discover an extensive selection of candies in a playful, vibra...
+2026-01-24 12:44:31,606 - INFO - Metadata: {'normalized_store_name': 'jojo', 'type': 'Kiosk', 'store_name': 'Jojo', 'group': 'Dine/ Food Court / Meal options', 'category': 'Dine/ Food Court / Meal options', 'floor': 5, 'sub_category': 'Desserts & Beverages'}
+2026-01-24 12:44:31,607 - INFO - 
+--- Chunk 6 ---
+2026-01-24 12:44:31,607 - INFO - Content: Store name: Jelly Factory, Floor: 2, Kiosk, A vibrant candy and ice cream cart offering a wide selection of colorful candies, jellies, gummy treats, slushies, and ice cream. Discover sweet delights fr...
+2026-01-24 12:44:31,607 - INFO - Metadata: {'normalized_store_name': 'jellyfactory', 'type': 'Kiosk', 'group': 'Dine/ Food Court / Meal options', 'store_name': 'Jelly Factory', 'category': 'Dine/ Food Court / Meal options', 'sub_category': 'Desserts & Beverages', 'floor': 2}
+2026-01-24 12:44:31,607 - INFO - 
+--- Chunk 7 ---
+2026-01-24 12:44:31,607 - INFO - Content: Store name: Jiyas Creation, Floor: 4, Outlet, A boutique store known for unique and custom-designed apparel, focusing on women's ethnic wear. They provide a bespoke feel to their collections, blending...
+2026-01-24 12:44:31,608 - INFO - Metadata: {'type': 'Outlet', 'normalized_store_name': 'jiyascreation', 'category': 'Clothing Brands', 'floor': 4, 'store_name': 'Jiyas Creation', 'group': 'Stores/Shops at Giga Mall'}
+2026-01-24 12:44:31,608 - INFO - 
+--- Chunk 8 ---
+2026-01-24 12:44:31,608 - INFO - Content: Store name: Zamin Jewelers, Floor: 1, Outlet, A jewelry retailer offering gold, diamond, and gemstone jewelry with classic and contemporary designs.
+2026-01-24 12:44:31,608 - INFO - Metadata: {'category': 'Jewelry', 'store_name': 'Zamin Jewelers', 'type': 'Outlet', 'normalized_store_name': 'zaminjewelers', 'floor': 1, 'group': 'Stores/Shops at Giga Mall'}
+2026-01-24 12:44:31,609 - INFO - ================================================================================
+2026-01-24 12:44:31,610 - INFO - 
+================================================================================
+2026-01-24 12:44:31,610 - INFO - FINAL PROMPT SENT TO LLM:
+2026-01-24 12:44:31,610 - INFO - ================================================================================
+2026-01-24 12:44:31,610 - INFO - You are a friendly and helpful AI assistant for Giga Mall. Your role is to answer customer questions about the mall, its stores, restaurants, and services.
+
+=== ALWAYS AVAILABLE INFORMATION (Use these without checking context) ===
+
+MALL LOCATION:
+- If user asks about Giga Mall's location, address, where is the mall, how to reach, directions, or map, ALWAYS respond with:
+  "You can find Giga Mall at: https://maps.app.goo.gl/2sDgo5JKupbKcbCQ6"
+- This information is ALWAYS available - do NOT say you don't have it.
+
+MALL CONTACT:
+- Phone: (051) 8491040
+
+=== CONTEXT FROM KNOWLEDGE BASE ===
+Store name: Juices Land, Floor: 5, Kiosk, A tropical-themed juice bar offering fresh fruit juices, bubble tea, milk tea, and healthy beverages. Enjoy a wide selection of fresh juices made from pomegranates, oranges, apples, and more, along with a Jeely Factory candy section.
+
+Store name: Chachajee, Floor: 5, Outlet, A beloved local favorite serving delicious traditional dishes with a modern twist.
+
+Store name: Jockey, Floor: 5, Outlet, An internationally renowned innerwear and leisurewear brand. Known for exceptional comfort and quality, they offer a wide range of premium underwear, activewear, and loungewear for men and women.
+
+Store name: Juice Station, Floor: 3, Kiosk, As natural as you! Fresh, pure juices made from the finest fruits with no additives. Grab & go options available in 250ML, 500ML, and 1LTR sizes. Experience the authentic taste of natural ingredients.
+
+Store name: Jojo, Floor: 5, Kiosk, A colorful candy store offering a wide variety of bulk candies, gummies, chocolates, and sweet treats. Discover an extensive selection of candies in a playful, vibrant setting with a gumball machine and delightful candy displays.
+
+Store name: Jelly Factory, Floor: 2, Kiosk, A vibrant candy and ice cream cart offering a wide selection of colorful candies, jellies, gummy treats, slushies, and ice cream. Discover sweet delights from our Jelly Factory and cool treats from our Ice Cream Stop.
+
+Store name: Jiyas Creation, Floor: 4, Outlet, A boutique store known for unique and custom-designed apparel, focusing on women's ethnic wear. They provide a bespoke feel to their collections, blending traditional styles with modern cuts.
+
+Store name: Zamin Jewelers, Floor: 1, Outlet, A jewelry retailer offering gold, diamond, and gemstone jewelry with classic and contemporary designs.
+
+Each context chunk describes ONE store or service with:
+- Store name, Floor number, Store type (Outlet/Kiosk), Category
+
+=== CONVERSATION HISTORY ===
+
+Previous Conversation History:
+User: J. location?
+Assistant: You can find Giga Mall at: https://maps.app.goo.gl/2sDgo5JKupbKcbCQ6
+
+Use the conversation history above to understand the context of the current question.
+
+
+=== CURRENT QUESTION ===
+J. location?
+
+=== RESPONSE RULES (Follow in this order) ===
+
+RULE 1: MALL LOCATION QUERIES (ONLY for the mall itself)
+- Only use this rule if the user clearly asks about the MALL location (e.g., mentions "Giga Mall", "the mall", "this mall").
+- Keywords: "location", "address", "where is", "directions", "map", "how to reach", "find the mall"
+- Response: "You can find Giga Mall at: https://maps.app.goo.gl/2sDgo5JKupbKcbCQ6"
+- Do NOT use this rule for store names like "J., j. J . j . etc" or "Junaid Jamshed" etc. Those are stores, not the mall.
+
+RULE 2: PRODUCT/DEAL/PRICE QUERIES
+- Keywords: "price", "cost", "deal", "discount", "offer", "menu price", "product price", "how much", "what's the price"
+- Examples: "What's the price of ABC brand's product?", "Any deals at XYZ?", "Menu prices?", "What does ABC store sell?"
+- Response: "For product information, deals, and pricing details, please visit the Giga Mall website or contact the store directly."
+
+RULE 3: STORE LOCATION & GENERAL INFO (Answer from context)
+- If the question mentions a store name (e.g., "J.", "Junaid Jamshed", "Jockey") and asks about location or floor, answer with that store's floor and type from context.
+- Questions about: which floor, store location in mall, store type, store description, what stores are available
+- Answer ONLY from the context provided above
+- If multiple stores match (e.g., "J."), list the best 2-4 options that start with or closely match that name.
+- Format for listing stores:
+  1) Store Name - Floor X (Type): Brief description
+- Be direct and concise
+
+RULE 4: INFORMATION NOT IN CONTEXT
+- If the question is NOT about location, products/deals, or store info from context
+- Response: "I'm unable to respond to your query. Please contact Giga Mall at (051) 8491040 for assistance."
+
+=== FORMATTING REQUIREMENTS ===
+- Plain text only (no markdown, no **bold**, no bullets, no special formatting)
+- URLs must be full URLs (e.g., https://maps.app.goo.gl/2sDgo5JKupbKcbCQ6) for clickable links
+- Keep responses short and friendly
+- No disclaimers like "Unfortunately" or "I don't have more information"
+- Be conversational, like talking to a friend
+
+=== EXAMPLES ===
+User: "What's the price of Nike shoes?"
+You: "For product information, deals, and pricing details, please visit the Giga Mall website or contact the store directly."
+
+User: "Which floor has clothing stores?"
+You: [Answer from context with store listings]
+
+User: "What's the weather today?"
+You: "I'm unable to respond to your query. Please contact Giga Mall at (051) 8491040 for assistance."
+2026-01-24 12:44:31,611 - INFO - ================================================================================
+
+2026-01-24 12:44:32,795 - INFO - 
+================================================================================
+2026-01-24 12:44:32,795 - INFO - FINAL RESPONSE GENERATED (NON-STREAMING):
+2026-01-24 12:44:32,796 - INFO - ================================================================================
+2026-01-24 12:44:32,796 - INFO - You can find Giga Mall at: https://maps.app.goo.gl/2sDgo5JKupbKcbCQ6
+2026-01-24 12:44:32,796 - INFO - ================================================================================
+
+2026-01-24 12:44:59,952 - INFO - 
+================================================================================
+2026-01-24 12:44:59,953 - INFO - NEW USER QUERY RECEIVED (NON-STREAMING)
+2026-01-24 12:44:59,953 - INFO - ================================================================================
+2026-01-24 12:44:59,953 - INFO - Session ID: 550e8400-e29b-41d4-a716-441655440111
+2026-01-24 12:44:59,954 - INFO - User Query: Jojo location?
+2026-01-24 12:44:59,954 - INFO - Chat History Available: Yes
+2026-01-24 12:44:59,954 - INFO - Chat History:
+User: J. location?
+Assistant: You can find Giga Mall at: https://maps.app.goo.gl/2sDgo5JKupbKcbCQ6
+User: J. location?
+Assistant: You can find Giga Mall at: https://maps.app.goo.gl/2sDgo5JKupbKcbCQ6
+2026-01-24 12:44:59,954 - INFO - ================================================================================
+2026-01-24 12:45:00,424 - INFO - ================================================================================
+2026-01-24 12:45:00,424 - INFO - RETRIEVED CHUNKS:
+2026-01-24 12:45:00,425 - INFO - ================================================================================
+2026-01-24 12:45:00,425 - INFO - 
+--- Chunk 1 ---
+2026-01-24 12:45:00,425 - INFO - Content: Store name: Jojo, Floor: 5, Kiosk, A colorful candy store offering a wide variety of bulk candies, gummies, chocolates, and sweet treats. Discover an extensive selection of candies in a playful, vibra...
+2026-01-24 12:45:00,425 - INFO - Metadata: {'group': 'Dine/ Food Court / Meal options', 'store_name': 'Jojo', 'category': 'Dine/ Food Court / Meal options', 'floor': 5, 'normalized_store_name': 'jojo', 'sub_category': 'Desserts & Beverages', 'type': 'Kiosk'}
+2026-01-24 12:45:00,425 - INFO - 
+--- Chunk 2 ---
+2026-01-24 12:45:00,426 - INFO - Content: Store name: Juices Land, Floor: 5, Kiosk, A tropical-themed juice bar offering fresh fruit juices, bubble tea, milk tea, and healthy beverages. Enjoy a wide selection of fresh juices made from pomegra...
+2026-01-24 12:45:00,426 - INFO - Metadata: {'normalized_store_name': 'juicesland', 'type': 'Kiosk', 'category': 'Dine/ Food Court / Meal options', 'floor': 5, 'group': 'Dine/ Food Court / Meal options', 'store_name': 'Juices Land', 'sub_category': 'Juice Bar'}
+2026-01-24 12:45:00,426 - INFO - 
+--- Chunk 3 ---
+2026-01-24 12:45:00,426 - INFO - Content: Store name: Chachajee, Floor: 5, Outlet, A beloved local favorite serving delicious traditional dishes with a modern twist.
+2026-01-24 12:45:00,426 - INFO - Metadata: {'type': 'Outlet', 'group': 'Dine/ Food Court / Meal options', 'store_name': 'Chachajee', 'sub_category': 'Restaurant', 'floor': 5, 'category': 'Dine/ Food Court / Meal options', 'normalized_store_name': 'chachajee'}
+2026-01-24 12:45:00,426 - INFO - 
+--- Chunk 4 ---
+2026-01-24 12:45:00,427 - INFO - Content: Store name: Johri, Floor: 2, Outlet, A traditional jewelry brand specializing in authentic gold and gemstone pieces. They are known for intricate bridal sets and fine jewelry that emphasizes classic P...
+2026-01-24 12:45:00,427 - INFO - Metadata: {'floor': 2, 'normalized_store_name': 'johri', 'category': 'Jewelry', 'group': 'Stores/Shops at Giga Mall', 'store_name': 'Johri', 'type': 'Outlet'}
+2026-01-24 12:45:00,427 - INFO - 
+--- Chunk 5 ---
+2026-01-24 12:45:00,427 - INFO - Content: Store name: Melon Box, Floor: 3, Kiosk, A trendy retail kiosk or shop that features a colorful variety of small gadgets, fashion accessories, novelty gifts, and "lifestyle knick-knacks" popular among ...
+2026-01-24 12:45:00,427 - INFO - Metadata: {'store_name': 'Melon Box', 'group': 'Stores/Shops at Giga Mall', 'type': 'Kiosk', 'floor': 3, 'category': 'Home & Lifestyle', 'normalized_store_name': 'melonbox'}
+2026-01-24 12:45:00,428 - INFO - 
+--- Chunk 6 ---
+2026-01-24 12:45:00,428 - INFO - Content: Store name: Jelly Factory, Floor: 2, Kiosk, A vibrant candy and ice cream cart offering a wide selection of colorful candies, jellies, gummy treats, slushies, and ice cream. Discover sweet delights fr...
+2026-01-24 12:45:00,428 - INFO - Metadata: {'normalized_store_name': 'jellyfactory', 'sub_category': 'Desserts & Beverages', 'category': 'Dine/ Food Court / Meal options', 'floor': 2, 'type': 'Kiosk', 'store_name': 'Jelly Factory', 'group': 'Dine/ Food Court / Meal options'}
+2026-01-24 12:45:00,428 - INFO - 
+--- Chunk 7 ---
+2026-01-24 12:45:00,428 - INFO - Content: Store name: Gloria Jean's Coffees, Floor: 4, Kiosk, Established in 1979, Gloria Jean's Coffees offers premium coffee blends, chillers, and delicious pastries. Experience the perfect cup of coffee in a...
+2026-01-24 12:45:00,429 - INFO - Metadata: {'floor': 4, 'store_name': "Gloria Jean's Coffees", 'sub_category': 'Cafe', 'normalized_store_name': 'gloriajeanscoffees', 'group': 'Dine/ Food Court / Meal options', 'type': 'Kiosk', 'category': 'Dine/ Food Court / Meal options'}
+2026-01-24 12:45:00,429 - INFO - 
+--- Chunk 8 ---
+2026-01-24 12:45:00,429 - INFO - Content: Store name: Alpha Accessories, Floor: 1, Kiosk, A fashion accessories store offering bags, jewelry, and trendy everyday essentials.
+2026-01-24 12:45:00,429 - INFO - Metadata: {'normalized_store_name': 'alphaaccessories', 'type': 'Kiosk', 'group': 'Stores/Shops at Giga Mall', 'floor': 1, 'store_name': 'Alpha Accessories', 'category': 'Accessories'}
+2026-01-24 12:45:00,429 - INFO - ================================================================================
+2026-01-24 12:45:00,430 - INFO - 
+================================================================================
+2026-01-24 12:45:00,430 - INFO - FINAL PROMPT SENT TO LLM:
+2026-01-24 12:45:00,431 - INFO - ================================================================================
+2026-01-24 12:45:00,431 - INFO - You are a friendly and helpful AI assistant for Giga Mall. Your role is to answer customer questions about the mall, its stores, restaurants, and services.
+
+=== ALWAYS AVAILABLE INFORMATION (Use these without checking context) ===
+
+MALL LOCATION:
+- If user asks about Giga Mall's location, address, where is the mall, how to reach, directions, or map, ALWAYS respond with:
+  "You can find Giga Mall at: https://maps.app.goo.gl/2sDgo5JKupbKcbCQ6"
+- This information is ALWAYS available - do NOT say you don't have it.
+
+MALL CONTACT:
+- Phone: (051) 8491040
+
+=== CONTEXT FROM KNOWLEDGE BASE ===
+Store name: Jojo, Floor: 5, Kiosk, A colorful candy store offering a wide variety of bulk candies, gummies, chocolates, and sweet treats. Discover an extensive selection of candies in a playful, vibrant setting with a gumball machine and delightful candy displays.
+
+Store name: Juices Land, Floor: 5, Kiosk, A tropical-themed juice bar offering fresh fruit juices, bubble tea, milk tea, and healthy beverages. Enjoy a wide selection of fresh juices made from pomegranates, oranges, apples, and more, along with a Jeely Factory candy section.
+
+Store name: Chachajee, Floor: 5, Outlet, A beloved local favorite serving delicious traditional dishes with a modern twist.
+
+Store name: Johri, Floor: 2, Outlet, A traditional jewelry brand specializing in authentic gold and gemstone pieces. They are known for intricate bridal sets and fine jewelry that emphasizes classic Pakistani heritage and craftsmanship.
+
+Store name: Melon Box, Floor: 3, Kiosk, A trendy retail kiosk or shop that features a colorful variety of small gadgets, fashion accessories, novelty gifts, and "lifestyle knick-knacks" popular among younger shoppers.
+
+Store name: Jelly Factory, Floor: 2, Kiosk, A vibrant candy and ice cream cart offering a wide selection of colorful candies, jellies, gummy treats, slushies, and ice cream. Discover sweet delights from our Jelly Factory and cool treats from our Ice Cream Stop.
+
+Store name: Gloria Jean's Coffees, Floor: 4, Kiosk, Established in 1979, Gloria Jean's Coffees offers premium coffee blends, chillers, and delicious pastries. Experience the perfect cup of coffee in a welcoming atmosphere.
+
+Store name: Alpha Accessories, Floor: 1, Kiosk, A fashion accessories store offering bags, jewelry, and trendy everyday essentials.
+
+Each context chunk describes ONE store or service with:
+- Store name, Floor number, Store type (Outlet/Kiosk), Category
+
+=== CONVERSATION HISTORY ===
+
+Previous Conversation History:
+User: J. location?
+Assistant: You can find Giga Mall at: https://maps.app.goo.gl/2sDgo5JKupbKcbCQ6
+User: J. location?
+Assistant: You can find Giga Mall at: https://maps.app.goo.gl/2sDgo5JKupbKcbCQ6
+
+Use the conversation history above to understand the context of the current question.
+
+
+=== CURRENT QUESTION ===
+Jojo location?
+
+=== RESPONSE RULES (Follow in this order) ===
+
+RULE 1: MALL LOCATION QUERIES (ONLY for the mall itself)
+- Only use this rule if the user clearly asks about the MALL location (e.g., mentions "Giga Mall", "the mall", "this mall").
+- Keywords: "location", "address", "where is", "directions", "map", "how to reach", "find the mall"
+- Response: "You can find Giga Mall at: https://maps.app.goo.gl/2sDgo5JKupbKcbCQ6"
+- Do NOT use this rule for store names like "J., j. J . j . etc" or "Junaid Jamshed" etc. Those are stores, not the mall.
+
+RULE 2: PRODUCT/DEAL/PRICE QUERIES
+- Keywords: "price", "cost", "deal", "discount", "offer", "menu price", "product price", "how much", "what's the price"
+- Examples: "What's the price of ABC brand's product?", "Any deals at XYZ?", "Menu prices?", "What does ABC store sell?"
+- Response: "For product information, deals, and pricing details, please visit the Giga Mall website or contact the store directly."
+
+RULE 3: STORE LOCATION & GENERAL INFO (Answer from context)
+- If the question mentions a store name (e.g., "J.", "Junaid Jamshed", "Jockey") and asks about location or floor, answer with that store's floor and type from context.
+- Questions about: which floor, store location in mall, store type, store description, what stores are available
+- Answer ONLY from the context provided above
+- If multiple stores match (e.g., "J."), list the best 2-4 options that start with or closely match that name.
+- Format for listing stores:
+  1) Store Name - Floor X (Type): Brief description
+- Be direct and concise
+
+RULE 4: INFORMATION NOT IN CONTEXT
+- If the question is NOT about location, products/deals, or store info from context
+- Response: "I'm unable to respond to your query. Please contact Giga Mall at (051) 8491040 for assistance."
+
+=== FORMATTING REQUIREMENTS ===
+- Plain text only (no markdown, no **bold**, no bullets, no special formatting)
+- URLs must be full URLs (e.g., https://maps.app.goo.gl/2sDgo5JKupbKcbCQ6) for clickable links
+- Keep responses short and friendly
+- No disclaimers like "Unfortunately" or "I don't have more information"
+- Be conversational, like talking to a friend
+
+=== EXAMPLES ===
+User: "What's the price of Nike shoes?"
+You: "For product information, deals, and pricing details, please visit the Giga Mall website or contact the store directly."
+
+User: "Which floor has clothing stores?"
+You: [Answer from context with store listings]
+
+User: "What's the weather today?"
+You: "I'm unable to respond to your query. Please contact Giga Mall at (051) 8491040 for assistance."
+2026-01-24 12:45:00,432 - INFO - ================================================================================
+
+2026-01-24 12:45:01,684 - INFO - 
+================================================================================
+2026-01-24 12:45:01,684 - INFO - FINAL RESPONSE GENERATED (NON-STREAMING):
+2026-01-24 12:45:01,684 - INFO - ================================================================================
+2026-01-24 12:45:01,685 - INFO - Jojo is located on Floor 5 and is a kiosk. It's a colorful candy store offering a wide variety of bulk candies, gummies, chocolates, and sweet treats. Enjoy the vibrant setting with delightful candy displays!
+2026-01-24 12:45:01,685 - INFO - ================================================================================
+
+2026-01-24 12:45:14,914 - INFO - 
+================================================================================
+2026-01-24 12:45:14,914 - INFO - NEW USER QUERY RECEIVED (NON-STREAMING)
+2026-01-24 12:45:14,915 - INFO - ================================================================================
+2026-01-24 12:45:14,915 - INFO - Session ID: 550e8400-e29b-41d4-a716-441655440111
+2026-01-24 12:45:14,915 - INFO - User Query: fragnences ?
+2026-01-24 12:45:14,915 - INFO - Chat History Available: Yes
+2026-01-24 12:45:14,916 - INFO - Chat History:
+User: J. location?
+Assistant: You can find Giga Mall at: https://maps.app.goo.gl/2sDgo5JKupbKcbCQ6
+User: J. location?
+Assistant: You can find Giga Mall at: https://maps.app.goo.gl/2sDgo5JKupbKcbCQ6
+User: Jojo location?
+Assistant: Jojo is located on Floor 5 and is a kiosk. It's a colorful candy store offering a wide variety of bulk candies, gummies, chocolates, and sweet treats. Enjoy the vibrant setting with delightful candy displays!
+2026-01-24 12:45:14,916 - INFO - ================================================================================
+2026-01-24 12:45:15,365 - INFO - ================================================================================
+2026-01-24 12:45:15,365 - INFO - RETRIEVED CHUNKS:
+2026-01-24 12:45:15,365 - INFO - ================================================================================
+2026-01-24 12:45:15,366 - INFO - 
+--- Chunk 1 ---
+2026-01-24 12:45:15,366 - INFO - Content: Store name: MTJ Fragrance, Floor: 3, Kiosk, MTJ Fragrances offers a variety of high-quality, long-lasting local perfumes for men, women, and children. They feature diverse scent profiles from fresh wo...
+2026-01-24 12:45:15,366 - INFO - Metadata: {'floor': 3, 'type': 'Kiosk', 'category': 'Beauty & Fragrances', 'store_name': 'MTJ Fragrance', 'group': 'Stores/Shops at Giga Mall', 'normalized_store_name': 'mtjfragrance'}
+2026-01-24 12:45:15,367 - INFO - 
+--- Chunk 2 ---
+2026-01-24 12:45:15,367 - INFO - Content: Store name: Just Fragrance, Floor: 1, Kiosk, A specialized perfume outlet offering a curated selection of scents. They provide a variety of local and imported fragrances, ranging from long-lasting off...
+2026-01-24 12:45:15,367 - INFO - Metadata: {'group': 'Stores/Shops at Giga Mall', 'floor': 1, 'normalized_store_name': 'justfragrance', 'type': 'Kiosk', 'store_name': 'Just Fragrance', 'category': 'Beauty & Fragrances'}
+2026-01-24 12:45:15,367 - INFO - 
+--- Chunk 3 ---
+2026-01-24 12:45:15,368 - INFO - Content: Store name: Abc Fragrance, Floor: 4, Kiosk, A perfume retailer providing a wide selection of local and imported scents. They cater to varied preferences with a collection of traditional Arabic attars ...
+2026-01-24 12:45:15,368 - INFO - Metadata: {'group': 'Stores/Shops at Giga Mall', 'type': 'Kiosk', 'category': 'Beauty & Fragrances', 'store_name': 'Abc Fragrance', 'normalized_store_name': 'abcfragrance', 'floor': 4}
+2026-01-24 12:45:15,368 - INFO - 
+--- Chunk 4 ---
+2026-01-24 12:45:15,369 - INFO - Content: Store name: Scents and Secrets, Floor: 5, Kiosk, A specialized fragrance house dedicated to high-quality, long-lasting perfumes and aromatic oils. They offer a diverse palette of scents, from designer...
+2026-01-24 12:45:15,369 - INFO - Metadata: {'store_name': 'Scents and Secrets', 'group': 'Stores/Shops at Giga Mall', 'category': 'Beauty & Fragrances', 'floor': 5, 'type': 'Kiosk', 'normalized_store_name': 'scentsandsecrets'}
+2026-01-24 12:45:15,369 - INFO - 
+--- Chunk 5 ---
+2026-01-24 12:45:15,370 - INFO - Content: Store name: Scents and Stories, Floor: 3, Kiosk, A perfume brand that focuses on creating unique and evocative fragrances, often drawing inspiration from various narratives or places. They offer both ...
+2026-01-24 12:45:15,370 - INFO - Metadata: {'normalized_store_name': 'scentsandstories', 'floor': 3, 'store_name': 'Scents and Stories', 'type': 'Kiosk', 'category': 'Beauty & Fragrances', 'group': 'Stores/Shops at Giga Mall'}
+2026-01-24 12:45:15,370 - INFO - 
+--- Chunk 6 ---
+2026-01-24 12:45:15,370 - INFO - Content: Store name: AMD, Floor: 4, Kiosk, A specialized fragrance house known for high-quality perfume oils (attars) and concentrated sprays. They focus on long-lasting scents, offering a wide palette ranging...
+2026-01-24 12:45:15,370 - INFO - Metadata: {'group': 'Stores/Shops at Giga Mall', 'type': 'Kiosk', 'floor': 4, 'normalized_store_name': 'amd', 'store_name': 'AMD', 'category': 'Beauty & Fragrances'}
+2026-01-24 12:45:15,370 - INFO - 
+--- Chunk 7 ---
+2026-01-24 12:45:15,370 - INFO - Content: Store name: Swiss Arabia, Floor: 4, Kiosk, A fragrance house that specializes in premium perfumes, body sprays, and traditional concentrated perfume oils (attars). They offer a luxurious blend of orie...
+2026-01-24 12:45:15,371 - INFO - Metadata: {'floor': 4, 'category': 'Beauty & Fragrances', 'normalized_store_name': 'swissarabia', 'group': 'Stores/Shops at Giga Mall', 'type': 'Kiosk', 'store_name': 'Swiss Arabia'}
+2026-01-24 12:45:15,371 - INFO - 
+--- Chunk 8 ---
+2026-01-24 12:45:15,371 - INFO - Content: Store name: Carrefour, Floor: 2, A leading global retail chain offering groceries, fresh produce, household essentials, electronics, and everyday necessities under one roof.
+2026-01-24 12:45:15,371 - INFO - Metadata: {'group': 'Services in Giga Mall', 'floor': 2, 'normalized_store_name': 'carrefour', 'store_name': 'Carrefour', 'category': 'Grocery'}
+2026-01-24 12:45:15,372 - INFO - ================================================================================
+2026-01-24 12:45:15,372 - INFO - 
+================================================================================
+2026-01-24 12:45:15,373 - INFO - FINAL PROMPT SENT TO LLM:
+2026-01-24 12:45:15,373 - INFO - ================================================================================
+2026-01-24 12:45:15,373 - INFO - You are a friendly and helpful AI assistant for Giga Mall. Your role is to answer customer questions about the mall, its stores, restaurants, and services.
+
+=== ALWAYS AVAILABLE INFORMATION (Use these without checking context) ===
+
+MALL LOCATION:
+- If user asks about Giga Mall's location, address, where is the mall, how to reach, directions, or map, ALWAYS respond with:
+  "You can find Giga Mall at: https://maps.app.goo.gl/2sDgo5JKupbKcbCQ6"
+- This information is ALWAYS available - do NOT say you don't have it.
+
+MALL CONTACT:
+- Phone: (051) 8491040
+
+=== CONTEXT FROM KNOWLEDGE BASE ===
+Store name: MTJ Fragrance, Floor: 3, Kiosk, MTJ Fragrances offers a variety of high-quality, long-lasting local perfumes for men, women, and children. They feature diverse scent profiles from fresh woody aromatics to oriental ouds, known for being 100% original and reliable.
+
+Store name: Just Fragrance, Floor: 1, Kiosk, A specialized perfume outlet offering a curated selection of scents. They provide a variety of local and imported fragrances, ranging from long-lasting office wear to premium evening perfumes for both men and women.
+
+Store name: Abc Fragrance, Floor: 4, Kiosk, A perfume retailer providing a wide selection of local and imported scents. They cater to varied preferences with a collection of traditional Arabic attars and western-style designer perfumes.
+
+Store name: Scents and Secrets, Floor: 5, Kiosk, A specialized fragrance house dedicated to high-quality, long-lasting perfumes and aromatic oils. They offer a diverse palette of scents, from designer-inspired sprays to unique signature blends, catering to both men and women.
+
+Store name: Scents and Stories, Floor: 3, Kiosk, A perfume brand that focuses on creating unique and evocative fragrances, often drawing inspiration from various narratives or places. They offer both men's and women's perfumes with complex and long-lasting scent profiles.
+
+Store name: AMD, Floor: 4, Kiosk, A specialized fragrance house known for high-quality perfume oils (attars) and concentrated sprays. They focus on long-lasting scents, offering a wide palette ranging from deep oriental ouds and musks to fresh, modern floral blends.
+
+Store name: Swiss Arabia, Floor: 4, Kiosk, A fragrance house that specializes in premium perfumes, body sprays, and traditional concentrated perfume oils (attars). They offer a luxurious blend of oriental and western scents.
+
+Store name: Carrefour, Floor: 2, A leading global retail chain offering groceries, fresh produce, household essentials, electronics, and everyday necessities under one roof.
+
+Each context chunk describes ONE store or service with:
+- Store name, Floor number, Store type (Outlet/Kiosk), Category
+
+=== CONVERSATION HISTORY ===
+
+Previous Conversation History:
+User: J. location?
+Assistant: You can find Giga Mall at: https://maps.app.goo.gl/2sDgo5JKupbKcbCQ6
+User: J. location?
+Assistant: You can find Giga Mall at: https://maps.app.goo.gl/2sDgo5JKupbKcbCQ6
+User: Jojo location?
+Assistant: Jojo is located on Floor 5 and is a kiosk. It's a colorful candy store offering a wide variety of bulk candies, gummies, chocolates, and sweet treats. Enjoy the vibrant setting with delightful candy displays!
+
+Use the conversation history above to understand the context of the current question.
+
+
+=== CURRENT QUESTION ===
+fragnences ?
+
+=== RESPONSE RULES (Follow in this order) ===
+
+RULE 1: MALL LOCATION QUERIES (ONLY for the mall itself)
+- Only use this rule if the user clearly asks about the MALL location (e.g., mentions "Giga Mall", "the mall", "this mall").
+- Keywords: "location", "address", "where is", "directions", "map", "how to reach", "find the mall"
+- Response: "You can find Giga Mall at: https://maps.app.goo.gl/2sDgo5JKupbKcbCQ6"
+- Do NOT use this rule for store names like "J., j. J . j . etc" or "Junaid Jamshed" etc. Those are stores, not the mall.
+
+RULE 2: PRODUCT/DEAL/PRICE QUERIES
+- Keywords: "price", "cost", "deal", "discount", "offer", "menu price", "product price", "how much", "what's the price"
+- Examples: "What's the price of ABC brand's product?", "Any deals at XYZ?", "Menu prices?", "What does ABC store sell?"
+- Response: "For product information, deals, and pricing details, please visit the Giga Mall website or contact the store directly."
+
+RULE 3: STORE LOCATION & GENERAL INFO (Answer from context)
+- If the question mentions a store name (e.g., "J.", "Junaid Jamshed", "Jockey") and asks about location or floor, answer with that store's floor and type from context.
+- Questions about: which floor, store location in mall, store type, store description, what stores are available
+- Answer ONLY from the context provided above
+- If multiple stores match (e.g., "J."), list the best 2-4 options that start with or closely match that name.
+- Format for listing stores:
+  1) Store Name - Floor X (Type): Brief description
+- Be direct and concise
+
+RULE 4: INFORMATION NOT IN CONTEXT
+- If the question is NOT about location, products/deals, or store info from context
+- Response: "I'm unable to respond to your query. Please contact Giga Mall at (051) 8491040 for assistance."
+
+=== FORMATTING REQUIREMENTS ===
+- Plain text only (no markdown, no **bold**, no bullets, no special formatting)
+- URLs must be full URLs (e.g., https://maps.app.goo.gl/2sDgo5JKupbKcbCQ6) for clickable links
+- Keep responses short and friendly
+- No disclaimers like "Unfortunately" or "I don't have more information"
+- Be conversational, like talking to a friend
+
+=== EXAMPLES ===
+User: "What's the price of Nike shoes?"
+You: "For product information, deals, and pricing details, please visit the Giga Mall website or contact the store directly."
+
+User: "Which floor has clothing stores?"
+You: [Answer from context with store listings]
+
+User: "What's the weather today?"
+You: "I'm unable to respond to your query. Please contact Giga Mall at (051) 8491040 for assistance."
+2026-01-24 12:45:15,374 - INFO - ================================================================================
+
+2026-01-24 12:45:19,456 - INFO - 
+================================================================================
+2026-01-24 12:45:19,457 - INFO - FINAL RESPONSE GENERATED (NON-STREAMING):
+2026-01-24 12:45:19,457 - INFO - ================================================================================
+2026-01-24 12:45:19,457 - INFO - Here are some fragrance stores you can find at Giga Mall:
+
+1) MTJ Fragrance - Floor 3 (Kiosk): Offers a variety of high-quality, long-lasting local perfumes for men, women, and children.
+
+2) Just Fragrance - Floor 1 (Kiosk): A specialized perfume outlet with a curated selection of local and imported fragrances for both men and women.
+
+3) Abc Fragrance - Floor 4 (Kiosk): Provides a wide selection of local and imported scents, including traditional Arabic attars and western-style designer perfumes.
+
+4) Scents and Secrets - Floor 5 (Kiosk): Dedicated to high-quality, long-lasting perfumes and aromatic oils, catering to both men and women.
+
+If you need more information about any specific store, feel free to ask!
+2026-01-24 12:45:19,457 - INFO - ================================================================================
+
+2026-01-24 12:45:48,056 - INFO - 
+================================================================================
+2026-01-24 12:45:48,057 - INFO - NEW USER QUERY RECEIVED (NON-STREAMING)
+2026-01-24 12:45:48,057 - INFO - ================================================================================
+2026-01-24 12:45:48,057 - INFO - Session ID: 550e8400-e29b-41d4-a716-441655440111
+2026-01-24 12:45:48,058 - INFO - User Query: any other ?
+2026-01-24 12:45:48,058 - INFO - Chat History Available: Yes
+2026-01-24 12:45:48,058 - INFO - Chat History:
+User: J. location?
+Assistant: You can find Giga Mall at: https://maps.app.goo.gl/2sDgo5JKupbKcbCQ6
+User: J. location?
+Assistant: You can find Giga Mall at: https://maps.app.goo.gl/2sDgo5JKupbKcbCQ6
+User: Jojo location?
+Assistant: Jojo is located on Floor 5 and is a kiosk. It's a colorful candy store offering a wide variety of bulk candies, gummies, chocolates, and sweet treats. Enjoy the vibrant setting with delightful candy displays!
+User: fragnences ?
+Assistant: Here are some fragrance stores you can find at Giga Mall:
+
+1) MTJ Fragrance - Floor 3 (Kiosk): Offers a variety of high-quality, long-lasting local perfumes for men, women, and children.
+
+2) Just Fragrance - Floor 1 (Kiosk): A specialized perfume outlet with a curated selection of local and imported fragrances for both men and women.
+
+3) Abc Fragrance - Floor 4 (Kiosk): Provides a wide selection of local and imported scents, including traditional Arabic attars and western-style designer perfumes.
+
+4) Scents and Secrets - Floor 5 (Kiosk): Dedicated to high-quality, long-lasting perfumes and aromatic oils, catering to both men and women.
+
+If you need more information about any specific store, feel free to ask!
+2026-01-24 12:45:48,058 - INFO - ================================================================================
+2026-01-24 12:45:48,465 - INFO - ================================================================================
+2026-01-24 12:45:48,465 - INFO - RETRIEVED CHUNKS:
+2026-01-24 12:45:48,465 - INFO - ================================================================================
+2026-01-24 12:45:48,465 - INFO - 
+--- Chunk 1 ---
+2026-01-24 12:45:48,466 - INFO - Content: Store name: Mr Kazi, Floor: 2, Outlet, A mobile accessories shop offering phone cases, chargers, cables, headphones, and tech gadgets.
+2026-01-24 12:45:48,466 - INFO - Metadata: {'group': 'Stores/Shops at Giga Mall', 'floor': 2, 'store_name': 'Mr Kazi', 'category': 'Electronics', 'normalized_store_name': 'mrkazi', 'type': 'Outlet'}
+2026-01-24 12:45:48,466 - INFO - 
+--- Chunk 2 ---
+2026-01-24 12:45:48,466 - INFO - Content: Store name: Howdy, Floor: 5, Outlet, Wild vibes and bold flavors! A Western-themed fast-food restaurant offering delicious burgers, prawn specialties, combo deals, and classic favorites. Experience th...
+2026-01-24 12:45:48,467 - INFO - Metadata: {'group': 'Dine/ Food Court / Meal options', 'category': 'Dine/ Food Court / Meal options', 'sub_category': 'Fast Food', 'normalized_store_name': 'howdy', 'store_name': 'Howdy', 'type': 'Outlet', 'floor': 5}
+2026-01-24 12:45:48,467 - INFO - 
+--- Chunk 3 ---
+2026-01-24 12:45:48,467 - INFO - Content: Store name: a and i, Floor: 5, Outlet, A comprehensive mobile and accessories hub specializing in the latest smartphone technology and high-quality peripherals. They offer an extensive range of protec...
+2026-01-24 12:45:48,468 - INFO - Metadata: {'type': 'Outlet', 'normalized_store_name': 'aandi', 'floor': 5, 'store_name': 'a and i', 'category': 'Electronics', 'group': 'Stores/Shops at Giga Mall'}
+2026-01-24 12:45:48,468 - INFO - 
+--- Chunk 4 ---
+2026-01-24 12:45:48,468 - INFO - Content: Store name: Melon Box, Floor: 3, Kiosk, A trendy retail kiosk or shop that features a colorful variety of small gadgets, fashion accessories, novelty gifts, and "lifestyle knick-knacks" popular among ...
+2026-01-24 12:45:48,468 - INFO - Metadata: {'category': 'Home & Lifestyle', 'floor': 3, 'normalized_store_name': 'melonbox', 'store_name': 'Melon Box', 'type': 'Kiosk', 'group': 'Stores/Shops at Giga Mall'}
+2026-01-24 12:45:48,468 - INFO - 
+--- Chunk 5 ---
+2026-01-24 12:45:48,468 - INFO - Content: Store name: Alpha Accessories, Floor: 1, Kiosk, A fashion accessories store offering bags, jewelry, and trendy everyday essentials.
+2026-01-24 12:45:48,469 - INFO - Metadata: {'group': 'Stores/Shops at Giga Mall', 'floor': 1, 'normalized_store_name': 'alphaaccessories', 'category': 'Accessories', 'store_name': 'Alpha Accessories', 'type': 'Kiosk'}
+2026-01-24 12:45:48,469 - INFO - 
+--- Chunk 6 ---
+2026-01-24 12:45:48,469 - INFO - Content: Store name: Sip Smart, Floor: 5, Outlet, A vibrant food stall specializing in Indian street food and fresh beverages. Enjoy authentic chaat items like Pani Puri, Gol Gappay, Dahi Bhallay, Chana Chat, ...
+2026-01-24 12:45:48,469 - INFO - Metadata: {'normalized_store_name': 'sipsmart', 'sub_category': 'Fast Food', 'category': 'Dine/ Food Court / Meal options', 'store_name': 'Sip Smart', 'type': 'Outlet', 'group': 'Dine/ Food Court / Meal options', 'floor': 5}
+2026-01-24 12:45:48,469 - INFO - 
+--- Chunk 7 ---
+2026-01-24 12:45:48,469 - INFO - Content: Store name: Tiny Years, Floor: 4, Outlet, A baby and children's store offering a complete variety of newborn essentials, clothing (three-piece suits, frocks, shalwar kameez), toys (stuff toys, activit...
+2026-01-24 12:45:48,469 - INFO - Metadata: {'normalized_store_name': 'tinyyears', 'store_name': 'Tiny Years', 'floor': 4, 'type': 'Outlet', 'group': 'Stores/Shops at Giga Mall', 'category': 'Toys'}
+2026-01-24 12:45:48,469 - INFO - 
+--- Chunk 8 ---
+2026-01-24 12:45:48,470 - INFO - Content: Store name: Dinners, Floor: 4, Outlet, A menswear brand specializing in formal and semi-formal wear. They offer a range of tailored suits, dress shirts, and smart trousers designed for professional an...
+2026-01-24 12:45:48,470 - INFO - Metadata: {'normalized_store_name': 'dinners', 'store_name': 'Dinners', 'category': 'Clothing Brands', 'type': 'Outlet', 'group': 'Stores/Shops at Giga Mall', 'floor': 4}
+2026-01-24 12:45:48,470 - INFO - ================================================================================
+2026-01-24 12:45:48,471 - INFO - 
+================================================================================
+2026-01-24 12:45:48,471 - INFO - FINAL PROMPT SENT TO LLM:
+2026-01-24 12:45:48,471 - INFO - ================================================================================
+2026-01-24 12:45:48,472 - INFO - You are a friendly and helpful AI assistant for Giga Mall. Your role is to answer customer questions about the mall, its stores, restaurants, and services.
+
+=== ALWAYS AVAILABLE INFORMATION (Use these without checking context) ===
+
+MALL LOCATION:
+- If user asks about Giga Mall's location, address, where is the mall, how to reach, directions, or map, ALWAYS respond with:
+  "You can find Giga Mall at: https://maps.app.goo.gl/2sDgo5JKupbKcbCQ6"
+- This information is ALWAYS available - do NOT say you don't have it.
+
+MALL CONTACT:
+- Phone: (051) 8491040
+
+=== CONTEXT FROM KNOWLEDGE BASE ===
+Store name: Mr Kazi, Floor: 2, Outlet, A mobile accessories shop offering phone cases, chargers, cables, headphones, and tech gadgets.
+
+Store name: Howdy, Floor: 5, Outlet, Wild vibes and bold flavors! A Western-themed fast-food restaurant offering delicious burgers, prawn specialties, combo deals, and classic favorites. Experience the sea-sational twist with our signature Prawn Star burger and enjoy fantastic deals for individuals, couples, and groups.
+
+Store name: a and i, Floor: 5, Outlet, A comprehensive mobile and accessories hub specializing in the latest smartphone technology and high-quality peripherals. They offer an extensive range of protective cases, high-speed chargers, premium audio gear, and essential tech gadgets for the modern mobile user.
+
+Store name: Melon Box, Floor: 3, Kiosk, A trendy retail kiosk or shop that features a colorful variety of small gadgets, fashion accessories, novelty gifts, and "lifestyle knick-knacks" popular among younger shoppers.
+
+Store name: Alpha Accessories, Floor: 1, Kiosk, A fashion accessories store offering bags, jewelry, and trendy everyday essentials.
+
+Store name: Sip Smart, Floor: 5, Outlet, A vibrant food stall specializing in Indian street food and fresh beverages. Enjoy authentic chaat items like Pani Puri, Gol Gappay, Dahi Bhallay, Chana Chat, Rajkachori, and Fruit Chat, along with fresh fruit juices and slushies made from fresh ingredients.
+
+Store name: Tiny Years, Floor: 4, Outlet, A baby and children's store offering a complete variety of newborn essentials, clothing (three-piece suits, frocks, shalwar kameez), toys (stuff toys, activity toys), and baby gear like strollers, cots, and car seats.
+
+Store name: Dinners, Floor: 4, Outlet, A menswear brand specializing in formal and semi-formal wear. They offer a range of tailored suits, dress shirts, and smart trousers designed for professional and elegant styling.
+
+Each context chunk describes ONE store or service with:
+- Store name, Floor number, Store type (Outlet/Kiosk), Category
+
+=== CONVERSATION HISTORY ===
+
+Previous Conversation History:
+User: J. location?
+Assistant: You can find Giga Mall at: https://maps.app.goo.gl/2sDgo5JKupbKcbCQ6
+User: J. location?
+Assistant: You can find Giga Mall at: https://maps.app.goo.gl/2sDgo5JKupbKcbCQ6
+User: Jojo location?
+Assistant: Jojo is located on Floor 5 and is a kiosk. It's a colorful candy store offering a wide variety of bulk candies, gummies, chocolates, and sweet treats. Enjoy the vibrant setting with delightful candy displays!
+User: fragnences ?
+Assistant: Here are some fragrance stores you can find at Giga Mall:
+
+1) MTJ Fragrance - Floor 3 (Kiosk): Offers a variety of high-quality, long-lasting local perfumes for men, women, and children.
+
+2) Just Fragrance - Floor 1 (Kiosk): A specialized perfume outlet with a curated selection of local and imported fragrances for both men and women.
+
+3) Abc Fragrance - Floor 4 (Kiosk): Provides a wide selection of local and imported scents, including traditional Arabic attars and western-style designer perfumes.
+
+4) Scents and Secrets - Floor 5 (Kiosk): Dedicated to high-quality, long-lasting perfumes and aromatic oils, catering to both men and women.
+
+If you need more information about any specific store, feel free to ask!
+
+Use the conversation history above to understand the context of the current question.
+
+
+=== CURRENT QUESTION ===
+any other ?
+
+=== RESPONSE RULES (Follow in this order) ===
+
+RULE 1: MALL LOCATION QUERIES (ONLY for the mall itself)
+- Only use this rule if the user clearly asks about the MALL location (e.g., mentions "Giga Mall", "the mall", "this mall").
+- Keywords: "location", "address", "where is", "directions", "map", "how to reach", "find the mall"
+- Response: "You can find Giga Mall at: https://maps.app.goo.gl/2sDgo5JKupbKcbCQ6"
+- Do NOT use this rule for store names like "J., j. J . j . etc" or "Junaid Jamshed" etc. Those are stores, not the mall.
+
+RULE 2: PRODUCT/DEAL/PRICE QUERIES
+- Keywords: "price", "cost", "deal", "discount", "offer", "menu price", "product price", "how much", "what's the price"
+- Examples: "What's the price of ABC brand's product?", "Any deals at XYZ?", "Menu prices?", "What does ABC store sell?"
+- Response: "For product information, deals, and pricing details, please visit the Giga Mall website or contact the store directly."
+
+RULE 3: STORE LOCATION & GENERAL INFO (Answer from context)
+- If the question mentions a store name (e.g., "J.", "Junaid Jamshed", "Jockey") and asks about location or floor, answer with that store's floor and type from context.
+- Questions about: which floor, store location in mall, store type, store description, what stores are available
+- Answer ONLY from the context provided above
+- If multiple stores match (e.g., "J."), list the best 2-4 options that start with or closely match that name.
+- Format for listing stores:
+  1) Store Name - Floor X (Type): Brief description
+- Be direct and concise
+
+RULE 4: INFORMATION NOT IN CONTEXT
+- If the question is NOT about location, products/deals, or store info from context
+- Response: "I'm unable to respond to your query. Please contact Giga Mall at (051) 8491040 for assistance."
+
+=== FORMATTING REQUIREMENTS ===
+- Plain text only (no markdown, no **bold**, no bullets, no special formatting)
+- URLs must be full URLs (e.g., https://maps.app.goo.gl/2sDgo5JKupbKcbCQ6) for clickable links
+- Keep responses short and friendly
+- No disclaimers like "Unfortunately" or "I don't have more information"
+- Be conversational, like talking to a friend
+
+=== EXAMPLES ===
+User: "What's the price of Nike shoes?"
+You: "For product information, deals, and pricing details, please visit the Giga Mall website or contact the store directly."
+
+User: "Which floor has clothing stores?"
+You: [Answer from context with store listings]
+
+User: "What's the weather today?"
+You: "I'm unable to respond to your query. Please contact Giga Mall at (051) 8491040 for assistance."
+2026-01-24 12:45:48,473 - INFO - ================================================================================
+
+2026-01-24 12:45:49,692 - INFO - 
+================================================================================
+2026-01-24 12:45:49,693 - INFO - FINAL RESPONSE GENERATED (NON-STREAMING):
+2026-01-24 12:45:49,693 - INFO - ================================================================================
+2026-01-24 12:45:49,694 - INFO - I'm unable to respond to your query. Please contact Giga Mall at (051) 8491040 for assistance.
+2026-01-24 12:45:49,694 - INFO - ================================================================================
+
+2026-01-24 12:46:00,773 - INFO - 
+================================================================================
+2026-01-24 12:46:00,773 - INFO - NEW USER QUERY RECEIVED (NON-STREAMING)
+2026-01-24 12:46:00,773 - INFO - ================================================================================
+2026-01-24 12:46:00,773 - INFO - Session ID: 550e8400-e29b-41d4-a716-441655440111
+2026-01-24 12:46:00,774 - INFO - User Query: any other fragnence options ?
+2026-01-24 12:46:00,774 - INFO - Chat History Available: Yes
+2026-01-24 12:46:00,774 - INFO - Chat History:
+User: J. location?
+Assistant: You can find Giga Mall at: https://maps.app.goo.gl/2sDgo5JKupbKcbCQ6
+User: J. location?
+Assistant: You can find Giga Mall at: https://maps.app.goo.gl/2sDgo5JKupbKcbCQ6
+User: Jojo location?
+Assistant: Jojo is located on Floor 5 and is a kiosk. It's a colorful candy store offering a wide variety of bulk candies, gummies, chocolates, and sweet treats. Enjoy the vibrant setting with delightful candy displays!
+User: fragnences ?
+Assistant: Here are some fragrance stores you can find at Giga Mall:
+
+1) MTJ Fragrance - Floor 3 (Kiosk): Offers a variety of high-quality, long-lasting local perfumes for men, women, and children.
+
+2) Just Fragrance - Floor 1 (Kiosk): A specialized perfume outlet with a curated selection of local and imported fragrances for both men and women.
+
+3) Abc Fragrance - Floor 4 (Kiosk): Provides a wide selection of local and imported scents, including traditional Arabic attars and western-style designer perfumes.
+
+4) Scents and Secrets - Floor 5 (Kiosk): Dedicated to high-quality, long-lasting perfumes and aromatic oils, catering to both men and women.
+
+If you need more information about any specific store, feel free to ask!
+User: any other ?
+Assistant: I'm unable to respond to your query. Please contact Giga Mall at (051) 8491040 for assistance.
+2026-01-24 12:46:00,774 - INFO - ================================================================================
+2026-01-24 12:46:01,905 - INFO - ================================================================================
+2026-01-24 12:46:01,905 - INFO - RETRIEVED CHUNKS:
+2026-01-24 12:46:01,905 - INFO - ================================================================================
+2026-01-24 12:46:01,906 - INFO - 
+--- Chunk 1 ---
+2026-01-24 12:46:01,907 - INFO - Content: Store name: Just Fragrance, Floor: 1, Kiosk, A specialized perfume outlet offering a curated selection of scents. They provide a variety of local and imported fragrances, ranging from long-lasting off...
+2026-01-24 12:46:01,907 - INFO - Metadata: {'store_name': 'Just Fragrance', 'type': 'Kiosk', 'category': 'Beauty & Fragrances', 'floor': 1, 'group': 'Stores/Shops at Giga Mall', 'normalized_store_name': 'justfragrance'}
+2026-01-24 12:46:01,907 - INFO - 
+--- Chunk 2 ---
+2026-01-24 12:46:01,907 - INFO - Content: Store name: MTJ Fragrance, Floor: 3, Kiosk, MTJ Fragrances offers a variety of high-quality, long-lasting local perfumes for men, women, and children. They feature diverse scent profiles from fresh wo...
+2026-01-24 12:46:01,907 - INFO - Metadata: {'group': 'Stores/Shops at Giga Mall', 'category': 'Beauty & Fragrances', 'normalized_store_name': 'mtjfragrance', 'floor': 3, 'type': 'Kiosk', 'store_name': 'MTJ Fragrance'}
+2026-01-24 12:46:01,907 - INFO - 
+--- Chunk 3 ---
+2026-01-24 12:46:01,908 - INFO - Content: Store name: Abc Fragrance, Floor: 4, Kiosk, A perfume retailer providing a wide selection of local and imported scents. They cater to varied preferences with a collection of traditional Arabic attars ...
+2026-01-24 12:46:01,908 - INFO - Metadata: {'floor': 4, 'group': 'Stores/Shops at Giga Mall', 'store_name': 'Abc Fragrance', 'category': 'Beauty & Fragrances', 'type': 'Kiosk', 'normalized_store_name': 'abcfragrance'}
+2026-01-24 12:46:01,908 - INFO - 
+--- Chunk 4 ---
+2026-01-24 12:46:01,908 - INFO - Content: Store name: AMD, Floor: 4, Kiosk, A specialized fragrance house known for high-quality perfume oils (attars) and concentrated sprays. They focus on long-lasting scents, offering a wide palette ranging...
+2026-01-24 12:46:01,909 - INFO - Metadata: {'store_name': 'AMD', 'normalized_store_name': 'amd', 'category': 'Beauty & Fragrances', 'group': 'Stores/Shops at Giga Mall', 'type': 'Kiosk', 'floor': 4}
+2026-01-24 12:46:01,909 - INFO - 
+--- Chunk 5 ---
+2026-01-24 12:46:01,909 - INFO - Content: Store name: Frutastic, Floor: 4, Kiosk, Fresh, natural juices made from the finest fruits. Enjoy a variety of healthy options including orange, apple, sugarcane, and more. Refreshing and nutritious be...
+2026-01-24 12:46:01,909 - INFO - Metadata: {'type': 'Kiosk', 'sub_category': 'Juice Bar', 'store_name': 'Frutastic', 'floor': 4, 'group': 'Dine/ Food Court / Meal options', 'normalized_store_name': 'frutastic', 'category': 'Dine/ Food Court / Meal options'}
+2026-01-24 12:46:01,909 - INFO - 
+--- Chunk 6 ---
+2026-01-24 12:46:01,909 - INFO - Content: Store name: J. Fragrance and Costmetics, Floor: 3, Kiosk, Part of the well-known Pakistani brand Junaid Jamshed, this section specializes in a wide array of perfumes, colognes, and cosmetics. They off...
+2026-01-24 12:46:01,910 - INFO - Metadata: {'category': 'Beauty & Fragrances', 'group': 'Stores/Shops at Giga Mall', 'store_name': 'J. Fragrance and Costmetics', 'floor': 3, 'normalized_store_name': 'jfragranceandcostmetics', 'type': 'Kiosk'}
+2026-01-24 12:46:01,910 - INFO - 
+--- Chunk 7 ---
+2026-01-24 12:46:01,910 - INFO - Content: Store name: Swiss Arabia, Floor: 4, Kiosk, A fragrance house that specializes in premium perfumes, body sprays, and traditional concentrated perfume oils (attars). They offer a luxurious blend of orie...
+2026-01-24 12:46:01,910 - INFO - Metadata: {'store_name': 'Swiss Arabia', 'group': 'Stores/Shops at Giga Mall', 'normalized_store_name': 'swissarabia', 'type': 'Kiosk', 'category': 'Beauty & Fragrances', 'floor': 4}
+2026-01-24 12:46:01,910 - INFO - 
+--- Chunk 8 ---
+2026-01-24 12:46:01,910 - INFO - Content: Store name: Bonanza Satrangi Beauty, Floor: 4, Kiosk, The cosmetics and fragrance line from the larger Bonanza Satrangi fashion house. It offers an "affordable, long lasting" range of makeup essential...
+2026-01-24 12:46:01,910 - INFO - Metadata: {'floor': 4, 'type': 'Kiosk', 'category': 'Beauty & Fragrances', 'group': 'Stores/Shops at Giga Mall', 'normalized_store_name': 'bonanzasatrangibeauty', 'store_name': 'Bonanza Satrangi Beauty'}
+2026-01-24 12:46:01,911 - INFO - ================================================================================
+2026-01-24 12:46:01,912 - INFO - 
+================================================================================
+2026-01-24 12:46:01,912 - INFO - FINAL PROMPT SENT TO LLM:
+2026-01-24 12:46:01,912 - INFO - ================================================================================
+2026-01-24 12:46:01,912 - INFO - You are a friendly and helpful AI assistant for Giga Mall. Your role is to answer customer questions about the mall, its stores, restaurants, and services.
+
+=== ALWAYS AVAILABLE INFORMATION (Use these without checking context) ===
+
+MALL LOCATION:
+- If user asks about Giga Mall's location, address, where is the mall, how to reach, directions, or map, ALWAYS respond with:
+  "You can find Giga Mall at: https://maps.app.goo.gl/2sDgo5JKupbKcbCQ6"
+- This information is ALWAYS available - do NOT say you don't have it.
+
+MALL CONTACT:
+- Phone: (051) 8491040
+
+=== CONTEXT FROM KNOWLEDGE BASE ===
+Store name: Just Fragrance, Floor: 1, Kiosk, A specialized perfume outlet offering a curated selection of scents. They provide a variety of local and imported fragrances, ranging from long-lasting office wear to premium evening perfumes for both men and women.
+
+Store name: MTJ Fragrance, Floor: 3, Kiosk, MTJ Fragrances offers a variety of high-quality, long-lasting local perfumes for men, women, and children. They feature diverse scent profiles from fresh woody aromatics to oriental ouds, known for being 100% original and reliable.
+
+Store name: Abc Fragrance, Floor: 4, Kiosk, A perfume retailer providing a wide selection of local and imported scents. They cater to varied preferences with a collection of traditional Arabic attars and western-style designer perfumes.
+
+Store name: AMD, Floor: 4, Kiosk, A specialized fragrance house known for high-quality perfume oils (attars) and concentrated sprays. They focus on long-lasting scents, offering a wide palette ranging from deep oriental ouds and musks to fresh, modern floral blends.
+
+Store name: Frutastic, Floor: 4, Kiosk, Fresh, natural juices made from the finest fruits. Enjoy a variety of healthy options including orange, apple, sugarcane, and more. Refreshing and nutritious beverages for every taste.
+
+Store name: J. Fragrance and Costmetics, Floor: 3, Kiosk, Part of the well-known Pakistani brand Junaid Jamshed, this section specializes in a wide array of perfumes, colognes, and cosmetics. They offer signature scents and makeup products that are popular locally.
+
+Store name: Swiss Arabia, Floor: 4, Kiosk, A fragrance house that specializes in premium perfumes, body sprays, and traditional concentrated perfume oils (attars). They offer a luxurious blend of oriental and western scents.
+
+Store name: Bonanza Satrangi Beauty, Floor: 4, Kiosk, The cosmetics and fragrance line from the larger Bonanza Satrangi fashion house. It offers an "affordable, long lasting" range of makeup essentials, including foundations, lipsticks, and serums, as well as a variety of perfumes and body sprays.
+
+Each context chunk describes ONE store or service with:
+- Store name, Floor number, Store type (Outlet/Kiosk), Category
+
+=== CONVERSATION HISTORY ===
+
+Previous Conversation History:
+User: J. location?
+Assistant: You can find Giga Mall at: https://maps.app.goo.gl/2sDgo5JKupbKcbCQ6
+User: J. location?
+Assistant: You can find Giga Mall at: https://maps.app.goo.gl/2sDgo5JKupbKcbCQ6
+User: Jojo location?
+Assistant: Jojo is located on Floor 5 and is a kiosk. It's a colorful candy store offering a wide variety of bulk candies, gummies, chocolates, and sweet treats. Enjoy the vibrant setting with delightful candy displays!
+User: fragnences ?
+Assistant: Here are some fragrance stores you can find at Giga Mall:
+
+1) MTJ Fragrance - Floor 3 (Kiosk): Offers a variety of high-quality, long-lasting local perfumes for men, women, and children.
+
+2) Just Fragrance - Floor 1 (Kiosk): A specialized perfume outlet with a curated selection of local and imported fragrances for both men and women.
+
+3) Abc Fragrance - Floor 4 (Kiosk): Provides a wide selection of local and imported scents, including traditional Arabic attars and western-style designer perfumes.
+
+4) Scents and Secrets - Floor 5 (Kiosk): Dedicated to high-quality, long-lasting perfumes and aromatic oils, catering to both men and women.
+
+If you need more information about any specific store, feel free to ask!
+User: any other ?
+Assistant: I'm unable to respond to your query. Please contact Giga Mall at (051) 8491040 for assistance.
+
+Use the conversation history above to understand the context of the current question.
+
+
+=== CURRENT QUESTION ===
+any other fragnence options ?
+
+=== RESPONSE RULES (Follow in this order) ===
+
+RULE 1: MALL LOCATION QUERIES (ONLY for the mall itself)
+- Only use this rule if the user clearly asks about the MALL location (e.g., mentions "Giga Mall", "the mall", "this mall").
+- Keywords: "location", "address", "where is", "directions", "map", "how to reach", "find the mall"
+- Response: "You can find Giga Mall at: https://maps.app.goo.gl/2sDgo5JKupbKcbCQ6"
+- Do NOT use this rule for store names like "J., j. J . j . etc" or "Junaid Jamshed" etc. Those are stores, not the mall.
+
+RULE 2: PRODUCT/DEAL/PRICE QUERIES
+- Keywords: "price", "cost", "deal", "discount", "offer", "menu price", "product price", "how much", "what's the price"
+- Examples: "What's the price of ABC brand's product?", "Any deals at XYZ?", "Menu prices?", "What does ABC store sell?"
+- Response: "For product information, deals, and pricing details, please visit the Giga Mall website or contact the store directly."
+
+RULE 3: STORE LOCATION & GENERAL INFO (Answer from context)
+- If the question mentions a store name (e.g., "J.", "Junaid Jamshed", "Jockey") and asks about location or floor, answer with that store's floor and type from context.
+- Questions about: which floor, store location in mall, store type, store description, what stores are available
+- Answer ONLY from the context provided above
+- If multiple stores match (e.g., "J."), list the best 2-4 options that start with or closely match that name.
+- Format for listing stores:
+  1) Store Name - Floor X (Type): Brief description
+- Be direct and concise
+
+RULE 4: INFORMATION NOT IN CONTEXT
+- If the question is NOT about location, products/deals, or store info from context
+- Response: "I'm unable to respond to your query. Please contact Giga Mall at (051) 8491040 for assistance."
+
+=== FORMATTING REQUIREMENTS ===
+- Plain text only (no markdown, no **bold**, no bullets, no special formatting)
+- URLs must be full URLs (e.g., https://maps.app.goo.gl/2sDgo5JKupbKcbCQ6) for clickable links
+- Keep responses short and friendly
+- No disclaimers like "Unfortunately" or "I don't have more information"
+- Be conversational, like talking to a friend
+
+=== EXAMPLES ===
+User: "What's the price of Nike shoes?"
+You: "For product information, deals, and pricing details, please visit the Giga Mall website or contact the store directly."
+
+User: "Which floor has clothing stores?"
+You: [Answer from context with store listings]
+
+User: "What's the weather today?"
+You: "I'm unable to respond to your query. Please contact Giga Mall at (051) 8491040 for assistance."
+2026-01-24 12:46:01,914 - INFO - ================================================================================
+
+2026-01-24 12:46:05,898 - INFO - 
+================================================================================
+2026-01-24 12:46:05,899 - INFO - FINAL RESPONSE GENERATED (NON-STREAMING):
+2026-01-24 12:46:05,899 - INFO - ================================================================================
+2026-01-24 12:46:05,899 - INFO - Here are some additional fragrance options at Giga Mall:
+
+1) J. Fragrance and Cosmetics - Floor 3 (Kiosk): Specializes in a wide array of perfumes, colognes, and cosmetics from the well-known Pakistani brand Junaid Jamshed.
+
+2) Swiss Arabia - Floor 4 (Kiosk): Offers premium perfumes, body sprays, and traditional concentrated perfume oils (attars) with a luxurious blend of oriental and western scents.
+
+3) AMD - Floor 4 (Kiosk): Known for high-quality perfume oils (attars) and concentrated sprays, focusing on long-lasting scents.
+
+4) Bonanza Satrangi Beauty - Floor 4 (Kiosk): Offers an affordable range of makeup essentials and a variety of perfumes and body sprays.
+
+If you need more details about any specific store, just let me know!
+2026-01-24 12:46:05,900 - INFO - ================================================================================
+
+2026-01-24 12:58:29,610 - INFO - 
+================================================================================
+2026-01-24 12:58:29,611 - INFO - NEW USER QUERY RECEIVED (NON-STREAMING)
+2026-01-24 12:58:29,611 - INFO - ================================================================================
+2026-01-24 12:58:29,612 - INFO - Session ID: 550e8400-e29b-41d4-a716-441655440111
+2026-01-24 12:58:29,612 - INFO - User Query: hi
+2026-01-24 12:58:29,612 - INFO - Chat History Available: Yes
+2026-01-24 12:58:29,612 - INFO - Chat History:
+User: J. location?
+Assistant: You can find Giga Mall at: https://maps.app.goo.gl/2sDgo5JKupbKcbCQ6
+User: Jojo location?
+Assistant: Jojo is located on Floor 5 and is a kiosk. It's a colorful candy store offering a wide variety of bulk candies, gummies, chocolates, and sweet treats. Enjoy the vibrant setting with delightful candy displays!
+User: fragnences ?
+Assistant: Here are some fragrance stores you can find at Giga Mall:
+
+1) MTJ Fragrance - Floor 3 (Kiosk): Offers a variety of high-quality, long-lasting local perfumes for men, women, and children.
+
+2) Just Fragrance - Floor 1 (Kiosk): A specialized perfume outlet with a curated selection of local and imported fragrances for both men and women.
+
+3) Abc Fragrance - Floor 4 (Kiosk): Provides a wide selection of local and imported scents, including traditional Arabic attars and western-style designer perfumes.
+
+4) Scents and Secrets - Floor 5 (Kiosk): Dedicated to high-quality, long-lasting perfumes and aromatic oils, catering to both men and women.
+
+If you need more information about any specific store, feel free to ask!
+User: any other ?
+Assistant: I'm unable to respond to your query. Please contact Giga Mall at (051) 8491040 for assistance.
+User: any other fragnence options ?
+Assistant: Here are some additional fragrance options at Giga Mall:
+
+1) J. Fragrance and Cosmetics - Floor 3 (Kiosk): Specializes in a wide array of perfumes, colognes, and cosmetics from the well-known Pakistani brand Junaid Jamshed.
+
+2) Swiss Arabia - Floor 4 (Kiosk): Offers premium perfumes, body sprays, and traditional concentrated perfume oils (attars) with a luxurious blend of oriental and western scents.
+
+3) AMD - Floor 4 (Kiosk): Known for high-quality perfume oils (attars) and concentrated sprays, focusing on long-lasting scents.
+
+4) Bonanza Satrangi Beauty - Floor 4 (Kiosk): Offers an affordable range of makeup essentials and a variety of perfumes and body sprays.
+
+If you need more details about any specific store, just let me know!
+2026-01-24 12:58:29,613 - INFO - ================================================================================
+2026-01-24 12:58:31,137 - INFO - ================================================================================
+2026-01-24 12:58:31,138 - INFO - RETRIEVED CHUNKS:
+2026-01-24 12:58:31,138 - INFO - ================================================================================
+2026-01-24 12:58:31,138 - INFO - 
+--- Chunk 1 ---
+2026-01-24 12:58:31,138 - INFO - Content: Store name: Howdy, Floor: 5, Outlet, Wild vibes and bold flavors! A Western-themed fast-food restaurant offering delicious burgers, prawn specialties, combo deals, and classic favorites. Experience th...
+2026-01-24 12:58:31,139 - INFO - Metadata: {'floor': 5, 'category': 'Dine/ Food Court / Meal options', 'group': 'Dine/ Food Court / Meal options', 'type': 'Outlet', 'store_name': 'Howdy', 'normalized_store_name': 'howdy', 'sub_category': 'Fast Food'}
+2026-01-24 12:58:31,139 - INFO - 
+--- Chunk 2 ---
+2026-01-24 12:58:31,139 - INFO - Content: Store name: a and i, Floor: 5, Outlet, A comprehensive mobile and accessories hub specializing in the latest smartphone technology and high-quality peripherals. They offer an extensive range of protec...
+2026-01-24 12:58:31,139 - INFO - Metadata: {'normalized_store_name': 'aandi', 'floor': 5, 'type': 'Outlet', 'group': 'Stores/Shops at Giga Mall', 'category': 'Electronics', 'store_name': 'a and i'}
+2026-01-24 12:58:31,140 - INFO - 
+--- Chunk 3 ---
+2026-01-24 12:58:31,140 - INFO - Content: Store name: Hi Volts, Floor: 4, Kiosk, A retail store that specializes in electronics, gadgets, and gaming gear. They offer a range of products from various tech brands, catering to enthusiasts lookin...
+2026-01-24 12:58:31,140 - INFO - Metadata: {'group': 'Stores/Shops at Giga Mall', 'floor': 4, 'type': 'Kiosk', 'store_name': 'Hi Volts', 'category': 'Electronics', 'normalized_store_name': 'hivolts'}
+2026-01-24 12:58:31,140 - INFO - 
+--- Chunk 4 ---
+2026-01-24 12:58:31,140 - INFO - Content: Store name: Pizza Hut, Floor: 5, Outlet, World-famous pizza with fresh ingredients and signature flavors. Dine in, carry out, or enjoy delivery.
+2026-01-24 12:58:31,140 - INFO - Metadata: {'category': 'Dine/ Food Court / Meal options', 'group': 'Dine/ Food Court / Meal options', 'normalized_store_name': 'pizzahut', 'store_name': 'Pizza Hut', 'sub_category': 'Restaurant', 'type': 'Outlet', 'floor': 5}
+2026-01-24 12:58:31,141 - INFO - 
+--- Chunk 5 ---
+2026-01-24 12:58:31,141 - INFO - Content: Store name: Mini Try, Floor: 2, Outlet, A trendy apparel brand focused on contemporary, everyday fashion styles.
+2026-01-24 12:58:31,141 - INFO - Metadata: {'store_name': 'Mini Try', 'floor': 2, 'type': 'Outlet', 'group': 'Stores/Shops at Giga Mall', 'normalized_store_name': 'minitry', 'category': 'Clothing Brands'}
+2026-01-24 12:58:31,141 - INFO - 
+--- Chunk 6 ---
+2026-01-24 12:58:31,141 - INFO - Content: Store name: Zero, Floor: 2, Outlet, A multinational health and wellness brand specializing in premium massage chairs (3D and 4D zero gravity models), treadmills, exercise cycles, and other fitness equ...
+2026-01-24 12:58:31,142 - INFO - Metadata: {'normalized_store_name': 'zero', 'group': 'Stores/Shops at Giga Mall', 'type': 'Outlet', 'floor': 2, 'store_name': 'Zero', 'category': 'Home & Lifestyle'}
+2026-01-24 12:58:31,142 - INFO - 
+--- Chunk 7 ---
+2026-01-24 12:58:31,142 - INFO - Content: Store name: Little Explorer, Floor: 2, Outlet, A children's store offering educational toys, games, and products that inspire creativity and play.
+2026-01-24 12:58:31,142 - INFO - Metadata: {'group': 'Stores/Shops at Giga Mall', 'type': 'Outlet', 'floor': 2, 'store_name': 'Little Explorer', 'normalized_store_name': 'littleexplorer', 'category': 'Toys'}
+2026-01-24 12:58:31,143 - INFO - 
+--- Chunk 8 ---
+2026-01-24 12:58:31,143 - INFO - Content: Store name: Saeed Ghani, Floor: 2, Kiosk, A heritage natural beauty and herbal wellness brand with skincare, haircare, and fragrance products rooted in traditional ingredients.
+2026-01-24 12:58:31,143 - INFO - Metadata: {'type': 'Kiosk', 'normalized_store_name': 'saeedghani', 'floor': 2, 'category': 'Beauty & Fragrances', 'group': 'Stores/Shops at Giga Mall', 'store_name': 'Saeed Ghani'}
+2026-01-24 12:58:31,143 - INFO - ================================================================================
+2026-01-24 12:58:31,144 - INFO - 
+================================================================================
+2026-01-24 12:58:31,144 - INFO - FINAL PROMPT SENT TO LLM:
+2026-01-24 12:58:31,145 - INFO - ================================================================================
+2026-01-24 12:58:31,182 - INFO - ================================================================================
+
+2026-01-24 12:58:32,518 - INFO - 
+================================================================================
+2026-01-24 12:58:32,518 - INFO - FINAL RESPONSE GENERATED (NON-STREAMING):
+2026-01-24 12:58:32,519 - INFO - ================================================================================
+2026-01-24 12:58:32,519 - INFO - Hi there! How can I assist you today? If you're looking for more fragrance options or anything else, just let me know!
+2026-01-24 12:58:32,520 - INFO - ================================================================================
+
+2026-01-24 12:58:43,173 - INFO - 
+================================================================================
+2026-01-24 12:58:43,173 - INFO - NEW USER QUERY RECEIVED (NON-STREAMING)
+2026-01-24 12:58:43,173 - INFO - ================================================================================
+2026-01-24 12:58:43,174 - INFO - Session ID: 550e8400-e29b-41d4-a716-441655440111
+2026-01-24 12:58:43,174 - INFO - User Query: hi
+2026-01-24 12:58:43,174 - INFO - Chat History Available: Yes
+2026-01-24 12:58:43,175 - INFO - Chat History:
+User: J. location?
+Assistant: You can find Giga Mall at: https://maps.app.goo.gl/2sDgo5JKupbKcbCQ6
+User: Jojo location?
+Assistant: Jojo is located on Floor 5 and is a kiosk. It's a colorful candy store offering a wide variety of bulk candies, gummies, chocolates, and sweet treats. Enjoy the vibrant setting with delightful candy displays!
+User: fragnences ?
+Assistant: Here are some fragrance stores you can find at Giga Mall:
+
+1) MTJ Fragrance - Floor 3 (Kiosk): Offers a variety of high-quality, long-lasting local perfumes for men, women, and children.
+
+2) Just Fragrance - Floor 1 (Kiosk): A specialized perfume outlet with a curated selection of local and imported fragrances for both men and women.
+
+3) Abc Fragrance - Floor 4 (Kiosk): Provides a wide selection of local and imported scents, including traditional Arabic attars and western-style designer perfumes.
+
+4) Scents and Secrets - Floor 5 (Kiosk): Dedicated to high-quality, long-lasting perfumes and aromatic oils, catering to both men and women.
+
+If you need more information about any specific store, feel free to ask!
+User: any other ?
+Assistant: I'm unable to respond to your query. Please contact Giga Mall at (051) 8491040 for assistance.
+User: any other fragnence options ?
+Assistant: Here are some additional fragrance options at Giga Mall:
+
+1) J. Fragrance and Cosmetics - Floor 3 (Kiosk): Specializes in a wide array of perfumes, colognes, and cosmetics from the well-known Pakistani brand Junaid Jamshed.
+
+2) Swiss Arabia - Floor 4 (Kiosk): Offers premium perfumes, body sprays, and traditional concentrated perfume oils (attars) with a luxurious blend of oriental and western scents.
+
+3) AMD - Floor 4 (Kiosk): Known for high-quality perfume oils (attars) and concentrated sprays, focusing on long-lasting scents.
+
+4) Bonanza Satrangi Beauty - Floor 4 (Kiosk): Offers an affordable range of makeup essentials and a variety of perfumes and body sprays.
+
+If you need more details about any specific store, just let me know!
+2026-01-24 12:58:43,175 - INFO - ================================================================================
+2026-01-24 12:58:43,607 - INFO - ================================================================================
+2026-01-24 12:58:43,608 - INFO - RETRIEVED CHUNKS:
+2026-01-24 12:58:43,608 - INFO - ================================================================================
+2026-01-24 12:58:43,608 - INFO - 
+--- Chunk 1 ---
+2026-01-24 12:58:43,609 - INFO - Content: Store name: Howdy, Floor: 5, Outlet, Wild vibes and bold flavors! A Western-themed fast-food restaurant offering delicious burgers, prawn specialties, combo deals, and classic favorites. Experience th...
+2026-01-24 12:58:43,609 - INFO - Metadata: {'floor': 5, 'group': 'Dine/ Food Court / Meal options', 'category': 'Dine/ Food Court / Meal options', 'type': 'Outlet', 'sub_category': 'Fast Food', 'store_name': 'Howdy', 'normalized_store_name': 'howdy'}
+2026-01-24 12:58:43,609 - INFO - 
+--- Chunk 2 ---
+2026-01-24 12:58:43,609 - INFO - Content: Store name: a and i, Floor: 5, Outlet, A comprehensive mobile and accessories hub specializing in the latest smartphone technology and high-quality peripherals. They offer an extensive range of protec...
+2026-01-24 12:58:43,610 - INFO - Metadata: {'store_name': 'a and i', 'category': 'Electronics', 'normalized_store_name': 'aandi', 'floor': 5, 'type': 'Outlet', 'group': 'Stores/Shops at Giga Mall'}
+2026-01-24 12:58:43,610 - INFO - 
+--- Chunk 3 ---
+2026-01-24 12:58:43,610 - INFO - Content: Store name: Hi Volts, Floor: 4, Kiosk, A retail store that specializes in electronics, gadgets, and gaming gear. They offer a range of products from various tech brands, catering to enthusiasts lookin...
+2026-01-24 12:58:43,610 - INFO - Metadata: {'normalized_store_name': 'hivolts', 'store_name': 'Hi Volts', 'floor': 4, 'category': 'Electronics', 'group': 'Stores/Shops at Giga Mall', 'type': 'Kiosk'}
+2026-01-24 12:58:43,611 - INFO - 
+--- Chunk 4 ---
+2026-01-24 12:58:43,611 - INFO - Content: Store name: Pizza Hut, Floor: 5, Outlet, World-famous pizza with fresh ingredients and signature flavors. Dine in, carry out, or enjoy delivery.
+2026-01-24 12:58:43,611 - INFO - Metadata: {'store_name': 'Pizza Hut', 'sub_category': 'Restaurant', 'category': 'Dine/ Food Court / Meal options', 'normalized_store_name': 'pizzahut', 'type': 'Outlet', 'floor': 5, 'group': 'Dine/ Food Court / Meal options'}
+2026-01-24 12:58:43,612 - INFO - 
+--- Chunk 5 ---
+2026-01-24 12:58:43,612 - INFO - Content: Store name: Mini Try, Floor: 2, Outlet, A trendy apparel brand focused on contemporary, everyday fashion styles.
+2026-01-24 12:58:43,612 - INFO - Metadata: {'store_name': 'Mini Try', 'group': 'Stores/Shops at Giga Mall', 'floor': 2, 'type': 'Outlet', 'normalized_store_name': 'minitry', 'category': 'Clothing Brands'}
+2026-01-24 12:58:43,612 - INFO - 
+--- Chunk 6 ---
+2026-01-24 12:58:43,613 - INFO - Content: Store name: Zero, Floor: 2, Outlet, A multinational health and wellness brand specializing in premium massage chairs (3D and 4D zero gravity models), treadmills, exercise cycles, and other fitness equ...
+2026-01-24 12:58:43,613 - INFO - Metadata: {'type': 'Outlet', 'group': 'Stores/Shops at Giga Mall', 'floor': 2, 'normalized_store_name': 'zero', 'store_name': 'Zero', 'category': 'Home & Lifestyle'}
+2026-01-24 12:58:43,613 - INFO - 
+--- Chunk 7 ---
+2026-01-24 12:58:43,613 - INFO - Content: Store name: Little Explorer, Floor: 2, Outlet, A children's store offering educational toys, games, and products that inspire creativity and play.
+2026-01-24 12:58:43,613 - INFO - Metadata: {'group': 'Stores/Shops at Giga Mall', 'store_name': 'Little Explorer', 'type': 'Outlet', 'floor': 2, 'category': 'Toys', 'normalized_store_name': 'littleexplorer'}
+2026-01-24 12:58:43,614 - INFO - 
+--- Chunk 8 ---
+2026-01-24 12:58:43,614 - INFO - Content: Store name: Saeed Ghani, Floor: 2, Kiosk, A heritage natural beauty and herbal wellness brand with skincare, haircare, and fragrance products rooted in traditional ingredients.
+2026-01-24 12:58:43,614 - INFO - Metadata: {'type': 'Kiosk', 'floor': 2, 'group': 'Stores/Shops at Giga Mall', 'category': 'Beauty & Fragrances', 'store_name': 'Saeed Ghani', 'normalized_store_name': 'saeedghani'}
+2026-01-24 12:58:43,614 - INFO - ================================================================================
+2026-01-24 12:58:43,615 - INFO - 
+================================================================================
+2026-01-24 12:58:43,616 - INFO - FINAL PROMPT SENT TO LLM:
+2026-01-24 12:58:43,616 - INFO - ================================================================================
+2026-01-24 12:58:43,629 - INFO - ================================================================================
+
+2026-01-24 12:58:45,986 - INFO - 
+================================================================================
+2026-01-24 12:58:45,986 - INFO - FINAL RESPONSE GENERATED (NON-STREAMING):
+2026-01-24 12:58:45,987 - INFO - ================================================================================
+2026-01-24 12:58:45,987 - INFO - Hi there! How can I assist you today? If you're looking for more fragrance options or anything else related to Giga Mall, just let me know!
+2026-01-24 12:58:45,988 - INFO - ================================================================================
+
+2026-01-24 12:58:54,875 - INFO - 
+================================================================================
+2026-01-24 12:58:54,875 - INFO - NEW USER QUERY RECEIVED (NON-STREAMING)
+2026-01-24 12:58:54,875 - INFO - ================================================================================
+2026-01-24 12:58:54,875 - INFO - Session ID: 550e8400-e29b-41d4-a716-441655410111
+2026-01-24 12:58:54,875 - INFO - User Query: hi
+2026-01-24 12:58:54,876 - INFO - Chat History Available: No
+2026-01-24 12:58:54,876 - INFO - ================================================================================
+2026-01-24 12:58:56,187 - INFO - ================================================================================
+2026-01-24 12:58:56,187 - INFO - RETRIEVED CHUNKS:
+2026-01-24 12:58:56,188 - INFO - ================================================================================
+2026-01-24 12:58:56,188 - INFO - 
+--- Chunk 1 ---
+2026-01-24 12:58:56,188 - INFO - Content: Store name: Howdy, Floor: 5, Outlet, Wild vibes and bold flavors! A Western-themed fast-food restaurant offering delicious burgers, prawn specialties, combo deals, and classic favorites. Experience th...
+2026-01-24 12:58:56,188 - INFO - Metadata: {'normalized_store_name': 'howdy', 'sub_category': 'Fast Food', 'floor': 5, 'category': 'Dine/ Food Court / Meal options', 'store_name': 'Howdy', 'type': 'Outlet', 'group': 'Dine/ Food Court / Meal options'}
+2026-01-24 12:58:56,189 - INFO - 
+--- Chunk 2 ---
+2026-01-24 12:58:56,189 - INFO - Content: Store name: a and i, Floor: 5, Outlet, A comprehensive mobile and accessories hub specializing in the latest smartphone technology and high-quality peripherals. They offer an extensive range of protec...
+2026-01-24 12:58:56,189 - INFO - Metadata: {'store_name': 'a and i', 'type': 'Outlet', 'floor': 5, 'category': 'Electronics', 'group': 'Stores/Shops at Giga Mall', 'normalized_store_name': 'aandi'}
+2026-01-24 12:58:56,190 - INFO - 
+--- Chunk 3 ---
+2026-01-24 12:58:56,190 - INFO - Content: Store name: Hi Volts, Floor: 4, Kiosk, A retail store that specializes in electronics, gadgets, and gaming gear. They offer a range of products from various tech brands, catering to enthusiasts lookin...
+2026-01-24 12:58:56,190 - INFO - Metadata: {'type': 'Kiosk', 'category': 'Electronics', 'store_name': 'Hi Volts', 'normalized_store_name': 'hivolts', 'group': 'Stores/Shops at Giga Mall', 'floor': 4}
+2026-01-24 12:58:56,191 - INFO - 
+--- Chunk 4 ---
+2026-01-24 12:58:56,191 - INFO - Content: Store name: Pizza Hut, Floor: 5, Outlet, World-famous pizza with fresh ingredients and signature flavors. Dine in, carry out, or enjoy delivery.
+2026-01-24 12:58:56,191 - INFO - Metadata: {'floor': 5, 'store_name': 'Pizza Hut', 'type': 'Outlet', 'group': 'Dine/ Food Court / Meal options', 'normalized_store_name': 'pizzahut', 'sub_category': 'Restaurant', 'category': 'Dine/ Food Court / Meal options'}
+2026-01-24 12:58:56,191 - INFO - 
+--- Chunk 5 ---
+2026-01-24 12:58:56,192 - INFO - Content: Store name: Mini Try, Floor: 2, Outlet, A trendy apparel brand focused on contemporary, everyday fashion styles.
+2026-01-24 12:58:56,192 - INFO - Metadata: {'type': 'Outlet', 'normalized_store_name': 'minitry', 'group': 'Stores/Shops at Giga Mall', 'store_name': 'Mini Try', 'floor': 2, 'category': 'Clothing Brands'}
+2026-01-24 12:58:56,192 - INFO - 
+--- Chunk 6 ---
+2026-01-24 12:58:56,192 - INFO - Content: Store name: Zero, Floor: 2, Outlet, A multinational health and wellness brand specializing in premium massage chairs (3D and 4D zero gravity models), treadmills, exercise cycles, and other fitness equ...
+2026-01-24 12:58:56,192 - INFO - Metadata: {'category': 'Home & Lifestyle', 'group': 'Stores/Shops at Giga Mall', 'type': 'Outlet', 'floor': 2, 'normalized_store_name': 'zero', 'store_name': 'Zero'}
+2026-01-24 12:58:56,192 - INFO - 
+--- Chunk 7 ---
+2026-01-24 12:58:56,193 - INFO - Content: Store name: Little Explorer, Floor: 2, Outlet, A children's store offering educational toys, games, and products that inspire creativity and play.
+2026-01-24 12:58:56,193 - INFO - Metadata: {'group': 'Stores/Shops at Giga Mall', 'store_name': 'Little Explorer', 'normalized_store_name': 'littleexplorer', 'category': 'Toys', 'floor': 2, 'type': 'Outlet'}
+2026-01-24 12:58:56,193 - INFO - 
+--- Chunk 8 ---
+2026-01-24 12:58:56,193 - INFO - Content: Store name: Saeed Ghani, Floor: 2, Kiosk, A heritage natural beauty and herbal wellness brand with skincare, haircare, and fragrance products rooted in traditional ingredients.
+2026-01-24 12:58:56,193 - INFO - Metadata: {'floor': 2, 'category': 'Beauty & Fragrances', 'normalized_store_name': 'saeedghani', 'store_name': 'Saeed Ghani', 'group': 'Stores/Shops at Giga Mall', 'type': 'Kiosk'}
+2026-01-24 12:58:56,194 - INFO - ================================================================================
+2026-01-24 12:58:56,195 - INFO - 
+================================================================================
+2026-01-24 12:58:56,195 - INFO - FINAL PROMPT SENT TO LLM:
+2026-01-24 12:58:56,195 - INFO - ================================================================================
+2026-01-24 12:58:56,208 - INFO - ================================================================================
+
+2026-01-24 12:58:57,232 - INFO - 
+================================================================================
+2026-01-24 12:58:57,232 - INFO - FINAL RESPONSE GENERATED (NON-STREAMING):
+2026-01-24 12:58:57,232 - INFO - ================================================================================
+2026-01-24 12:58:57,232 - INFO - Hi there! How can I assist you today?
+2026-01-24 12:58:57,233 - INFO - ================================================================================
+
+2026-01-24 12:59:06,596 - INFO - 
+================================================================================
+2026-01-24 12:59:06,597 - INFO - NEW USER QUERY RECEIVED (NON-STREAMING)
+2026-01-24 12:59:06,597 - INFO - ================================================================================
+2026-01-24 12:59:06,597 - INFO - Session ID: 550e8400-e29b-41d4-a716-441655410111
+2026-01-24 12:59:06,597 - INFO - User Query: any botique?
+2026-01-24 12:59:06,597 - INFO - Chat History Available: Yes
+2026-01-24 12:59:06,598 - INFO - Chat History:
+User: hi
+Assistant: Hi there! How can I assist you today?
+2026-01-24 12:59:06,598 - INFO - ================================================================================
+2026-01-24 12:59:07,079 - INFO - ================================================================================
+2026-01-24 12:59:07,080 - INFO - RETRIEVED CHUNKS:
+2026-01-24 12:59:07,080 - INFO - ================================================================================
+2026-01-24 12:59:07,080 - INFO - 
+--- Chunk 1 ---
+2026-01-24 12:59:07,081 - INFO - Content: Store name: Mip.j Store, Floor: 5, Kiosk, A boutique fashion outlet focusing on unique, trendy apparel and accessories. They offer a selection of modern silhouettes and creative designs for shoppers l...
+2026-01-24 12:59:07,081 - INFO - Metadata: {'normalized_store_name': 'mipjstore', 'type': 'Kiosk', 'group': 'Stores/Shops at Giga Mall', 'category': 'Clothing Brands', 'store_name': 'Mip.j Store', 'floor': 5}
+2026-01-24 12:59:07,081 - INFO - 
+--- Chunk 2 ---
+2026-01-24 12:59:07,081 - INFO - Content: Store name: Coppelia, Floor: 3, Outlet, A stylish boutique offering elegant jewelry and fashionable bags for women, featuring chic designs that range from everyday essentials to statement pieces for s...
+2026-01-24 12:59:07,081 - INFO - Metadata: {'category': 'Accessories', 'type': 'Outlet', 'store_name': 'Coppelia', 'normalized_store_name': 'coppelia', 'floor': 3, 'group': 'Stores/Shops at Giga Mall'}
+2026-01-24 12:59:07,082 - INFO - 
+--- Chunk 3 ---
+2026-01-24 12:59:07,082 - INFO - Content: Store name: Vereity Bags and Costmetics, Floor: 4, Kiosk, A retail outlet that offers a broad selection of fashionable bags, purses, and cosmetic brands (Variety). They cater to varied customer needs ...
+2026-01-24 12:59:07,082 - INFO - Metadata: {'normalized_store_name': 'vereitybagsandcostmetics', 'store_name': 'Vereity Bags and Costmetics', 'floor': 4, 'type': 'Kiosk', 'group': 'Stores/Shops at Giga Mall', 'category': 'Accessories'}
+2026-01-24 12:59:07,082 - INFO - 
+--- Chunk 4 ---
+2026-01-24 12:59:07,083 - INFO - Content: Store name: Younique, Floor: 2, Outlet, A lifestyle and gift shop focusing on aesthetic and "Pinterest-inspired" home décor, unique toys, stationery, and creative daily-use items like themed sippers.
+2026-01-24 12:59:07,083 - INFO - Metadata: {'floor': 2, 'category': 'Home & Lifestyle', 'store_name': 'Younique', 'group': 'Stores/Shops at Giga Mall', 'normalized_store_name': 'younique', 'type': 'Outlet'}
+2026-01-24 12:59:07,083 - INFO - 
+--- Chunk 5 ---
+2026-01-24 12:59:07,084 - INFO - Content: Store name: Taarkashi, Floor: 1, Outlet, A boutique with artisanal embroidered fabrics and modern/contemporary garments.
+2026-01-24 12:59:07,084 - INFO - Metadata: {'category': 'Clothing Brands', 'floor': 1, 'type': 'Outlet', 'normalized_store_name': 'taarkashi', 'group': 'Stores/Shops at Giga Mall', 'store_name': 'Taarkashi'}
+2026-01-24 12:59:07,084 - INFO - 
+--- Chunk 6 ---
+2026-01-24 12:59:07,084 - INFO - Content: Store name: Anamta Fateh, Floor: 5, Outlet, A boutique of elegance and handcrafted luxury, specializing in artisanal women's wear. The brand is renowned for its meticulously detailed embroidery and pr...
+2026-01-24 12:59:07,085 - INFO - Metadata: {'normalized_store_name': 'anamtafateh', 'group': 'Stores/Shops at Giga Mall', 'floor': 5, 'category': 'Clothing Brands', 'store_name': 'Anamta Fateh', 'type': 'Outlet'}
+2026-01-24 12:59:07,085 - INFO - 
+--- Chunk 7 ---
+2026-01-24 12:59:07,085 - INFO - Content: Store name: Batik Studio, Floor: 3, Outlet, A fashion brand inspired by traditional batik artistry, combining cultural textile techniques with modern clothing designs to produce unique prints and patt...
+2026-01-24 12:59:07,085 - INFO - Metadata: {'group': 'Stores/Shops at Giga Mall', 'normalized_store_name': 'batikstudio', 'category': 'Clothing Brands', 'store_name': 'Batik Studio', 'type': 'Outlet', 'floor': 3}
+2026-01-24 12:59:07,085 - INFO - 
+--- Chunk 8 ---
+2026-01-24 12:59:07,086 - INFO - Content: Store name: The Body Shop, Floor: 3, Outlet, A world-renowned beauty and skincare brand committed to ethical, cruelty-free, and sustainable products. They offer extensive lines of body butters, skin t...
+2026-01-24 12:59:07,086 - INFO - Metadata: {'category': 'Beauty & Fragrances', 'type': 'Outlet', 'floor': 3, 'group': 'Stores/Shops at Giga Mall', 'store_name': 'The Body Shop', 'normalized_store_name': 'thebodyshop'}
+2026-01-24 12:59:07,086 - INFO - ================================================================================
+2026-01-24 12:59:07,086 - INFO - 
+================================================================================
+2026-01-24 12:59:07,086 - INFO - FINAL PROMPT SENT TO LLM:
+2026-01-24 12:59:07,087 - INFO - ================================================================================
+2026-01-24 12:59:07,100 - INFO - ================================================================================
+
+2026-01-24 12:59:10,170 - INFO - 
+================================================================================
+2026-01-24 12:59:10,170 - INFO - FINAL RESPONSE GENERATED (NON-STREAMING):
+2026-01-24 12:59:10,171 - INFO - ================================================================================
+2026-01-24 12:59:10,171 - INFO - Here are some boutique options at Giga Mall:
+
+1) Mip.j Store - Floor 5 (Kiosk): A boutique fashion outlet focusing on unique, trendy apparel and accessories, offering modern silhouettes and creative designs.
+
+2) Anamta Fateh - Floor 5 (Outlet): A boutique of elegance and handcrafted luxury, specializing in artisanal women's wear with meticulously detailed embroidery and premium fabrics.
+
+3) Taarkashi - Floor 1 (Outlet): A boutique with artisanal embroidered fabrics and modern/contemporary garments.
+
+If you need more information about any specific store, feel free to ask!
+2026-01-24 12:59:10,171 - INFO - ================================================================================
+
+2026-01-24 12:59:39,772 - INFO - 
+================================================================================
+2026-01-24 12:59:39,772 - INFO - NEW USER QUERY RECEIVED (NON-STREAMING)
+2026-01-24 12:59:39,773 - INFO - ================================================================================
+2026-01-24 12:59:39,773 - INFO - Session ID: 550e8400-e29b-41d4-a716-441655410111
+2026-01-24 12:59:39,773 - INFO - User Query: i want to buy perfumes
+2026-01-24 12:59:39,773 - INFO - Chat History Available: Yes
+2026-01-24 12:59:39,774 - INFO - Chat History:
+User: hi
+Assistant: Hi there! How can I assist you today?
+User: any botique?
+Assistant: Here are some boutique options at Giga Mall:
+
+1) Mip.j Store - Floor 5 (Kiosk): A boutique fashion outlet focusing on unique, trendy apparel and accessories, offering modern silhouettes and creative designs.
+
+2) Anamta Fateh - Floor 5 (Outlet): A boutique of elegance and handcrafted luxury, specializing in artisanal women's wear with meticulously detailed embroidery and premium fabrics.
+
+3) Taarkashi - Floor 1 (Outlet): A boutique with artisanal embroidered fabrics and modern/contemporary garments.
+
+If you need more information about any specific store, feel free to ask!
+2026-01-24 12:59:39,774 - INFO - ================================================================================
+2026-01-24 12:59:40,219 - INFO - ================================================================================
+2026-01-24 12:59:40,219 - INFO - RETRIEVED CHUNKS:
+2026-01-24 12:59:40,220 - INFO - ================================================================================
+2026-01-24 12:59:40,220 - INFO - 
+--- Chunk 1 ---
+2026-01-24 12:59:40,220 - INFO - Content: Store name: Abc Fragrance, Floor: 4, Kiosk, A perfume retailer providing a wide selection of local and imported scents. They cater to varied preferences with a collection of traditional Arabic attars ...
+2026-01-24 12:59:40,221 - INFO - Metadata: {'normalized_store_name': 'abcfragrance', 'group': 'Stores/Shops at Giga Mall', 'store_name': 'Abc Fragrance', 'type': 'Kiosk', 'category': 'Beauty & Fragrances', 'floor': 4}
+2026-01-24 12:59:40,221 - INFO - 
+--- Chunk 2 ---
+2026-01-24 12:59:40,222 - INFO - Content: Store name: Just Fragrance, Floor: 1, Kiosk, A specialized perfume outlet offering a curated selection of scents. They provide a variety of local and imported fragrances, ranging from long-lasting off...
+2026-01-24 12:59:40,222 - INFO - Metadata: {'store_name': 'Just Fragrance', 'category': 'Beauty & Fragrances', 'group': 'Stores/Shops at Giga Mall', 'type': 'Kiosk', 'normalized_store_name': 'justfragrance', 'floor': 1}
+2026-01-24 12:59:40,222 - INFO - 
+--- Chunk 3 ---
+2026-01-24 12:59:40,222 - INFO - Content: Store name: Scents and Secrets, Floor: 5, Kiosk, A specialized fragrance house dedicated to high-quality, long-lasting perfumes and aromatic oils. They offer a diverse palette of scents, from designer...
+2026-01-24 12:59:40,222 - INFO - Metadata: {'store_name': 'Scents and Secrets', 'type': 'Kiosk', 'floor': 5, 'group': 'Stores/Shops at Giga Mall', 'normalized_store_name': 'scentsandsecrets', 'category': 'Beauty & Fragrances'}
+2026-01-24 12:59:40,223 - INFO - 
+--- Chunk 4 ---
+2026-01-24 12:59:40,223 - INFO - Content: Store name: Swiss Arabia, Floor: 4, Kiosk, A fragrance house that specializes in premium perfumes, body sprays, and traditional concentrated perfume oils (attars). They offer a luxurious blend of orie...
+2026-01-24 12:59:40,223 - INFO - Metadata: {'group': 'Stores/Shops at Giga Mall', 'category': 'Beauty & Fragrances', 'store_name': 'Swiss Arabia', 'floor': 4, 'type': 'Kiosk', 'normalized_store_name': 'swissarabia'}
+2026-01-24 12:59:40,223 - INFO - 
+--- Chunk 5 ---
+2026-01-24 12:59:40,223 - INFO - Content: Store name: Scents and Stories, Floor: 3, Kiosk, A perfume brand that focuses on creating unique and evocative fragrances, often drawing inspiration from various narratives or places. They offer both ...
+2026-01-24 12:59:40,224 - INFO - Metadata: {'normalized_store_name': 'scentsandstories', 'floor': 3, 'group': 'Stores/Shops at Giga Mall', 'store_name': 'Scents and Stories', 'type': 'Kiosk', 'category': 'Beauty & Fragrances'}
+2026-01-24 12:59:40,224 - INFO - 
+--- Chunk 6 ---
+2026-01-24 12:59:40,224 - INFO - Content: Store name: MTJ Fragrance, Floor: 3, Kiosk, MTJ Fragrances offers a variety of high-quality, long-lasting local perfumes for men, women, and children. They feature diverse scent profiles from fresh wo...
+2026-01-24 12:59:40,224 - INFO - Metadata: {'normalized_store_name': 'mtjfragrance', 'type': 'Kiosk', 'floor': 3, 'group': 'Stores/Shops at Giga Mall', 'store_name': 'MTJ Fragrance', 'category': 'Beauty & Fragrances'}
+2026-01-24 12:59:40,224 - INFO - 
+--- Chunk 7 ---
+2026-01-24 12:59:40,225 - INFO - Content: Store name: AMD, Floor: 4, Kiosk, A specialized fragrance house known for high-quality perfume oils (attars) and concentrated sprays. They focus on long-lasting scents, offering a wide palette ranging...
+2026-01-24 12:59:40,225 - INFO - Metadata: {'store_name': 'AMD', 'type': 'Kiosk', 'normalized_store_name': 'amd', 'floor': 4, 'category': 'Beauty & Fragrances', 'group': 'Stores/Shops at Giga Mall'}
+2026-01-24 12:59:40,225 - INFO - 
+--- Chunk 8 ---
+2026-01-24 12:59:40,226 - INFO - Content: Store name: J. Fragrance and Costmetics, Floor: 3, Kiosk, Part of the well-known Pakistani brand Junaid Jamshed, this section specializes in a wide array of perfumes, colognes, and cosmetics. They off...
+2026-01-24 12:59:40,226 - INFO - Metadata: {'type': 'Kiosk', 'category': 'Beauty & Fragrances', 'normalized_store_name': 'jfragranceandcostmetics', 'floor': 3, 'store_name': 'J. Fragrance and Costmetics', 'group': 'Stores/Shops at Giga Mall'}
+2026-01-24 12:59:40,226 - INFO - ================================================================================
+2026-01-24 12:59:40,227 - INFO - 
+================================================================================
+2026-01-24 12:59:40,227 - INFO - FINAL PROMPT SENT TO LLM:
+2026-01-24 12:59:40,227 - INFO - ================================================================================
+2026-01-24 12:59:40,241 - INFO - ================================================================================
+
+2026-01-24 12:59:45,017 - INFO - 
+================================================================================
+2026-01-24 12:59:45,017 - INFO - FINAL RESPONSE GENERATED (NON-STREAMING):
+2026-01-24 12:59:45,017 - INFO - ================================================================================
+2026-01-24 12:59:45,017 - INFO - Here are some great perfume stores at Giga Mall where you can find a variety of scents:
+
+1) Abc Fragrance - Floor 4 (Kiosk): A perfume retailer providing a wide selection of local and imported scents, including traditional Arabic attars and western-style designer perfumes.
+
+2) Just Fragrance - Floor 1 (Kiosk): A specialized perfume outlet offering a curated selection of scents, from long-lasting office wear to premium evening perfumes for both men and women.
+
+3) Scents and Secrets - Floor 5 (Kiosk): A fragrance house dedicated to high-quality, long-lasting perfumes and aromatic oils, offering a diverse palette of scents for both men and women.
+
+4) Swiss Arabia - Floor 4 (Kiosk): A fragrance house specializing in premium perfumes, body sprays, and traditional concentrated perfume oils (attars) with a luxurious blend of oriental and western scents.
+
+If you need more information about any specific store, just let me know!
+2026-01-24 12:59:45,018 - INFO - ================================================================================
+
+2026-01-24 13:00:52,814 - INFO - 
+================================================================================
+2026-01-24 13:00:52,815 - INFO - NEW USER QUERY RECEIVED (NON-STREAMING)
+2026-01-24 13:00:52,815 - INFO - ================================================================================
+2026-01-24 13:00:52,815 - INFO - Session ID: 550e8400-e29b-41d4-a716-441655410111
+2026-01-24 13:00:52,816 - INFO - User Query: any other
+2026-01-24 13:00:52,816 - INFO - Chat History Available: Yes
+2026-01-24 13:00:52,816 - INFO - Chat History:
+User: hi
+Assistant: Hi there! How can I assist you today?
+User: any botique?
+Assistant: Here are some boutique options at Giga Mall:
+
+1) Mip.j Store - Floor 5 (Kiosk): A boutique fashion outlet focusing on unique, trendy apparel and accessories, offering modern silhouettes and creative designs.
+
+2) Anamta Fateh - Floor 5 (Outlet): A boutique of elegance and handcrafted luxury, specializing in artisanal women's wear with meticulously detailed embroidery and premium fabrics.
+
+3) Taarkashi - Floor 1 (Outlet): A boutique with artisanal embroidered fabrics and modern/contemporary garments.
+
+If you need more information about any specific store, feel free to ask!
+User: i want to buy perfumes
+Assistant: Here are some great perfume stores at Giga Mall where you can find a variety of scents:
+
+1) Abc Fragrance - Floor 4 (Kiosk): A perfume retailer providing a wide selection of local and imported scents, including traditional Arabic attars and western-style designer perfumes.
+
+2) Just Fragrance - Floor 1 (Kiosk): A specialized perfume outlet offering a curated selection of scents, from long-lasting office wear to premium evening perfumes for both men and women.
+
+3) Scents and Secrets - Floor 5 (Kiosk): A fragrance house dedicated to high-quality, long-lasting perfumes and aromatic oils, offering a diverse palette of scents for both men and women.
+
+4) Swiss Arabia - Floor 4 (Kiosk): A fragrance house specializing in premium perfumes, body sprays, and traditional concentrated perfume oils (attars) with a luxurious blend of oriental and western scents.
+
+If you need more information about any specific store, just let me know!
+2026-01-24 13:00:52,816 - INFO - ================================================================================
+2026-01-24 13:00:53,528 - INFO - ================================================================================
+2026-01-24 13:00:53,529 - INFO - RETRIEVED CHUNKS:
+2026-01-24 13:00:53,529 - INFO - ================================================================================
+2026-01-24 13:00:53,529 - INFO - 
+--- Chunk 1 ---
+2026-01-24 13:00:53,530 - INFO - Content: Store name: a and i, Floor: 5, Outlet, A comprehensive mobile and accessories hub specializing in the latest smartphone technology and high-quality peripherals. They offer an extensive range of protec...
+2026-01-24 13:00:53,530 - INFO - Metadata: {'store_name': 'a and i', 'floor': 5, 'group': 'Stores/Shops at Giga Mall', 'category': 'Electronics', 'normalized_store_name': 'aandi', 'type': 'Outlet'}
+2026-01-24 13:00:53,530 - INFO - 
+--- Chunk 2 ---
+2026-01-24 13:00:53,530 - INFO - Content: Store name: Mr Kazi, Floor: 2, Outlet, A mobile accessories shop offering phone cases, chargers, cables, headphones, and tech gadgets.
+2026-01-24 13:00:53,531 - INFO - Metadata: {'group': 'Stores/Shops at Giga Mall', 'floor': 2, 'store_name': 'Mr Kazi', 'category': 'Electronics', 'type': 'Outlet', 'normalized_store_name': 'mrkazi'}
+2026-01-24 13:00:53,531 - INFO - 
+--- Chunk 3 ---
+2026-01-24 13:00:53,531 - INFO - Content: Store name: Howdy, Floor: 5, Outlet, Wild vibes and bold flavors! A Western-themed fast-food restaurant offering delicious burgers, prawn specialties, combo deals, and classic favorites. Experience th...
+2026-01-24 13:00:53,532 - INFO - Metadata: {'category': 'Dine/ Food Court / Meal options', 'store_name': 'Howdy', 'normalized_store_name': 'howdy', 'group': 'Dine/ Food Court / Meal options', 'sub_category': 'Fast Food', 'type': 'Outlet', 'floor': 5}
+2026-01-24 13:00:53,532 - INFO - 
+--- Chunk 4 ---
+2026-01-24 13:00:53,532 - INFO - Content: Store name: Mayblline, Floor: 3, Kiosk, A global cosmetics giant available at various beauty counters or within major department stores in the mall. It offers the latest international trends in makeup...
+2026-01-24 13:00:53,532 - INFO - Metadata: {'normalized_store_name': 'mayblline', 'floor': 3, 'store_name': 'Mayblline', 'group': 'Stores/Shops at Giga Mall', 'type': 'Kiosk', 'category': 'Beauty & Fragrances'}
+2026-01-24 13:00:53,532 - INFO - 
+--- Chunk 5 ---
+2026-01-24 13:00:53,532 - INFO - Content: Store name: Younique, Floor: 2, Outlet, A lifestyle and gift shop focusing on aesthetic and "Pinterest-inspired" home décor, unique toys, stationery, and creative daily-use items like themed sippers.
+2026-01-24 13:00:53,533 - INFO - Metadata: {'store_name': 'Younique', 'category': 'Home & Lifestyle', 'normalized_store_name': 'younique', 'floor': 2, 'type': 'Outlet', 'group': 'Stores/Shops at Giga Mall'}
+2026-01-24 13:00:53,533 - INFO - 
+--- Chunk 6 ---
+2026-01-24 13:00:53,533 - INFO - Content: Store name: Service, Floor: 2, Outlet, A footwear brand offering all kinds of footwear for men, women, and children.
+2026-01-24 13:00:53,533 - INFO - Metadata: {'normalized_store_name': 'service', 'floor': 2, 'group': 'Stores/Shops at Giga Mall', 'type': 'Outlet', 'category': 'Footwear/Shoes', 'store_name': 'Service'}
+2026-01-24 13:00:53,533 - INFO - 
+--- Chunk 7 ---
+2026-01-24 13:00:53,534 - INFO - Content: Store name: Mr Game, Floor: 3, Outlet, A dedicated center for gaming enthusiasts, offering the latest video game consoles (PlayStation, Xbox, Nintendo), popular gaming titles, and high-performance gam...
+2026-01-24 13:00:53,534 - INFO - Metadata: {'category': 'Electronics', 'floor': 3, 'normalized_store_name': 'mrgame', 'group': 'Stores/Shops at Giga Mall', 'type': 'Outlet', 'store_name': 'Mr Game'}
+2026-01-24 13:00:53,534 - INFO - 
+--- Chunk 8 ---
+2026-01-24 13:00:53,534 - INFO - Content: Store name: Alpha Accessories, Floor: 1, Kiosk, A fashion accessories store offering bags, jewelry, and trendy everyday essentials.
+2026-01-24 13:00:53,535 - INFO - Metadata: {'group': 'Stores/Shops at Giga Mall', 'store_name': 'Alpha Accessories', 'type': 'Kiosk', 'floor': 1, 'normalized_store_name': 'alphaaccessories', 'category': 'Accessories'}
+2026-01-24 13:00:53,535 - INFO - ================================================================================
+2026-01-24 13:00:53,536 - INFO - 
+================================================================================
+2026-01-24 13:00:53,536 - INFO - FINAL PROMPT SENT TO LLM:
+2026-01-24 13:00:53,536 - INFO - ================================================================================
+2026-01-24 13:00:53,550 - INFO - ================================================================================
+
+2026-01-24 13:00:58,468 - INFO - 
+================================================================================
+2026-01-24 13:00:58,468 - INFO - FINAL RESPONSE GENERATED (NON-STREAMING):
+2026-01-24 13:00:58,468 - INFO - ================================================================================
+2026-01-24 13:00:58,468 - INFO - Here are a few more stores at Giga Mall that you might find interesting:
+
+1) Alpha Accessories - Floor 1 (Kiosk): A fashion accessories store offering bags, jewelry, and trendy everyday essentials.
+
+2) Mr Game - Floor 3 (Outlet): A dedicated center for gaming enthusiasts, offering the latest video game consoles, popular gaming titles, and high-performance gaming accessories.
+
+3) Mayblline - Floor 3 (Kiosk): A global cosmetics giant offering the latest international trends in makeup, including their famous foundations, mascaras, and lipsticks.
+
+If you need more information about any specific store or category, just let me know!
+2026-01-24 13:00:58,469 - INFO - ================================================================================
+
+2026-01-24 13:01:12,450 - INFO - 
+================================================================================
+2026-01-24 13:01:12,451 - INFO - NEW USER QUERY RECEIVED (NON-STREAMING)
+2026-01-24 13:01:12,451 - INFO - ================================================================================
+2026-01-24 13:01:12,451 - INFO - Session ID: 550e8400-e29b-41d4-a716-441655410111
+2026-01-24 13:01:12,451 - INFO - User Query: any other fragnecnaes
+2026-01-24 13:01:12,451 - INFO - Chat History Available: Yes
+2026-01-24 13:01:12,452 - INFO - Chat History:
+User: hi
+Assistant: Hi there! How can I assist you today?
+User: any botique?
+Assistant: Here are some boutique options at Giga Mall:
+
+1) Mip.j Store - Floor 5 (Kiosk): A boutique fashion outlet focusing on unique, trendy apparel and accessories, offering modern silhouettes and creative designs.
+
+2) Anamta Fateh - Floor 5 (Outlet): A boutique of elegance and handcrafted luxury, specializing in artisanal women's wear with meticulously detailed embroidery and premium fabrics.
+
+3) Taarkashi - Floor 1 (Outlet): A boutique with artisanal embroidered fabrics and modern/contemporary garments.
+
+If you need more information about any specific store, feel free to ask!
+User: i want to buy perfumes
+Assistant: Here are some great perfume stores at Giga Mall where you can find a variety of scents:
+
+1) Abc Fragrance - Floor 4 (Kiosk): A perfume retailer providing a wide selection of local and imported scents, including traditional Arabic attars and western-style designer perfumes.
+
+2) Just Fragrance - Floor 1 (Kiosk): A specialized perfume outlet offering a curated selection of scents, from long-lasting office wear to premium evening perfumes for both men and women.
+
+3) Scents and Secrets - Floor 5 (Kiosk): A fragrance house dedicated to high-quality, long-lasting perfumes and aromatic oils, offering a diverse palette of scents for both men and women.
+
+4) Swiss Arabia - Floor 4 (Kiosk): A fragrance house specializing in premium perfumes, body sprays, and traditional concentrated perfume oils (attars) with a luxurious blend of oriental and western scents.
+
+If you need more information about any specific store, just let me know!
+User: any other
+Assistant: Here are a few more stores at Giga Mall that you might find interesting:
+
+1) Alpha Accessories - Floor 1 (Kiosk): A fashion accessories store offering bags, jewelry, and trendy everyday essentials.
+
+2) Mr Game - Floor 3 (Outlet): A dedicated center for gaming enthusiasts, offering the latest video game consoles, popular gaming titles, and high-performance gaming accessories.
+
+3) Mayblline - Floor 3 (Kiosk): A global cosmetics giant offering the latest international trends in makeup, including their famous foundations, mascaras, and lipsticks.
+
+If you need more information about any specific store or category, just let me know!
+2026-01-24 13:01:12,453 - INFO - ================================================================================
+2026-01-24 13:01:12,940 - INFO - ================================================================================
+2026-01-24 13:01:12,940 - INFO - RETRIEVED CHUNKS:
+2026-01-24 13:01:12,940 - INFO - ================================================================================
+2026-01-24 13:01:12,941 - INFO - 
+--- Chunk 1 ---
+2026-01-24 13:01:12,941 - INFO - Content: Store name: Abc Fragrance, Floor: 4, Kiosk, A perfume retailer providing a wide selection of local and imported scents. They cater to varied preferences with a collection of traditional Arabic attars ...
+2026-01-24 13:01:12,941 - INFO - Metadata: {'group': 'Stores/Shops at Giga Mall', 'category': 'Beauty & Fragrances', 'store_name': 'Abc Fragrance', 'type': 'Kiosk', 'normalized_store_name': 'abcfragrance', 'floor': 4}
+2026-01-24 13:01:12,941 - INFO - 
+--- Chunk 2 ---
+2026-01-24 13:01:12,941 - INFO - Content: Store name: Swiss Arabia, Floor: 4, Kiosk, A fragrance house that specializes in premium perfumes, body sprays, and traditional concentrated perfume oils (attars). They offer a luxurious blend of orie...
+2026-01-24 13:01:12,942 - INFO - Metadata: {'floor': 4, 'group': 'Stores/Shops at Giga Mall', 'type': 'Kiosk', 'store_name': 'Swiss Arabia', 'normalized_store_name': 'swissarabia', 'category': 'Beauty & Fragrances'}
+2026-01-24 13:01:12,942 - INFO - 
+--- Chunk 3 ---
+2026-01-24 13:01:12,942 - INFO - Content: Store name: Just Fragrance, Floor: 1, Kiosk, A specialized perfume outlet offering a curated selection of scents. They provide a variety of local and imported fragrances, ranging from long-lasting off...
+2026-01-24 13:01:12,942 - INFO - Metadata: {'store_name': 'Just Fragrance', 'group': 'Stores/Shops at Giga Mall', 'type': 'Kiosk', 'floor': 1, 'category': 'Beauty & Fragrances', 'normalized_store_name': 'justfragrance'}
+2026-01-24 13:01:12,942 - INFO - 
+--- Chunk 4 ---
+2026-01-24 13:01:12,942 - INFO - Content: Store name: MTJ Fragrance, Floor: 3, Kiosk, MTJ Fragrances offers a variety of high-quality, long-lasting local perfumes for men, women, and children. They feature diverse scent profiles from fresh wo...
+2026-01-24 13:01:12,943 - INFO - Metadata: {'category': 'Beauty & Fragrances', 'normalized_store_name': 'mtjfragrance', 'type': 'Kiosk', 'store_name': 'MTJ Fragrance', 'group': 'Stores/Shops at Giga Mall', 'floor': 3}
+2026-01-24 13:01:12,943 - INFO - 
+--- Chunk 5 ---
+2026-01-24 13:01:12,943 - INFO - Content: Store name: Frutastic, Floor: 4, Kiosk, Fresh, natural juices made from the finest fruits. Enjoy a variety of healthy options including orange, apple, sugarcane, and more. Refreshing and nutritious be...
+2026-01-24 13:01:12,943 - INFO - Metadata: {'store_name': 'Frutastic', 'sub_category': 'Juice Bar', 'group': 'Dine/ Food Court / Meal options', 'category': 'Dine/ Food Court / Meal options', 'type': 'Kiosk', 'floor': 4, 'normalized_store_name': 'frutastic'}
+2026-01-24 13:01:12,944 - INFO - 
+--- Chunk 6 ---
+2026-01-24 13:01:12,944 - INFO - Content: Store name: AMD, Floor: 4, Kiosk, A specialized fragrance house known for high-quality perfume oils (attars) and concentrated sprays. They focus on long-lasting scents, offering a wide palette ranging...
+2026-01-24 13:01:12,944 - INFO - Metadata: {'category': 'Beauty & Fragrances', 'normalized_store_name': 'amd', 'type': 'Kiosk', 'floor': 4, 'store_name': 'AMD', 'group': 'Stores/Shops at Giga Mall'}
+2026-01-24 13:01:12,944 - INFO - 
+--- Chunk 7 ---
+2026-01-24 13:01:12,944 - INFO - Content: Store name: J. Fragrance and Costmetics, Floor: 3, Kiosk, Part of the well-known Pakistani brand Junaid Jamshed, this section specializes in a wide array of perfumes, colognes, and cosmetics. They off...
+2026-01-24 13:01:12,944 - INFO - Metadata: {'category': 'Beauty & Fragrances', 'group': 'Stores/Shops at Giga Mall', 'store_name': 'J. Fragrance and Costmetics', 'type': 'Kiosk', 'floor': 3, 'normalized_store_name': 'jfragranceandcostmetics'}
+2026-01-24 13:01:12,944 - INFO - 
+--- Chunk 8 ---
+2026-01-24 13:01:12,944 - INFO - Content: Store name: The Potato Factory, Floor: 4, Kiosk, A specialty snack stall offering delicious fries in various styles. Enjoy original fries, twister fries, and other potato specialties served fresh and ...
+2026-01-24 13:01:12,944 - INFO - Metadata: {'type': 'Kiosk', 'normalized_store_name': 'thepotatofactory', 'sub_category': 'Fast Food', 'floor': 4, 'category': 'Dine/ Food Court / Meal options', 'group': 'Dine/ Food Court / Meal options', 'store_name': 'The Potato Factory'}
+2026-01-24 13:01:12,945 - INFO - ================================================================================
+2026-01-24 13:01:12,945 - INFO - 
+================================================================================
+2026-01-24 13:01:12,946 - INFO - FINAL PROMPT SENT TO LLM:
+2026-01-24 13:01:12,946 - INFO - ================================================================================
+2026-01-24 13:01:12,960 - INFO - ================================================================================
+
+2026-01-24 13:01:17,491 - INFO - 
+================================================================================
+2026-01-24 13:01:17,491 - INFO - FINAL RESPONSE GENERATED (NON-STREAMING):
+2026-01-24 13:01:17,491 - INFO - ================================================================================
+2026-01-24 13:01:17,492 - INFO - Here are a few more fragrance stores at Giga Mall that you might find interesting:
+
+1) MTJ Fragrance - Floor 3 (Kiosk): Offers a variety of high-quality, long-lasting local perfumes for men, women, and children, featuring diverse scent profiles from fresh woody aromatics to oriental ouds.
+
+2) AMD - Floor 4 (Kiosk): A specialized fragrance house known for high-quality perfume oils (attars) and concentrated sprays, focusing on long-lasting scents with a wide palette ranging from deep oriental ouds to fresh floral blends.
+
+3) J. Fragrance and Cosmetics - Floor 3 (Kiosk): Part of the well-known Pakistani brand Junaid Jamshed, specializing in a wide array of perfumes, colognes, and cosmetics with popular local signature scents.
+
+If you need more information about any specific store, feel free to ask!
+2026-01-24 13:01:17,492 - INFO - ================================================================================
+
+2026-01-24 13:01:44,657 - INFO - 
+================================================================================
+2026-01-24 13:01:44,658 - INFO - NEW USER QUERY RECEIVED (NON-STREAMING)
+2026-01-24 13:01:44,658 - INFO - ================================================================================
+2026-01-24 13:01:44,658 - INFO - Session ID: 550e8400-e21b-41d4-a716-441655410111
+2026-01-24 13:01:44,659 - INFO - User Query: j. location
+2026-01-24 13:01:44,659 - INFO - Chat History Available: No
+2026-01-24 13:01:44,659 - INFO - ================================================================================
+2026-01-24 13:01:45,226 - INFO - ================================================================================
+2026-01-24 13:01:45,227 - INFO - RETRIEVED CHUNKS:
+2026-01-24 13:01:45,227 - INFO - ================================================================================
+2026-01-24 13:01:45,227 - INFO - 
+--- Chunk 1 ---
+2026-01-24 13:01:45,227 - INFO - Content: Store name: Jiyas Creation, Floor: 4, Outlet, A boutique store known for unique and custom-designed apparel, focusing on women's ethnic wear. They provide a bespoke feel to their collections, blending...
+2026-01-24 13:01:45,227 - INFO - Metadata: {'normalized_store_name': 'jiyascreation', 'category': 'Clothing Brands', 'group': 'Stores/Shops at Giga Mall', 'store_name': 'Jiyas Creation', 'floor': 4, 'type': 'Outlet'}
+2026-01-24 13:01:45,228 - INFO - 
+--- Chunk 2 ---
+2026-01-24 13:01:45,228 - INFO - Content: Store name: Jockey, Floor: 5, Outlet, An internationally renowned innerwear and leisurewear brand. Known for exceptional comfort and quality, they offer a wide range of premium underwear, activewear, ...
+2026-01-24 13:01:45,228 - INFO - Metadata: {'floor': 5, 'store_name': 'Jockey', 'type': 'Outlet', 'group': 'Stores/Shops at Giga Mall', 'category': 'Clothing Brands', 'normalized_store_name': 'jockey'}
+2026-01-24 13:01:45,229 - INFO - 
+--- Chunk 3 ---
+2026-01-24 13:01:45,229 - INFO - Content: Store name: Chachajee, Floor: 5, Outlet, A beloved local favorite serving delicious traditional dishes with a modern twist.
+2026-01-24 13:01:45,229 - INFO - Metadata: {'normalized_store_name': 'chachajee', 'category': 'Dine/ Food Court / Meal options', 'type': 'Outlet', 'floor': 5, 'group': 'Dine/ Food Court / Meal options', 'sub_category': 'Restaurant', 'store_name': 'Chachajee'}
+2026-01-24 13:01:45,229 - INFO - 
+--- Chunk 4 ---
+2026-01-24 13:01:45,230 - INFO - Content: Store name: Location, Floor: 2, Outlet, A fully independent men's street wear brand based in the UK. Since its launch, it has fused sportswear with urban streetwear in order to produce clothing that i...
+2026-01-24 13:01:45,230 - INFO - Metadata: {'category': 'Clothing Brands', 'normalized_store_name': 'location', 'floor': 2, 'group': 'Stores/Shops at Giga Mall', 'store_name': 'Location', 'type': 'Outlet'}
+2026-01-24 13:01:45,230 - INFO - 
+--- Chunk 5 ---
+2026-01-24 13:01:45,230 - INFO - Content: Store name: Jelly Factory, Floor: 2, Kiosk, A vibrant candy and ice cream cart offering a wide selection of colorful candies, jellies, gummy treats, slushies, and ice cream. Discover sweet delights fr...
+2026-01-24 13:01:45,230 - INFO - Metadata: {'category': 'Dine/ Food Court / Meal options', 'type': 'Kiosk', 'floor': 2, 'store_name': 'Jelly Factory', 'normalized_store_name': 'jellyfactory', 'sub_category': 'Desserts & Beverages', 'group': 'Dine/ Food Court / Meal options'}
+2026-01-24 13:01:45,230 - INFO - 
+--- Chunk 6 ---
+2026-01-24 13:01:45,230 - INFO - Content: Store name: J. Fragrance and Costmetics, Floor: 3, Kiosk, Part of the well-known Pakistani brand Junaid Jamshed, this section specializes in a wide array of perfumes, colognes, and cosmetics. They off...
+2026-01-24 13:01:45,231 - INFO - Metadata: {'normalized_store_name': 'jfragranceandcostmetics', 'category': 'Beauty & Fragrances', 'store_name': 'J. Fragrance and Costmetics', 'group': 'Stores/Shops at Giga Mall', 'type': 'Kiosk', 'floor': 3}
+2026-01-24 13:01:45,231 - INFO - 
+--- Chunk 7 ---
+2026-01-24 13:01:45,231 - INFO - Content: Store name: Johri, Floor: 2, Outlet, A traditional jewelry brand specializing in authentic gold and gemstone pieces. They are known for intricate bridal sets and fine jewelry that emphasizes classic P...
+2026-01-24 13:01:45,231 - INFO - Metadata: {'type': 'Outlet', 'category': 'Jewelry', 'normalized_store_name': 'johri', 'floor': 2, 'group': 'Stores/Shops at Giga Mall', 'store_name': 'Johri'}
+2026-01-24 13:01:45,231 - INFO - 
+--- Chunk 8 ---
+2026-01-24 13:01:45,231 - INFO - Content: Store name: Juices Land, Floor: 5, Kiosk, A tropical-themed juice bar offering fresh fruit juices, bubble tea, milk tea, and healthy beverages. Enjoy a wide selection of fresh juices made from pomegra...
+2026-01-24 13:01:45,231 - INFO - Metadata: {'sub_category': 'Juice Bar', 'normalized_store_name': 'juicesland', 'store_name': 'Juices Land', 'category': 'Dine/ Food Court / Meal options', 'floor': 5, 'group': 'Dine/ Food Court / Meal options', 'type': 'Kiosk'}
+2026-01-24 13:01:45,232 - INFO - ================================================================================
+2026-01-24 13:01:45,233 - INFO - 
+================================================================================
+2026-01-24 13:01:45,233 - INFO - FINAL PROMPT SENT TO LLM:
+2026-01-24 13:01:45,233 - INFO - ================================================================================
+2026-01-24 13:01:45,247 - INFO - ================================================================================
+
+2026-01-24 13:01:52,714 - INFO - 
+================================================================================
+2026-01-24 13:01:52,714 - INFO - FINAL RESPONSE GENERATED (NON-STREAMING):
+2026-01-24 13:01:52,714 - INFO - ================================================================================
+2026-01-24 13:01:52,715 - INFO - J. Fragrance and Cosmetics - Floor 3 (Kiosk): Part of the well-known Pakistani brand Junaid Jamshed, this section specializes in a wide array of perfumes, colognes, and cosmetics. They offer signature scents and makeup products that are popular locally.
+
+If you're looking for more options, let me know!
+2026-01-24 13:01:52,715 - INFO - ================================================================================
+
