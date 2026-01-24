@@ -38,6 +38,7 @@ logging.basicConfig(
 )
 
 history_logger = logging.getLogger("chat_history")
+logger = logging.getLogger(__name__)
 
 # ============================================================================
 # FastAPI App Setup

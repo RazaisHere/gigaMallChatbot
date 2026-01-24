@@ -333,3 +333,8 @@ pip install python-multipart
 2026-01-23 16:20:22,609 - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
 2026-01-23 16:24:26,944 - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
 2026-01-23 16:24:29,264 - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-24 11:57:57,596 - Deleted existing ChromaDB directory for fresh start
+2026-01-24 11:57:57,600 - Saved new markdown file: fileUploaded\2b251393-6acc-4937-856a-a367d7d7a450_mallinfo2.md
+2026-01-24 11:58:01,169 - Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+2026-01-24 11:58:07,047 - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-01-24 11:58:09,813 - RAG pipeline completed - new ChromaDB created
