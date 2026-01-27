@@ -292,7 +292,7 @@ Use the conversation history above to understand the context of the current ques
         chat_history_section = ""
 
     prompt = ChatPromptTemplate.from_template(prompt_template)
-
+    #test
     # Build chain with context, question, and chat history
     def format_inputs(inputs: dict) -> dict:
         """Format inputs for the prompt and log the final prompt"""
