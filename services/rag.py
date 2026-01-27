@@ -140,7 +140,9 @@ def _parse_store_documents(markdown_text: str) -> List[Document]:
         if "top pick" in desc_lower:
             keywords.append("Top Pick")
         
-        current_store_metadata["tags"] = keywords
+        # Convert tags list to comma-separated string for ChromaDB compatibility
+        # ChromaDB only accepts str, int, float, bool, or None in metadata
+        current_store_metadata["tags"] = ", ".join(keywords) if keywords else ""
 
         docs.append(
             Document(
@@ -300,7 +302,7 @@ def build_retriever_from_markdown(file_path: str) -> Any:
     for doc in chunks:
         category = doc.metadata.get("category", "")
         sub_category = doc.metadata.get("sub_category", "")
-        tags = doc.metadata.get("tags", [])
+        tags = doc.metadata.get("tags", "")  # tags is now a comma-separated string
         
         # Build additional context string
         context_parts = []
@@ -309,8 +311,7 @@ def build_retriever_from_markdown(file_path: str) -> Any:
         if sub_category:
             context_parts.append(f"Subcategory: {sub_category}")
         if tags:
-            tag_text = ", ".join(tags)
-            context_parts.append(f"Tags: {tag_text}")
+            context_parts.append(f"Tags: {tags}")
         
         # Append context to page_content so it's included in embeddings
         if context_parts:

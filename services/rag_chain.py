@@ -60,7 +60,7 @@ def _format_docs(docs: List[Any]) -> str:
         rag_logger.info(f"Type: {metadata.get('type', 'N/A')}")
         rag_logger.info(f"Category: {metadata.get('category', 'N/A')}")
         rag_logger.info(f"Sub-Category: {metadata.get('sub_category', 'N/A')}")
-        rag_logger.info(f"Tags: {metadata.get('tags', [])}")
+        rag_logger.info(f"Tags: {metadata.get('tags', 'N/A')}")
         rag_logger.info(f"\nFull Content:\n{page_content}")
         rag_logger.info("-" * 80)
     rag_logger.info("=" * 80 + "\n")
