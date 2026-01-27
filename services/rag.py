@@ -135,9 +135,11 @@ def _parse_store_documents(markdown_text: str) -> List[Document]:
             keywords.append("Fast Fashion")
         if "couture" in desc_lower:
             keywords.append("Couture")
-            
+        
+        # Detect Top Pick / Recommended stores
         if "top pick" in desc_lower:
-        keywords.append("Top Pick")
+            keywords.append("Top Pick")
+        
         current_store_metadata["tags"] = keywords
 
         docs.append(
