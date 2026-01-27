@@ -218,15 +218,32 @@ def build_retriever_from_markdown(file_path: str) -> Any:
     # 4. Create embeddings using text-embedding-ada-002
     embeddings = OpenAIEmbeddings(model="text-embedding-ada-002")
 
-    # 5. Create chromadb directory for persistent storage
+    # 5. Ensure chromadb directory exists for persistent storage
     chroma_db_dir = Path("chromadb")
     chroma_db_dir.mkdir(exist_ok=True)
 
-    # 6. Vector store with persistent Chroma DB
+    # Use a fixed collection name so we can overwrite contents on each upload
+    collection_name = "giga_mall_rag"
+
+    # 5a. If collection already exists, clear its contents instead of deleting files
+    try:
+        existing_vs = Chroma(
+            persist_directory=str(chroma_db_dir),
+            embedding_function=embeddings,
+            collection_name=collection_name,
+        )
+        # delete all existing docs in this collection
+        existing_vs.delete(where={})
+    except Exception:
+        # If collection doesn't exist yet, ignore
+        pass
+
+    # 6. Vector store with persistent Chroma DB for the new document
     vectorstore = Chroma.from_documents(
         documents=chunks,
         embedding=embeddings,
         persist_directory=str(chroma_db_dir),
+        collection_name=collection_name,
     )
 
     # Similarity retriever for tighter matches to user query
@@ -269,10 +286,11 @@ def load_existing_retriever() -> Any:
     # Create embeddings (must match the model used during creation)
     embeddings = OpenAIEmbeddings(model="text-embedding-ada-002")
     
-    # Load existing Chroma vector store
+    # Load existing Chroma vector store for the same collection
     vectorstore = Chroma(
         persist_directory=str(chroma_db_dir),
-        embedding_function=embeddings
+        embedding_function=embeddings,
+        collection_name="giga_mall_rag",
     )
     
     # Create retriever with similarity for tighter matches

@@ -3493,3 +3493,155 @@ If you need more information about any specific store, feel free to ask!
 If you're looking for more options, let me know!
 2026-01-24 13:01:52,715 - rag_workflow - INFO - ================================================================================
 
+2026-01-27 13:33:15,489 - chromadb.telemetry.product.posthog - INFO - Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+2026-01-27 13:33:18,733 - rag_workflow - INFO - 
+================================================================================
+2026-01-27 13:33:18,733 - rag_workflow - INFO - NEW USER QUERY RECEIVED (NON-STREAMING)
+2026-01-27 13:33:18,734 - rag_workflow - INFO - ================================================================================
+2026-01-27 13:33:18,734 - rag_workflow - INFO - Session ID: 89c66885-fba7-4ce9-9dbf-6eacc20b24c7
+2026-01-27 13:33:18,734 - rag_workflow - INFO - User Query: chinese food?
+2026-01-27 13:33:18,734 - rag_workflow - INFO - Chat History Available: No
+2026-01-27 13:33:18,734 - rag_workflow - INFO - ================================================================================
+2026-01-27 13:33:25,425 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-01-27 13:33:25,462 - rag_workflow - INFO - ================================================================================
+2026-01-27 13:33:25,462 - rag_workflow - INFO - RETRIEVED CHUNKS:
+2026-01-27 13:33:25,463 - rag_workflow - INFO - ================================================================================
+2026-01-27 13:33:25,463 - rag_workflow - INFO - 
+--- Chunk 1 ---
+2026-01-27 13:33:25,463 - rag_workflow - INFO - Content: Store name: China Grill, Floor: 5, Outlet, Authentic Chinese cuisine with grilled specialties and traditional favorites.
+2026-01-27 13:33:25,463 - rag_workflow - INFO - Metadata: {'floor': 5, 'store_name': 'China Grill', 'sub_category': 'Restaurant', 'category': 'Dine/ Food Court / Meal options', 'type': 'Outlet', 'normalized_store_name': 'chinagrill', 'group': 'Dine/ Food Court / Meal options'}
+2026-01-27 13:33:25,463 - rag_workflow - INFO - 
+--- Chunk 2 ---
+2026-01-27 13:33:25,463 - rag_workflow - INFO - Content: Store name: True Taste, Floor: 5, Outlet, A vibrant food stall offering a wide array of snacks and beverages. Enjoy steamed, fried, and cheese momos, various bubble teas and boba, traditional chai, he...
+2026-01-27 13:33:25,464 - rag_workflow - INFO - Metadata: {'type': 'Outlet', 'floor': 5, 'group': 'Dine/ Food Court / Meal options', 'category': 'Dine/ Food Court / Meal options', 'store_name': 'True Taste', 'sub_category': 'Fast Food', 'normalized_store_name': 'truetaste'}
+2026-01-27 13:33:25,464 - rag_workflow - INFO - 
+--- Chunk 3 ---
+2026-01-27 13:33:25,464 - rag_workflow - INFO - Content: Store name: Asian Fusion, Floor: 5, Outlet, Experience authentic Asian cuisine with a modern twist. Enjoy fresh juice and shake options alongside traditional dishes in a contemporary setting.
+2026-01-27 13:33:25,464 - rag_workflow - INFO - Metadata: {'category': 'Dine/ Food Court / Meal options', 'type': 'Outlet', 'group': 'Dine/ Food Court / Meal options', 'sub_category': 'Restaurant', 'floor': 5, 'normalized_store_name': 'asianfusion', 'store_name': 'Asian Fusion'}
+2026-01-27 13:33:25,464 - rag_workflow - INFO - 
+--- Chunk 4 ---
+2026-01-27 13:33:25,464 - rag_workflow - INFO - Content: Store name: Chachajee, Floor: 5, Outlet, A beloved local favorite serving delicious traditional dishes with a modern twist.
+2026-01-27 13:33:25,464 - rag_workflow - INFO - Metadata: {'floor': 5, 'category': 'Dine/ Food Court / Meal options', 'normalized_store_name': 'chachajee', 'group': 'Dine/ Food Court / Meal options', 'store_name': 'Chachajee', 'sub_category': 'Restaurant', 'type': 'Outlet'}
+2026-01-27 13:33:25,464 - rag_workflow - INFO - 
+--- Chunk 5 ---
+2026-01-27 13:33:25,465 - rag_workflow - INFO - Content: Store name: House of Mandi, Floor: 5, Outlet, Experience the real Arabic taste with authentic Mandi dishes. Specializing in traditional Arabic cuisine including chicken and mutton Mandi, BBQ platters,...
+2026-01-27 13:33:25,465 - rag_workflow - INFO - Metadata: {'category': 'Dine/ Food Court / Meal options', 'floor': 5, 'sub_category': 'Restaurant', 'type': 'Outlet', 'store_name': 'House of Mandi', 'group': 'Dine/ Food Court / Meal options', 'normalized_store_name': 'houseofmandi'}
+2026-01-27 13:33:25,465 - rag_workflow - INFO - 
+--- Chunk 6 ---
+2026-01-27 13:33:25,465 - rag_workflow - INFO - Content: Store name: Sip Smart, Floor: 5, Outlet, A vibrant food stall specializing in Indian street food and fresh beverages. Enjoy authentic chaat items like Pani Puri, Gol Gappay, Dahi Bhallay, Chana Chat, ...
+2026-01-27 13:33:25,465 - rag_workflow - INFO - Metadata: {'group': 'Dine/ Food Court / Meal options', 'store_name': 'Sip Smart', 'category': 'Dine/ Food Court / Meal options', 'floor': 5, 'type': 'Outlet', 'sub_category': 'Fast Food', 'normalized_store_name': 'sipsmart'}
+2026-01-27 13:33:25,465 - rag_workflow - INFO - 
+--- Chunk 7 ---
+2026-01-27 13:33:25,465 - rag_workflow - INFO - Content: Store name: Pizza n Pasta, Floor: 5, Outlet, A fast-food restaurant offering delicious pizzas, pasta, burgers, subs, and salads. Enjoy XL pizzas, crunch burgers, zinger burgers, sub sandwiches, and co...
+2026-01-27 13:33:25,465 - rag_workflow - INFO - Metadata: {'group': 'Dine/ Food Court / Meal options', 'floor': 5, 'sub_category': 'Fast Food', 'category': 'Dine/ Food Court / Meal options', 'store_name': 'Pizza n Pasta', 'normalized_store_name': 'pizzanpasta', 'type': 'Outlet'}
+2026-01-27 13:33:25,465 - rag_workflow - INFO - 
+--- Chunk 8 ---
+2026-01-27 13:33:25,465 - rag_workflow - INFO - Content: Store name: Howdy, Floor: 5, Outlet, Wild vibes and bold flavors! A Western-themed fast-food restaurant offering delicious burgers, prawn specialties, combo deals, and classic favorites. Experience th...
+2026-01-27 13:33:25,466 - rag_workflow - INFO - Metadata: {'group': 'Dine/ Food Court / Meal options', 'type': 'Outlet', 'floor': 5, 'normalized_store_name': 'howdy', 'store_name': 'Howdy', 'sub_category': 'Fast Food', 'category': 'Dine/ Food Court / Meal options'}
+2026-01-27 13:33:25,466 - rag_workflow - INFO - ================================================================================
+2026-01-27 13:33:25,466 - rag_workflow - INFO - 
+================================================================================
+2026-01-27 13:33:25,466 - rag_workflow - INFO - FINAL PROMPT SENT TO LLM:
+2026-01-27 13:33:25,466 - rag_workflow - INFO - ================================================================================
+2026-01-27 13:33:25,494 - rag_workflow - INFO - ================================================================================
+
+2026-01-27 13:33:28,029 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-27 13:33:28,040 - rag_workflow - INFO - 
+================================================================================
+2026-01-27 13:33:28,040 - rag_workflow - INFO - FINAL RESPONSE GENERATED (NON-STREAMING):
+2026-01-27 13:33:28,040 - rag_workflow - INFO - ================================================================================
+2026-01-27 13:33:28,048 - rag_workflow - INFO - ================================================================================
+
+2026-01-27 13:34:24,316 - main - INFO - Deleted previous uploaded file: fileUploaded\2b251393-6acc-4937-856a-a367d7d7a450_mallinfo2.md
+2026-01-27 13:34:24,317 - main - INFO - Saved new markdown file: fileUploaded\d0487b01-e452-48c8-826c-79db0d104a8d_malldata3.md
+2026-01-27 13:34:25,139 - chromadb.telemetry.product.posthog - INFO - Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+2026-01-27 13:34:27,642 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-01-27 13:34:35,032 - main - INFO - RAG pipeline completed - new ChromaDB created
+2026-01-27 13:34:49,845 - rag_workflow - INFO - 
+================================================================================
+2026-01-27 13:34:49,845 - rag_workflow - INFO - NEW USER QUERY RECEIVED (NON-STREAMING)
+2026-01-27 13:34:49,846 - rag_workflow - INFO - ================================================================================
+2026-01-27 13:34:49,846 - rag_workflow - INFO - Session ID: e9927645-b694-4d66-9e70-b9afb230b343
+2026-01-27 13:34:49,846 - rag_workflow - INFO - User Query: chinese food?
+2026-01-27 13:34:49,846 - rag_workflow - INFO - Chat History Available: No
+2026-01-27 13:34:49,847 - rag_workflow - INFO - ================================================================================
+2026-01-27 13:34:50,853 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-01-27 13:34:50,881 - rag_workflow - INFO - ================================================================================
+2026-01-27 13:34:50,882 - rag_workflow - INFO - RETRIEVED CHUNKS:
+2026-01-27 13:34:50,882 - rag_workflow - INFO - ================================================================================
+2026-01-27 13:34:50,882 - rag_workflow - INFO - 
+--- Chunk 1 ---
+2026-01-27 13:34:50,883 - rag_workflow - INFO - Content: Store name: China Grill, Floor: 2nd Floor, Outlet, Authentic Chinese cuisine with grilled specialties and traditional favorites.
+2026-01-27 13:34:50,883 - rag_workflow - INFO - Metadata: {'store_name': 'China Grill', 'normalized_store_name': 'chinagrill', 'floor': 2, 'group': 'Dine/ Food Court / Meal options', 'sub_category': 'Restaurant', 'type': 'Outlet', 'category': 'Dine/ Food Court / Meal options'}
+2026-01-27 13:34:50,883 - rag_workflow - INFO - 
+--- Chunk 2 ---
+2026-01-27 13:34:50,883 - rag_workflow - INFO - Content: Store name: True Taste, Floor: 2nd Floor, Outlet, A vibrant food stall offering a wide array of snacks and beverages. Enjoy steamed, fried, and cheese momos, various bubble teas and boba, traditional ...
+2026-01-27 13:34:50,884 - rag_workflow - INFO - Metadata: {'type': 'Outlet', 'store_name': 'True Taste', 'group': 'Dine/ Food Court / Meal options', 'sub_category': 'Fast Food', 'category': 'Dine/ Food Court / Meal options', 'floor': 2, 'normalized_store_name': 'truetaste'}
+2026-01-27 13:34:50,884 - rag_workflow - INFO - 
+--- Chunk 3 ---
+2026-01-27 13:34:50,884 - rag_workflow - INFO - Content: Store name: Asian Fusion, Floor: 2nd Floor, Outlet, Experience authentic Asian cuisine with a modern twist. Enjoy fresh juice and shake options alongside traditional dishes in a contemporary setting.
+2026-01-27 13:34:50,885 - rag_workflow - INFO - Metadata: {'store_name': 'Asian Fusion', 'category': 'Dine/ Food Court / Meal options', 'type': 'Outlet', 'sub_category': 'Restaurant', 'floor': 2, 'normalized_store_name': 'asianfusion', 'group': 'Dine/ Food Court / Meal options'}
+2026-01-27 13:34:50,885 - rag_workflow - INFO - 
+--- Chunk 4 ---
+2026-01-27 13:34:50,885 - rag_workflow - INFO - Content: Store name: Chachajee, Floor: 2nd Floor, Outlet, A beloved local favorite serving delicious traditional dishes with a modern twist.
+2026-01-27 13:34:50,885 - rag_workflow - INFO - Metadata: {'group': 'Dine/ Food Court / Meal options', 'category': 'Dine/ Food Court / Meal options', 'sub_category': 'Restaurant', 'type': 'Outlet', 'floor': 2, 'normalized_store_name': 'chachajee', 'store_name': 'Chachajee'}
+2026-01-27 13:34:50,886 - rag_workflow - INFO - 
+--- Chunk 5 ---
+2026-01-27 13:34:50,886 - rag_workflow - INFO - Content: Store name: Sip Smart, Floor: 2nd Floor, Outlet, A vibrant food stall specializing in Indian street food and fresh beverages. Enjoy authentic chaat items like Pani Puri, Gol Gappay, Dahi Bhallay, Chan...
+2026-01-27 13:34:50,886 - rag_workflow - INFO - Metadata: {'floor': 2, 'group': 'Dine/ Food Court / Meal options', 'normalized_store_name': 'sipsmart', 'store_name': 'Sip Smart', 'sub_category': 'Fast Food', 'category': 'Dine/ Food Court / Meal options', 'type': 'Outlet'}
+2026-01-27 13:34:50,887 - rag_workflow - INFO - 
+--- Chunk 6 ---
+2026-01-27 13:34:50,887 - rag_workflow - INFO - Content: Store name: House of Mandi, Floor: 2nd Floor, Outlet, Experience the real Arabic taste with authentic Mandi dishes. Specializing in traditional Arabic cuisine including chicken and mutton Mandi, BBQ p...
+2026-01-27 13:34:50,887 - rag_workflow - INFO - Metadata: {'store_name': 'House of Mandi', 'sub_category': 'Restaurant', 'type': 'Outlet', 'normalized_store_name': 'houseofmandi', 'group': 'Dine/ Food Court / Meal options', 'floor': 2, 'category': 'Dine/ Food Court / Meal options'}
+2026-01-27 13:34:50,887 - rag_workflow - INFO - 
+--- Chunk 7 ---
+2026-01-27 13:34:50,888 - rag_workflow - INFO - Content: Store name: Pizza n Pasta, Floor: 2nd Floor, Outlet, A fast-food restaurant offering delicious pizzas, pasta, burgers, subs, and salads. Enjoy XL pizzas, crunch burgers, zinger burgers, sub sandwiches...
+2026-01-27 13:34:50,888 - rag_workflow - INFO - Metadata: {'store_name': 'Pizza n Pasta', 'normalized_store_name': 'pizzanpasta', 'floor': 2, 'sub_category': 'Fast Food', 'category': 'Dine/ Food Court / Meal options', 'type': 'Outlet', 'group': 'Dine/ Food Court / Meal options'}
+2026-01-27 13:34:50,888 - rag_workflow - INFO - 
+--- Chunk 8 ---
+2026-01-27 13:34:50,888 - rag_workflow - INFO - Content: Store name: Howdy, Floor: 2nd Floor, Outlet, Wild vibes and bold flavors! A Western-themed fast-food restaurant offering delicious burgers, prawn specialties, combo deals, and classic favorites. Exper...
+2026-01-27 13:34:50,889 - rag_workflow - INFO - Metadata: {'sub_category': 'Fast Food', 'normalized_store_name': 'howdy', 'floor': 2, 'type': 'Outlet', 'group': 'Dine/ Food Court / Meal options', 'store_name': 'Howdy', 'category': 'Dine/ Food Court / Meal options'}
+2026-01-27 13:34:50,889 - rag_workflow - INFO - ================================================================================
+2026-01-27 13:34:50,890 - rag_workflow - INFO - 
+================================================================================
+2026-01-27 13:34:50,890 - rag_workflow - INFO - FINAL PROMPT SENT TO LLM:
+2026-01-27 13:34:50,890 - rag_workflow - INFO - ================================================================================
+2026-01-27 13:34:50,913 - rag_workflow - INFO - ================================================================================
+
+2026-01-27 13:34:52,997 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-27 13:34:53,003 - rag_workflow - INFO - 
+================================================================================
+2026-01-27 13:34:53,003 - rag_workflow - INFO - FINAL RESPONSE GENERATED (NON-STREAMING):
+2026-01-27 13:34:53,004 - rag_workflow - INFO - ================================================================================
+2026-01-27 13:34:53,015 - rag_workflow - INFO - ================================================================================
+
+2026-01-27 14:03:25,919 - main - INFO - Deleted previous uploaded file: fileUploaded\d0487b01-e452-48c8-826c-79db0d104a8d_malldata3.md
+2026-01-27 14:03:25,922 - main - INFO - Deleted existing ChromaDB directory for fresh start
+2026-01-27 14:03:25,922 - main - INFO - Saved new markdown file: fileUploaded\46a6806d-8c8a-4ab7-96b7-774b3aa022dd_malldata3.md
+2026-01-27 14:03:26,716 - chromadb.telemetry.product.posthog - INFO - Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+2026-01-27 14:03:28,719 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-01-27 14:03:30,623 - main - INFO - RAG pipeline completed - new ChromaDB created
+2026-01-27 14:06:08,681 - main - INFO - Deleted previous uploaded file: fileUploaded\46a6806d-8c8a-4ab7-96b7-774b3aa022dd_malldata3.md
+2026-01-27 14:07:56,185 - main - INFO - Deleted existing ChromaDB directory for fresh start
+2026-01-27 14:07:56,186 - main - INFO - Saved new markdown file: fileUploaded\45fa4e29-e718-4729-96da-78ed5f4cda16_malldata4.md
+2026-01-27 14:07:57,603 - chromadb.telemetry.product.posthog - INFO - Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+2026-01-27 14:07:59,630 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-01-27 14:08:01,544 - main - INFO - RAG pipeline completed - new ChromaDB created
+2026-01-27 14:08:13,319 - main - INFO - Deleted previous uploaded file: fileUploaded\45fa4e29-e718-4729-96da-78ed5f4cda16_malldata4.md
+2026-01-27 14:08:13,320 - main - WARNING - Failed to delete ChromaDB (attempt 1/3), retrying...
+2026-01-27 14:08:14,340 - main - WARNING - Failed to delete ChromaDB (attempt 2/3), retrying...
+2026-01-27 14:08:15,350 - main - ERROR - Failed to delete ChromaDB after 3 attempts: [WinError 32] The process cannot access the file because it is being used by another process: 'chromadb\\chroma.sqlite3'
+2026-01-27 14:08:24,224 - main - WARNING - Failed to delete ChromaDB (attempt 1/3), retrying...
+2026-01-27 14:08:25,231 - main - WARNING - Failed to delete ChromaDB (attempt 2/3), retrying...
+2026-01-27 14:08:26,210 - main - ERROR - Failed to delete ChromaDB after 3 attempts: [WinError 32] The process cannot access the file because it is being used by another process: 'chromadb\\chroma.sqlite3'
+2026-01-27 14:09:01,042 - main - WARNING - Failed to delete ChromaDB (attempt 1/3), retrying...
+2026-01-27 14:09:02,060 - main - WARNING - Failed to delete ChromaDB (attempt 2/3), retrying...
+2026-01-27 14:09:03,082 - main - ERROR - Failed to delete ChromaDB after 3 attempts: [WinError 32] The process cannot access the file because it is being used by another process: 'chromadb\\chroma.sqlite3'
+2026-01-27 14:12:58,293 - main - INFO - Saved new markdown file: fileUploaded\4e7e179b-4d97-4255-ac7f-9f1060ccd370_malldata4.md
+2026-01-27 14:12:59,592 - chromadb.telemetry.product.posthog - INFO - Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+2026-01-27 14:13:01,689 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-01-27 14:13:03,662 - main - INFO - RAG pipeline completed - new ChromaDB created
+2026-01-27 14:13:07,818 - main - INFO - Deleted previous uploaded file: fileUploaded\4e7e179b-4d97-4255-ac7f-9f1060ccd370_malldata4.md
+2026-01-27 14:13:07,820 - main - INFO - Saved new markdown file: fileUploaded\b147fc84-a180-49ef-a50f-41a747fac723_malldata4.md
+2026-01-27 14:13:09,940 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-01-27 14:13:12,235 - main - INFO - RAG pipeline completed - new ChromaDB created

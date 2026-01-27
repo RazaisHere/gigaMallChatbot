@@ -39,3 +39,10 @@ venv/
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+.log
+*.log
+chromadb/
+
+# Uploaded files
+fileUploaded/
+logs/

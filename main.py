@@ -9,7 +9,8 @@ import shutil
 import uuid
 from pathlib import Path
 from typing import Any
-
+import asyncio
+import gc
 from fastapi import FastAPI, Depends, UploadFile, File, HTTPException
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.responses import StreamingResponse
@@ -102,18 +103,6 @@ def root():
 async def upload_markdown(file: UploadFile = File(...)):
     """
     Upload a markdown file and build a basic RAG retriever.
-
-    Complete RAG Pipeline:
-    - Accepts a markdown file (.md)
-    - Saves it to 'fileUploaded' directory
-    - Loads file using TextLoader
-    - Creates 'chromadb' directory for persistent storage
-    - Converts data into chunks using RecursiveCharacterTextSplitter
-    - Generates embeddings using text-embedding-ada-002
-    - Stores in Chroma vector store with persistence
-    - Builds similarity retriever with k=5
-
-    The resulting retriever is stored in-memory and used by the /rag/stream endpoint.
     """
     filename = file.filename or ""
     if not filename.lower().endswith(".md"):
@@ -129,25 +118,13 @@ async def upload_markdown(file: UploadFile = File(...)):
     else:
         file_uploaded_dir.mkdir(exist_ok=True)
 
-    # Delete existing ChromaDB directory to start fresh
-    chroma_db_dir = Path("chromadb")
-    if chroma_db_dir.exists():
-        shutil.rmtree(chroma_db_dir)
-        logger.info("Deleted existing ChromaDB directory for fresh start")
-
     # Store new file in fileUploaded folder
     file_path = file_uploaded_dir / f"{uuid.uuid4()}_{filename}"
     contents = await file.read()
     file_path.write_bytes(contents)
     logger.info(f"Saved new markdown file: {file_path}")
 
-    # Run complete RAG pipeline:
-    # 1. Load file using TextLoader
-    # 2. Create fresh chromadb directory
-    # 3. Convert data into chunks
-    # 4. Generate embeddings using text-embedding-ada-002
-    # 5. Store in Chroma vector store
-    # 6. Build retriever and store it globally for QA use
+    # Run complete RAG pipeline
     retriever = build_retriever_from_markdown(str(file_path))
     set_rag_retriever(retriever)
     logger.info("RAG pipeline completed - new ChromaDB created")
