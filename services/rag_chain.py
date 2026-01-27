@@ -47,17 +47,23 @@ def _format_docs(docs: List[Any]) -> str:
     Join retrieved documents into a single context string.
     Also logs the retrieved chunks for debugging.
     """
-    # Log retrieved chunks with metadata
-    rag_logger.info("=" * 80)
-    rag_logger.info("RETRIEVED CHUNKS:")
+    # Log retrieved chunks with metadata (visible in terminal and log file)
+    rag_logger.info("\n" + "=" * 80)
+    rag_logger.info(f"RETRIEVED CHUNKS (Total: {len(docs)}):")
     rag_logger.info("=" * 80)
     for i, doc in enumerate(docs, 1):
         page_content = getattr(doc, "page_content", "")
         metadata = getattr(doc, "metadata", {})
-        rag_logger.info(f"\n--- Chunk {i} ---")
-        rag_logger.info(f"Content: {page_content[:200]}..." if len(page_content) > 200 else f"Content: {page_content}")
-        rag_logger.info(f"Metadata: {metadata}")
-    rag_logger.info("=" * 80)
+        rag_logger.info(f"\n--- Chunk {i}/{len(docs)} ---")
+        rag_logger.info(f"Store Name: {metadata.get('store_name', 'N/A')}")
+        rag_logger.info(f"Floor: {metadata.get('floor', 'N/A')}")
+        rag_logger.info(f"Type: {metadata.get('type', 'N/A')}")
+        rag_logger.info(f"Category: {metadata.get('category', 'N/A')}")
+        rag_logger.info(f"Sub-Category: {metadata.get('sub_category', 'N/A')}")
+        rag_logger.info(f"Tags: {metadata.get('tags', [])}")
+        rag_logger.info(f"\nFull Content:\n{page_content}")
+        rag_logger.info("-" * 80)
+    rag_logger.info("=" * 80 + "\n")
     
     return "\n\n".join(getattr(doc, "page_content", "") for doc in docs)
 

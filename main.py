@@ -43,6 +43,12 @@ rag_logger = logging.getLogger("rag_workflow")
 rag_file_handler = logging.FileHandler(log_dir / "rag_workflow.log")
 rag_file_handler.setFormatter(logging.Formatter('%(asctime)s - %(levelname)s - %(message)s'))
 rag_logger.addHandler(rag_file_handler)
+
+# Add console handler so RAG logs also appear in terminal
+rag_console_handler = logging.StreamHandler()
+rag_console_handler.setFormatter(logging.Formatter('%(asctime)s - %(levelname)s - %(message)s'))
+rag_logger.addHandler(rag_console_handler)
+
 rag_logger.setLevel(logging.INFO)
 
 history_logger = logging.getLogger("chat_history")
