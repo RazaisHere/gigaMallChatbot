@@ -60,6 +60,85 @@ def _parse_store_documents(markdown_text: str) -> List[Document]:
             current_store_metadata["normalized_store_name"] = _normalize_text(
                 str(store_name)
             )
+        
+        # Detect keywords and add as tags for better semantic matching
+        desc_lower = text.lower()
+        keywords = []
+        
+        # Food-related tags
+        # Detect Chinese food
+        if any(keyword in desc_lower for keyword in ["chinese", "noodles", "fried rice", "chow mein", "stir-fry"]):
+            keywords.append("Chinese food")
+        
+        # Detect Desi food
+        if any(keyword in desc_lower for keyword in ["desi", "pakistani", "traditional", "bbq", "kebab", "curry", "biryani"]):
+            keywords.append("Desi food")
+        
+        # Detect Fast food
+        if any(keyword in desc_lower for keyword in ["fast food", "burger", "pizza", "fries", "combo"]):
+            keywords.append("Fast food")
+        
+        # Detect Cafe
+        if any(keyword in desc_lower for keyword in ["coffee", "cafe", "latte", "cappuccino", "espresso"]):
+            keywords.append("Cafe")
+        
+        # Clothing-related tags
+        # Gender / Target Audience
+        # Check for unisex first (men and women together)
+        if ("men" in desc_lower and "women" in desc_lower) or "unisex" in desc_lower or ("men" in desc_lower and "women" in desc_lower and "children" in desc_lower):
+            keywords.append("Unisex")
+        elif "men" in desc_lower or "menswear" in desc_lower or ("men" in desc_lower and "women" not in desc_lower):
+            keywords.append("Men")
+        elif "women" in desc_lower or "womenswear" in desc_lower or ("women" in desc_lower and "men" not in desc_lower):
+            keywords.append("Women")
+        
+        # Kids detection (separate from gender)
+        if any(keyword in desc_lower for keyword in ["kids", "children", "baby", "infant", "toddler", "kidswear"]):
+            keywords.append("Kids")
+        
+        # Style / Type
+        if "casual" in desc_lower:
+            keywords.append("Casual")
+        if "formal" in desc_lower:
+            keywords.append("Formal")
+        if "smart casual" in desc_lower or "smart-casual" in desc_lower:
+            keywords.append("Smart Casual")
+        if "ethnic" in desc_lower or "eastern" in desc_lower:
+            keywords.append("Ethnic")
+        if "streetwear" in desc_lower or "street wear" in desc_lower:
+            keywords.append("Streetwear")
+        if "party wear" in desc_lower or "party" in desc_lower:
+            keywords.append("Party Wear")
+        if "bridal" in desc_lower:
+            keywords.append("Bridal")
+        if "western" in desc_lower:
+            keywords.append("Western")
+        if "fusion" in desc_lower:
+            keywords.append("Fusion")
+        if "sportswear" in desc_lower or "sports" in desc_lower:
+            keywords.append("Sportswear")
+        if "activewear" in desc_lower or "active wear" in desc_lower:
+            keywords.append("Activewear")
+        if "innerwear" in desc_lower or "underwear" in desc_lower:
+            keywords.append("Innerwear")
+        if "leisurewear" in desc_lower or "loungewear" in desc_lower:
+            keywords.append("Leisurewear")
+        
+        # Specialty / Price Range
+        if "luxury" in desc_lower or "premium" in desc_lower or "high-end" in desc_lower:
+            keywords.append("Luxury")
+        if "budget" in desc_lower or "affordable" in desc_lower:
+            keywords.append("Budget")
+        if "designer" in desc_lower:
+            keywords.append("Designer")
+        if "fast fashion" in desc_lower or "fast-fashion" in desc_lower:
+            keywords.append("Fast Fashion")
+        if "couture" in desc_lower:
+            keywords.append("Couture")
+            
+        if "top pick" in desc_lower:
+        keywords.append("Top Pick")
+        current_store_metadata["tags"] = keywords
 
         docs.append(
             Document(
@@ -215,6 +294,26 @@ def build_retriever_from_markdown(file_path: str) -> Any:
     if not chunks:
         raise ValueError(f"No chunks created from store documents: {file_path}")
 
+    # Include category, sub_category, and tags in embedding text for better semantic matching
+    for doc in chunks:
+        category = doc.metadata.get("category", "")
+        sub_category = doc.metadata.get("sub_category", "")
+        tags = doc.metadata.get("tags", [])
+        
+        # Build additional context string
+        context_parts = []
+        if category:
+            context_parts.append(f"Category: {category}")
+        if sub_category:
+            context_parts.append(f"Subcategory: {sub_category}")
+        if tags:
+            tag_text = ", ".join(tags)
+            context_parts.append(f"Tags: {tag_text}")
+        
+        # Append context to page_content so it's included in embeddings
+        if context_parts:
+            doc.page_content = f"{doc.page_content}\n" + "\n".join(context_parts)
+
     # 4. Create embeddings using text-embedding-ada-002
     embeddings = OpenAIEmbeddings(model="text-embedding-ada-002")
 
@@ -246,10 +345,10 @@ def build_retriever_from_markdown(file_path: str) -> Any:
         collection_name=collection_name,
     )
 
-    # Similarity retriever for tighter matches to user query
+    # MMR retriever for diverse results with better recall
     retriever = vectorstore.as_retriever(
-        search_type="similarity",
-        search_kwargs={"k": 8},
+        search_type="mmr",
+        search_kwargs={"k": 8, "fetch_k": 20},
     )
 
     return retriever
@@ -293,10 +392,10 @@ def load_existing_retriever() -> Any:
         collection_name="giga_mall_rag",
     )
     
-    # Create retriever with similarity for tighter matches
+    # MMR retriever for diverse results
     retriever = vectorstore.as_retriever(
-        search_type="similarity",
-        search_kwargs={"k": 8},
+        search_type="mmr",
+        search_kwargs={"k": 8, "fetch_k": 20},
     )
     
     return retriever

@@ -260,7 +260,7 @@ RULE 4b: RESPONSE FORMAT
 
 Use ONLY provided context
 
-List 2–5 relevant options
+Keep the response frontend friendly and engaging.
 
 Avoid repeating stores already mentioned
 
