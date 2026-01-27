@@ -1,9 +1,0 @@
-2026-01-20 18:13:09,045 - [workflow] - ================================================================================
-2026-01-20 18:13:09,046 - [workflow] - WORKFLOW START | User Query: 'tell me where is kfc'
-2026-01-20 18:13:09,046 - [workflow] - STEP 1: Text Normalization
-2026-01-20 18:13:09,058 - [workflow] - STEP 2: Entity & Intent Detection (LLM)
-2026-01-20 18:13:09,086 - [workflow] - STEP 3: Category Mapping
-2026-01-20 18:13:09,102 - [workflow] - STEP 4 & 5: Database Query
-2026-01-20 18:13:09,160 - [workflow] - STEP 6: Response Formatting (LLM)
-2026-01-20 18:13:11,447 - [workflow] - WORKFLOW END | Result: Success
-2026-01-20 18:13:11,448 - [workflow] - ================================================================================
