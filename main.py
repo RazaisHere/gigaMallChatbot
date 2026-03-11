@@ -11,9 +11,9 @@ from pathlib import Path
 from typing import Any
 import asyncio
 import gc
-from fastapi import FastAPI, Depends, UploadFile, File, HTTPException
+from fastapi import FastAPI, Depends, UploadFile, File, HTTPException, Request
 from fastapi.middleware.cors import CORSMiddleware
-from fastapi.responses import StreamingResponse
+from fastapi.responses import StreamingResponse, JSONResponse
 from pydantic import BaseModel
 from sqlalchemy.orm import Session
 
@@ -22,6 +22,7 @@ from database import get_db
 from services.llm import get_llm
 from services.rag import build_retriever_from_markdown, load_existing_retriever
 from services.rag_chain import set_rag_retriever, build_rag_qa_chain
+from services.socialMediaIntegration import send_message_to_sendpulse
 
 # ============================================================================
 # Logging Configuration
@@ -389,6 +390,179 @@ async def rag_stream(request: RagChatRequest, db: Session = Depends(get_db)):
             "X-Accel-Buffering": "no"
         }
     )
+
+
+@app.post("/webhook")
+async def webhook(request: Request, db: Session = Depends(get_db)):
+    """
+    Webhook endpoint to receive messages from SendPulse.
+    SendPulse sends messages as a JSON array.
+    
+    This endpoint:
+    1. Receives incoming messages from SendPulse (WhatsApp, Instagram, Messenger)
+    2. Extracts user message and service type
+    3. Uses contact_id as session_id for database storage
+    4. Saves user message to database
+    5. Generates bot response using existing RAG system
+    6. Saves bot response to database
+    7. Sends response back via SendPulse API
+    """
+    try:
+        incoming_data = await request.json()
+        
+        if not incoming_data or not isinstance(incoming_data, list):
+            raise HTTPException(status_code=400, detail="Invalid data format: expected JSON array")
+        
+        if len(incoming_data) == 0:
+            raise HTTPException(status_code=400, detail="Empty data array")
+        
+        event = incoming_data[0]
+        service = event.get('service')  # 'whatsapp', 'instagram', 'messenger'
+        sender_id = event.get("contact", {}).get("id")
+        
+        if not sender_id:
+            raise HTTPException(status_code=400, detail="Missing contact ID")
+        
+        if not service:
+            raise HTTPException(status_code=400, detail="Missing service type")
+        
+        # Use contact_id as session_id for database storage
+        session_id = str(sender_id)
+        
+        logger.info(f"Received webhook from {service} - Contact ID: {sender_id}")
+        
+        # Extract message payload based on service type
+        message_payload = event.get("info", {}).get("message", {}).get("channel_data", {}).get("message", {})
+        
+        # Handle attachments (images, etc.)
+        attachments = message_payload.get("attachments") or []
+        if attachments:
+            for attach in attachments:
+                if attach.get("type") == "image":
+                    image_url = attach.get("payload", {}).get("url")
+                    logger.info(f"Received image URL from {service}: {image_url}")
+                    bot_reply = "Sorry, I cannot understand images. If you need any assistance, please let me know."
+                    await send_message_to_sendpulse(bot_reply, service, sender_id)
+                    return JSONResponse({"status": "received_attachments"})
+        
+        # Extract text message based on service type
+        if service == "whatsapp":
+            user_message = (
+                message_payload
+                .get("message", {})
+                .get("text", {})
+                .get("body", "")
+            )
+        else:
+            user_message = message_payload.get("text", "")
+        
+        if not user_message or not user_message.strip():
+            logger.warning(f"Empty message received from {service} - Contact ID: {sender_id}")
+            return JSONResponse({"status": "empty_message"})
+        
+        logger.info(f"User Message from {service}: {user_message}")
+        
+        # Save user message to database
+        ChatHistoryManager.save_message(
+            db=db,
+            session_id=session_id,
+            role="user",
+            message=user_message
+        )
+        
+        # Load existing Chroma DB retriever
+        try:
+            retriever = load_existing_retriever()
+        except ValueError as e:
+            error_msg = "I'm having trouble accessing the mall information right now. Please try again later."
+            logger.error(f"RAG system not initialized: {str(e)}")
+            # Save error message to database
+            ChatHistoryManager.save_message(
+                db=db,
+                session_id=session_id,
+                role="assistant",
+                message=error_msg
+            )
+            await send_message_to_sendpulse(error_msg, service, sender_id)
+            return JSONResponse({"status": "error", "detail": str(e)})
+        
+        # Get chat history (last 5 conversation pairs)
+        history_messages = ChatHistoryManager.get_last_conversation_pairs(
+            db, session_id, num_pairs=5
+        )
+        
+        # Format chat history as string for prompt
+        chat_history_str = ""
+        if history_messages:
+            chat_history_lines = []
+            for msg in history_messages:
+                role_label = "User" if msg["role"] == "user" else "Assistant"
+                chat_history_lines.append(f"{role_label}: {msg['message']}")
+            chat_history_str = "\n".join(chat_history_lines)
+        
+        # Log user query
+        rag_logger.info("\n" + "=" * 80)
+        rag_logger.info("NEW USER QUERY RECEIVED (SENDPULSE WEBHOOK)")
+        rag_logger.info("=" * 80)
+        rag_logger.info(f"Service: {service}")
+        rag_logger.info(f"Session ID: {session_id}")
+        rag_logger.info(f"User Query: {user_message}")
+        rag_logger.info(f"Chat History Available: {'Yes' if chat_history_str else 'No'}")
+        if chat_history_str:
+            rag_logger.info(f"Chat History:\n{chat_history_str}")
+        rag_logger.info("=" * 80)
+        
+        # Non-streaming LLM for RAG (webhook needs complete response)
+        rag_llm = get_llm(streaming=False)
+        
+        # Build RAG chain with chat history
+        rag_chain = build_rag_qa_chain(retriever, rag_llm, chat_history_str)
+        
+        try:
+            # Invoke chain: automatically does embeddings -> similarity search -> retrieval
+            result: Any = rag_chain.invoke(user_message)
+            # ChatOpenAI returns an AIMessage; fall back to string for safety
+            bot_reply = getattr(result, "content", str(result))
+            
+            # Log final response
+            rag_logger.info("\n" + "=" * 80)
+            rag_logger.info("FINAL RESPONSE GENERATED (SENDPULSE WEBHOOK):")
+            rag_logger.info("=" * 80)
+            rag_logger.info(bot_reply)
+            rag_logger.info("=" * 80 + "\n")
+        except Exception as e:
+            error_msg = "I'm having trouble processing your request. Please try again."
+            logger.error(f"Error generating RAG answer: {str(e)}")
+            # Save error message to database
+            ChatHistoryManager.save_message(
+                db=db,
+                session_id=session_id,
+                role="assistant",
+                message=error_msg
+            )
+            await send_message_to_sendpulse(error_msg, service, sender_id)
+            return JSONResponse({"status": "error", "detail": str(e)})
+        
+        # Save assistant response to database
+        ChatHistoryManager.save_message(
+            db=db,
+            session_id=session_id,
+            role="assistant",
+            message=bot_reply
+        )
+        
+        # Send reply back via SendPulse
+        await send_message_to_sendpulse(bot_reply, service, sender_id)
+        
+        return JSONResponse({"status": "success"})
+        
+    except HTTPException:
+        raise
+    except Exception as e:
+        logger.error(f"Error processing webhook: {e}", exc_info=True)
+        import traceback
+        traceback.print_exc()
+        raise HTTPException(status_code=500, detail=str(e))
 
 
 if __name__ == "__main__":

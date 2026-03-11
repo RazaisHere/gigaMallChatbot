@@ -18,6 +18,10 @@ class Settings(BaseSettings):
     # API Keys
     openai_api_key: str  # For OpenAI API
     
+    # SendPulse credentials for social media integration
+    sendpulse_client_id: str
+    sendpulse_client_secret: str
+    
     class Config:
         env_file = ".env"
         case_sensitive = False
