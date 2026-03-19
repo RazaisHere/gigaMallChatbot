@@ -7,6 +7,7 @@ import json
 import logging
 import shutil
 import uuid
+import traceback
 from pathlib import Path
 from typing import Any
 import asyncio
@@ -16,6 +17,24 @@ from fastapi.middleware.cors import CORSMiddleware
 from fastapi.responses import StreamingResponse, JSONResponse
 from pydantic import BaseModel
 from sqlalchemy.orm import Session
+from sqlalchemy.exc import SQLAlchemyError
+
+# Try to import OpenAI exceptions - they may be in different locations depending on SDK version
+try:
+    from openai import APIError, RateLimitError, APIConnectionError, APITimeoutError
+except ImportError:
+    try:
+        from openai.error import APIError, RateLimitError, APIConnectionError, APITimeoutError
+    except ImportError:
+        # If OpenAI exceptions aren't available, create placeholder classes
+        class APIError(Exception):
+            pass
+        class RateLimitError(Exception):
+            pass
+        class APIConnectionError(Exception):
+            pass
+        class APITimeoutError(Exception):
+            pass
 
 from chat_history import ChatHistoryManager
 from database import get_db
@@ -87,6 +106,233 @@ class RagChatResponse(BaseModel):
     """RAG chat response model"""
     answer: str
     session_id: str
+
+
+class ErrorResponse(BaseModel):
+    """Error response model with detailed error information"""
+    error_code: str
+    error_type: str
+    message: str
+    detail: str | None = None
+    session_id: str | None = None
+
+
+# ============================================================================
+# Error Handling Utilities
+# ============================================================================
+class ErrorCodes:
+    """Error codes for different error types"""
+    RAG_NOT_INITIALIZED = "RAG_NOT_INITIALIZED"
+    OPENAI_API_ERROR = "OPENAI_API_ERROR"
+    OPENAI_RATE_LIMIT = "OPENAI_RATE_LIMIT"
+    OPENAI_CONNECTION_ERROR = "OPENAI_CONNECTION_ERROR"
+    OPENAI_TIMEOUT = "OPENAI_TIMEOUT"
+    DATABASE_ERROR = "DATABASE_ERROR"
+    RETRIEVAL_ERROR = "RETRIEVAL_ERROR"
+    LLM_GENERATION_ERROR = "LLM_GENERATION_ERROR"
+    VALIDATION_ERROR = "VALIDATION_ERROR"
+    INTERNAL_SERVER_ERROR = "INTERNAL_SERVER_ERROR"
+
+
+def handle_error_for_chat(
+    error: Exception,
+    session_id: str,
+    db: Session,
+    logger_instance: logging.Logger
+) -> HTTPException:
+    """
+    Handle errors for /rag/chat endpoint and return appropriate HTTPException.
+    Also saves error message to database.
+    """
+    error_traceback = traceback.format_exc()
+    error_str = str(error).lower()
+    logger_instance.error(f"Error in /rag/chat: {str(error)}")
+    logger_instance.error(f"Traceback: {error_traceback}")
+    
+    # Determine error type and code
+    # Check for OpenAI API key errors first
+    if "api key" in error_str or "openai_api_key" in error_str or "authentication" in error_str:
+        error_code = ErrorCodes.RAG_NOT_INITIALIZED
+        error_type = "Configuration Error"
+        status_code = 400
+        user_message = "OpenAI API key is not configured. Please check your environment variables."
+        detail = str(error)
+    elif isinstance(error, ValueError) or "not initialized" in error_str or "chroma" in error_str:
+        error_code = ErrorCodes.RAG_NOT_INITIALIZED
+        error_type = "Configuration Error"
+        status_code = 400
+        user_message = "The RAG system is not properly initialized. Please upload a markdown file first."
+        detail = str(error)
+    elif isinstance(error, RateLimitError) or "rate limit" in error_str:
+        error_code = ErrorCodes.OPENAI_RATE_LIMIT
+        error_type = "Rate Limit Error"
+        status_code = 429
+        user_message = "OpenAI API rate limit exceeded. Please try again in a moment."
+        detail = str(error)
+    elif isinstance(error, APIConnectionError) or "connection" in error_str or "network" in error_str:
+        error_code = ErrorCodes.OPENAI_CONNECTION_ERROR
+        error_type = "Connection Error"
+        status_code = 503
+        user_message = "Unable to connect to OpenAI API. Please check your internet connection."
+        detail = str(error)
+    elif isinstance(error, APITimeoutError) or "timeout" in error_str:
+        error_code = ErrorCodes.OPENAI_TIMEOUT
+        error_type = "Timeout Error"
+        status_code = 504
+        user_message = "Request to OpenAI API timed out. Please try again."
+        detail = str(error)
+    elif isinstance(error, APIError) or "openai" in error_str:
+        error_code = ErrorCodes.OPENAI_API_ERROR
+        error_type = "OpenAI API Error"
+        status_code = 502
+        user_message = "OpenAI API returned an error. Please try again later."
+        detail = str(error)
+    elif isinstance(error, SQLAlchemyError) or "database" in error_str or "sql" in error_str:
+        error_code = ErrorCodes.DATABASE_ERROR
+        error_type = "Database Error"
+        status_code = 500
+        user_message = "Database error occurred. Please try again."
+        detail = f"Database error: {str(error)}"
+    elif isinstance(error, KeyError) or isinstance(error, AttributeError) or "retrieval" in error_str:
+        error_code = ErrorCodes.RETRIEVAL_ERROR
+        error_type = "Retrieval Error"
+        status_code = 500
+        user_message = "Error retrieving information from the knowledge base."
+        detail = str(error)
+    else:
+        error_code = ErrorCodes.LLM_GENERATION_ERROR
+        error_type = "LLM Generation Error"
+        status_code = 500
+        user_message = "I'm having trouble processing your request. Please try again."
+        detail = str(error)
+    
+    # Save error message to database
+    try:
+        ChatHistoryManager.save_message(
+            db=db,
+            session_id=session_id,
+            role="assistant",
+            message=user_message
+        )
+    except Exception as db_error:
+        logger_instance.error(f"Failed to save error message to database: {str(db_error)}")
+    
+    # Return structured error response
+    return HTTPException(
+        status_code=status_code,
+        detail=json.dumps({
+            "error_code": error_code,
+            "error_type": error_type,
+            "message": user_message,
+            "detail": detail,
+            "session_id": session_id
+        })
+    )
+
+
+def create_sse_error_response(
+    error: Exception,
+    session_id: str,
+    error_code: str,
+    error_type: str,
+    user_message: str,
+    detail: str | None = None
+) -> str:
+    """Create a structured SSE error response"""
+    error_data = {
+        "type": "error",
+        "error_code": error_code,
+        "error_type": error_type,
+        "message": user_message,
+        "detail": detail,
+        "session_id": session_id
+    }
+    return f"data: {json.dumps(error_data)}\n\n"
+
+
+def handle_error_for_stream(
+    error: Exception,
+    session_id: str,
+    db: Session,
+    logger_instance: logging.Logger
+) -> str:
+    """
+    Handle errors for /rag/stream endpoint and return SSE error response.
+    Also saves error message to database.
+    """
+    error_traceback = traceback.format_exc()
+    error_str = str(error).lower()
+    logger_instance.error(f"Error in /rag/stream: {str(error)}")
+    logger_instance.error(f"Traceback: {error_traceback}")
+    
+    # Determine error type and code
+    # Check for OpenAI API key errors first
+    if "api key" in error_str or "openai_api_key" in error_str or "authentication" in error_str:
+        error_code = ErrorCodes.RAG_NOT_INITIALIZED
+        error_type = "Configuration Error"
+        user_message = "OpenAI API key is not configured. Please check your environment variables."
+        detail = str(error)
+    elif isinstance(error, ValueError) or "not initialized" in error_str or "chroma" in error_str:
+        error_code = ErrorCodes.RAG_NOT_INITIALIZED
+        error_type = "Configuration Error"
+        user_message = "The RAG system is not properly initialized. Please upload a markdown file first."
+        detail = str(error)
+    elif isinstance(error, RateLimitError) or "rate limit" in error_str:
+        error_code = ErrorCodes.OPENAI_RATE_LIMIT
+        error_type = "Rate Limit Error"
+        user_message = "OpenAI API rate limit exceeded. Please try again in a moment."
+        detail = str(error)
+    elif isinstance(error, APIConnectionError) or "connection" in error_str or "network" in error_str:
+        error_code = ErrorCodes.OPENAI_CONNECTION_ERROR
+        error_type = "Connection Error"
+        user_message = "Unable to connect to OpenAI API. Please check your internet connection."
+        detail = str(error)
+    elif isinstance(error, APITimeoutError) or "timeout" in error_str:
+        error_code = ErrorCodes.OPENAI_TIMEOUT
+        error_type = "Timeout Error"
+        user_message = "Request to OpenAI API timed out. Please try again."
+        detail = str(error)
+    elif isinstance(error, APIError) or "openai" in error_str:
+        error_code = ErrorCodes.OPENAI_API_ERROR
+        error_type = "OpenAI API Error"
+        user_message = "OpenAI API returned an error. Please try again later."
+        detail = str(error)
+    elif isinstance(error, SQLAlchemyError) or "database" in error_str or "sql" in error_str:
+        error_code = ErrorCodes.DATABASE_ERROR
+        error_type = "Database Error"
+        user_message = "Database error occurred. Please try again."
+        detail = f"Database error: {str(error)}"
+    elif isinstance(error, KeyError) or isinstance(error, AttributeError) or "retrieval" in error_str:
+        error_code = ErrorCodes.RETRIEVAL_ERROR
+        error_type = "Retrieval Error"
+        user_message = "Error retrieving information from the knowledge base."
+        detail = str(error)
+    else:
+        error_code = ErrorCodes.LLM_GENERATION_ERROR
+        error_type = "LLM Generation Error"
+        user_message = "I'm having trouble processing your request. Please try again."
+        detail = str(error)
+    
+    # Save error message to database
+    try:
+        ChatHistoryManager.save_message(
+            db=db,
+            session_id=session_id,
+            role="assistant",
+            message=user_message
+        )
+    except Exception as db_error:
+        logger_instance.error(f"Failed to save error message to database: {str(db_error)}")
+    
+    # Return SSE error response
+    return create_sse_error_response(
+        error=error,
+        session_id=session_id,
+        error_code=error_code,
+        error_type=error_type,
+        user_message=user_message,
+        detail=detail
+    )
 
 
 # ============================================================================
@@ -167,15 +413,20 @@ def stream_rag_response(request: RagChatRequest, db: Session):
     # 3. Retrieves top k=5 relevant chunks
     try:
         retriever = load_existing_retriever()
-    except ValueError as e:
-        error_msg = f"RAG system not initialized: {str(e)}"
-        yield f"data: {json.dumps({'type': 'error', 'data': error_msg})}\n\n"
+    except Exception as e:
+        error_response = handle_error_for_stream(e, session_id, db, rag_logger)
+        yield error_response
         return
     
     # Get chat history (last 5 conversation pairs)
-    history_messages = ChatHistoryManager.get_last_conversation_pairs(
-        db, session_id, num_pairs=5
-    )
+    try:
+        history_messages = ChatHistoryManager.get_last_conversation_pairs(
+            db, session_id, num_pairs=5
+        )
+    except Exception as e:
+        error_response = handle_error_for_stream(e, session_id, db, rag_logger)
+        yield error_response
+        return
     
     # Format chat history as string for prompt
     chat_history_str = ""
@@ -198,18 +449,33 @@ def stream_rag_response(request: RagChatRequest, db: Session):
     rag_logger.info("=" * 80)
     
     # Save user message to database
-    ChatHistoryManager.save_message(
-        db=db,
-        session_id=session_id,
-        role="user",
-        message=request.message
-    )
+    try:
+        ChatHistoryManager.save_message(
+            db=db,
+            session_id=session_id,
+            role="user",
+            message=request.message
+        )
+    except Exception as e:
+        error_response = handle_error_for_stream(e, session_id, db, rag_logger)
+        yield error_response
+        return
     
     # Initialize streaming LLM for RAG
-    streaming_llm = get_llm(streaming=True)
+    try:
+        streaming_llm = get_llm(streaming=True)
+    except Exception as e:
+        error_response = handle_error_for_stream(e, session_id, db, rag_logger)
+        yield error_response
+        return
     
     # Build RAG chain with chat history
-    rag_chain = build_rag_qa_chain(retriever, streaming_llm, chat_history_str)
+    try:
+        rag_chain = build_rag_qa_chain(retriever, streaming_llm, chat_history_str)
+    except Exception as e:
+        error_response = handle_error_for_stream(e, session_id, db, rag_logger)
+        yield error_response
+        return
     
     full_response = ""
     
@@ -239,27 +505,31 @@ def stream_rag_response(request: RagChatRequest, db: Session):
         rag_logger.info("=" * 80 + "\n")
         
         # Save assistant response to database
-        ChatHistoryManager.save_message(
-            db=db,
-            session_id=session_id,
-            role="assistant",
-            message=full_response
-        )
+        try:
+            ChatHistoryManager.save_message(
+                db=db,
+                session_id=session_id,
+                role="assistant",
+                message=full_response
+            )
+        except Exception as e:
+            rag_logger.error(f"Failed to save assistant response to database: {str(e)}")
+            # Don't fail the request if saving fails, just log it
         
     except Exception as e:
-        error_msg = "I'm having trouble processing your request. Please try again."
-        yield f"data: {json.dumps({'type': 'error', 'data': error_msg})}\n\n"
-        
-        # Save error message to database
-        ChatHistoryManager.save_message(
-            db=db,
-            session_id=session_id,
-            role="assistant",
-            message=error_msg
-        )
+        error_response = handle_error_for_stream(e, session_id, db, rag_logger)
+        yield error_response
+        return
 
 
-@app.post("/rag/chat", response_model=RagChatResponse)
+@app.post("/rag/chat", response_model=RagChatResponse, responses={
+    400: {"model": ErrorResponse, "description": "Bad Request - RAG not initialized or validation error"},
+    429: {"model": ErrorResponse, "description": "Rate Limit - OpenAI API rate limit exceeded"},
+    500: {"model": ErrorResponse, "description": "Internal Server Error - Database or LLM generation error"},
+    502: {"model": ErrorResponse, "description": "Bad Gateway - OpenAI API error"},
+    503: {"model": ErrorResponse, "description": "Service Unavailable - Connection error"},
+    504: {"model": ErrorResponse, "description": "Gateway Timeout - Request timeout"}
+})
 async def rag_chat(request: RagChatRequest, db: Session = Depends(get_db)):
     """
     Simple RAG chat endpoint - returns complete response (non-streaming)
@@ -273,8 +543,23 @@ async def rag_chat(request: RagChatRequest, db: Session = Depends(get_db)):
     - Returns complete response using LLM
     
     Use this endpoint for Postman testing or non-streaming clients.
+    
+    Returns structured error responses with error codes for different failure scenarios.
     """
     session_id = get_or_create_session_id(request.session_id)
+    
+    # Validate request
+    if not request.message or not request.message.strip():
+        raise HTTPException(
+            status_code=400,
+            detail=json.dumps({
+                "error_code": ErrorCodes.VALIDATION_ERROR,
+                "error_type": "Validation Error",
+                "message": "Message cannot be empty",
+                "detail": "The request message field is required and cannot be empty",
+                "session_id": session_id
+            })
+        )
     
     # Load existing Chroma DB retriever (not create new one)
     # This automatically:
@@ -283,13 +568,16 @@ async def rag_chat(request: RagChatRequest, db: Session = Depends(get_db)):
     # 3. Retrieves top k=5 relevant chunks
     try:
         retriever = load_existing_retriever()
-    except ValueError as e:
-        raise HTTPException(status_code=400, detail=str(e))
+    except Exception as e:
+        raise handle_error_for_chat(e, session_id, db, rag_logger)
     
     # Get chat history (last 5 conversation pairs)
-    history_messages = ChatHistoryManager.get_last_conversation_pairs(
-        db, session_id, num_pairs=5
-    )
+    try:
+        history_messages = ChatHistoryManager.get_last_conversation_pairs(
+            db, session_id, num_pairs=5
+        )
+    except Exception as e:
+        raise handle_error_for_chat(e, session_id, db, rag_logger)
     
     # Format chat history as string for prompt
     chat_history_str = ""
@@ -312,24 +600,37 @@ async def rag_chat(request: RagChatRequest, db: Session = Depends(get_db)):
     rag_logger.info("=" * 80)
     
     # Save user message to database
-    ChatHistoryManager.save_message(
-        db=db,
-        session_id=session_id,
-        role="user",
-        message=request.message
-    )
+    try:
+        ChatHistoryManager.save_message(
+            db=db,
+            session_id=session_id,
+            role="user",
+            message=request.message
+        )
+    except Exception as e:
+        raise handle_error_for_chat(e, session_id, db, rag_logger)
     
     # Non-streaming LLM for RAG
-    rag_llm = get_llm(streaming=False)
+    try:
+        rag_llm = get_llm(streaming=False)
+    except Exception as e:
+        raise handle_error_for_chat(e, session_id, db, rag_logger)
     
     # Build RAG chain with chat history
-    rag_chain = build_rag_qa_chain(retriever, rag_llm, chat_history_str)
+    try:
+        rag_chain = build_rag_qa_chain(retriever, rag_llm, chat_history_str)
+    except Exception as e:
+        raise handle_error_for_chat(e, session_id, db, rag_logger)
     
     try:
         # Invoke chain: automatically does embeddings -> similarity search -> retrieval
         result: Any = rag_chain.invoke(request.message)
         # ChatOpenAI returns an AIMessage; fall back to string for safety
         answer = getattr(result, "content", str(result))
+        
+        # Validate answer
+        if not answer or not answer.strip():
+            raise ValueError("LLM returned an empty response")
         
         # Log final response
         rag_logger.info("\n" + "=" * 80)
@@ -338,26 +639,19 @@ async def rag_chat(request: RagChatRequest, db: Session = Depends(get_db)):
         rag_logger.info(answer)
         rag_logger.info("=" * 80 + "\n")
     except Exception as e:
-        error_msg = "I'm having trouble processing your request. Please try again."
-        # Save error message to database
+        raise handle_error_for_chat(e, session_id, db, rag_logger)
+    
+    # Save assistant response to database
+    try:
         ChatHistoryManager.save_message(
             db=db,
             session_id=session_id,
             role="assistant",
-            message=error_msg
+            message=answer
         )
-        raise HTTPException(
-            status_code=500,
-            detail=f"Failed to generate RAG answer: {str(e)}",
-        )
-    
-    # Save assistant response to database
-    ChatHistoryManager.save_message(
-        db=db,
-        session_id=session_id,
-        role="assistant",
-        message=answer
-    )
+    except Exception as e:
+        rag_logger.error(f"Failed to save assistant response to database: {str(e)}")
+        # Don't fail the request if saving fails, just log it
     
     return RagChatResponse(
         answer=answer,
