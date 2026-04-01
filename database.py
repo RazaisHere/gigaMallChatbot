@@ -2,10 +2,9 @@
 Database models and configuration for PostgreSQL
 """
 
-from sqlalchemy import create_engine, Column, Integer, String, DateTime, Text
+from sqlalchemy import create_engine, Column, Integer, String, DateTime, Text, func
 from sqlalchemy.ext.declarative import declarative_base
-from sqlalchemy.orm import sessionmaker
-from datetime import datetime
+from sqlalchemy.orm import sessionmaker, synonym
 from config import settings
 
 Base = declarative_base()
@@ -19,7 +18,10 @@ class ChatMessage(Base):
     session_id = Column(String, index=True)  # To group conversations by session
     role = Column(String)                     # 'user' or 'assistant'
     message = Column(Text)
-    timestamp = Column(DateTime, default=datetime.utcnow)
+    # Canonical DB column in the updated schema.
+    created_at = Column(DateTime(timezone=True), nullable=False, server_default=func.now())
+    # Backward-compatible alias so existing code using `timestamp` keeps working.
+    timestamp = synonym("created_at")
 
 
 # Create database engine

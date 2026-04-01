@@ -4,6 +4,7 @@ Manages conversation history in PostgreSQL
 """
 
 from sqlalchemy.orm import Session
+from sqlalchemy import text
 from database import ChatMessage
 from typing import List, Dict
 from datetime import datetime, timedelta
@@ -11,6 +12,20 @@ from datetime import datetime, timedelta
 
 class ChatHistoryManager:
     """Manages conversation history in PostgreSQL"""
+
+    @staticmethod
+    def _ensure_session_exists(db: Session, session_id: str) -> None:
+        """Create the chat session row if it does not already exist."""
+        db.execute(
+            text(
+                """
+                INSERT INTO chat_sessions (session_id)
+                VALUES (:session_id)
+                ON CONFLICT (session_id) DO NOTHING
+                """
+            ),
+            {"session_id": session_id}
+        )
     
     @staticmethod
     def save_message(
@@ -20,15 +35,22 @@ class ChatHistoryManager:
         message: str
     ) -> ChatMessage:
         """Save a message to database"""
-        chat_msg = ChatMessage(
-            session_id=session_id,
-            role=role,
-            message=message
-        )
-        db.add(chat_msg)
-        db.commit()
-        db.refresh(chat_msg)
-        return chat_msg
+        try:
+            ChatHistoryManager._ensure_session_exists(db, session_id)
+
+            chat_msg = ChatMessage(
+                session_id=session_id,
+                role=role,
+                message=message
+            )
+            db.add(chat_msg)
+            db.commit()
+            db.refresh(chat_msg)
+            return chat_msg
+        except Exception:
+            # Reset failed transaction state so callers can continue safely.
+            db.rollback()
+            raise
     
     @staticmethod
     def get_recent_history(
